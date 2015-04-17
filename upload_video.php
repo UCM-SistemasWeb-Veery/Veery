@@ -15,21 +15,20 @@
 							<fieldset>
 								<legend><h3>Subir un video</h3></legend>
 								<div>
-							<div>
 									<div class="col col-6">
 										<label class="float-right">Seleccionar archivo:</label>
 									</div>
 									<div class="col col-6">
 										<input class="float-left" type="file" name="archivo"/>
-									</d				<div class="col col-6">
+									</div>
+									<div class="col col-6">
 										<label class="float-right">Nombre del video:</label>
 									</div>
 									<div class="col col-6">
 										<input class="float-left" type="text" name="nombre_cancion" value="Gasolina" size="20"></input>
 									</div>
 								</div>
-						iv>
-								</div>
+
 								<div>
 									<div class="col col-6">
 										<label class="float-right">Nombre del álbum:</label>
