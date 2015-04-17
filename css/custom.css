@@ -1,0 +1,94 @@
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+/* 
+
+HEADER
+
+*/
+/* 
+
+RIGHT SIDEBAR
+
+*/
+/* Box */
+/* 
+
+FOOTER
+
+*/
+/* 
+
+LEFT SIDEBAR
+
+*/
+html {
+  background-color: #f8f8f8;
+  font-family: 'Muli', sans-serif;
+}
+header {
+  background: white;
+}
+footer {
+  background: #f1c40f;
+  color: white;
+}
+footer .container #album-art {
+  background: #f39c12;
+}
+footer .container #controls {
+  background: #f39c12;
+}
+#logo {
+  max-width: 350px;
+}
+/* 
+
+CONTENT
+
+*/
+/* HTML ELEMENTS */
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  background: transparent;
+  border-radius: 0px;
+  border: 1px solid #f1c40f;
+  color: #f1c40f;
+  float: none;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: #f39c12;
+  color: #f39c12;
+}
+.btn:hover {
+  background: #f1c40f;
+  border-color: #f39c12;
+  color: #fff;
+}
+.btn.btn-inverse {
+  background: #f1c40f;
+  border-color: #f39c12;
+  color: #fff;
+}
+.btn.active {
+  background: #f1c40f;
+  border-color: #f39c12;
+  color: #fff;
+}
+.btn.selected {
+  background: #f39c12;
+  border-color: #f39c12;
+  color: #fff;
+}
+.mood-selector {
+  display: inline-block;
+  vertical-align: top;
+}
+.mood-selector .mood-btn {
+  border-radius: 15px;
+}

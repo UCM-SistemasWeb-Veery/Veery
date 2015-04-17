@@ -1,0 +1,168 @@
+/*
+
+GRID STRUCTURE 
+COPYRIGHT VEERY
+	
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+
+/*
+
+CONTAINER - CONTAINER-FULL
+
+*/
+.container {
+  display: block;
+  overflow: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+      width: 750px;
+  }
+  @media (min-width: 992px) {
+      width: 970px;
+  }
+  @media (min-width: 1200px) {
+      width: 1170px;
+  }
+}
+.container-full {
+  display:block;
+  overflow: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
+
+GENERAL .ROW STYLING
+
+*/
+
+.row:after {
+	clear:both;
+}
+
+.row {
+	clear: both;
+	padding: 0;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/*
+
+GENERAL .COL STYLING
+
+*/
+
+.col{
+  float:left;
+  position: relative;
+  min-height: 1px;
+  margin: 0;
+  padding: 2.5%;
+  @media (max-width: 768px) {
+      width: 100%;
+  }  
+}
+
+.generate-columns(12);
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .col-@{i} {
+    width: (@i * 100%)/@n;
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+.generate-column-offset(12);
+
+.generate-column-offset(@n, @i: 1) when (@i =< @n) {
+  .col-offset-@{i} {
+    margin-left: (@i * 100%)/@n;
+  }
+  .generate-column-offset(@n, (@i + 1));
+}
+
+.generate-column-pull(12);
+
+.generate-column-pull(@n, @i: 1) when (@i =< @n) {
+  .col-pull-@{i} {
+    right: (@i * 100%)/@n;
+  }
+  .generate-column-pull(@n, (@i + 1));
+}
+
+.generate-column-push(12);
+
+.generate-column-push(@n, @i: 1) when (@i =< @n) {
+  .col-push-@{i} {
+    left: (@i * 100%)/@n;
+  }
+  .generate-column-push(@n, (@i + 1));
+}
+
+/* UNIVERSAL */
+
+.block{
+  display: block;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
+
+.invisible{
+  display: none;
+}
+/* TEXT STYLES */
+
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
