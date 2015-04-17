@@ -54,8 +54,6 @@ CONTAINER - CONTAINER-FULL
 .container-full {
   display: block;
   overflow: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -246,6 +244,22 @@ GENERAL .COL STYLING
 }
 .invisible {
   display: none;
+}
+.medium-up {
+  display: none;
+}
+@media (min-width: 768px) {
+  .medium-up {
+    display: block;
+  }
+}
+.medium-down {
+  display: none;
+}
+@media (max-width: 767px) {
+  .medium-down {
+    display: block;
+  }
 }
 /* TEXT STYLES */
 .center {

@@ -19,7 +19,6 @@
 	<meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<title><?php echo SITETITLE; ?></title> 
 	<meta name="description" content="">
-	<!-- <title>Veery</title>-->
 	<link href="css/grid.css" rel="stylesheet" type="text/css">
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
@@ -34,20 +33,25 @@
 		</div>
 		</header><!-- header role="banner" -->
 	</div><!-- container-fluid -->
-<div id="app-content" class="container">
 	<div class="container-full">
-		<nav class="navbar navbar-your-class navbar-static-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button> <a class="brand" href="#">Your Logo</a>
-			        <div class="nav-collapse collapse">
-			        	<ul class="nav">
-			            	<li class="active"><a href="#">Home</a></li>
-			                <li><a href="#about">About</a></li>
-			                <li><a href="#contact">Contact</a></li>
-			             </ul>
-			     	</div><!--/.nav-collapse -->
-			     </div>
+			<div id="left-sidebar" class="col col-2">
+				<?php
+					include_once('left_sidebar.php');
+				?>
 			</div>
-		</nav>
-	</div>
+			<div id="app-content" class="container-full">
+				<nav class="clearfix">
+				    <ul class="clearfix">
+				        <li><a href="#">My Veery</a></li>
+				        <li><a class="bold" href="#">Just For You</a></li>
+				        <li><a href="#">Trending</a></li>
+				        <li><a href="#">Live</a></li>
+				        <li><a href="#">Browse</a></li>
+				        <li id="search-box">
+				        	<input type="text" name="search" placeholder="Search">
+				        	<button type="submit" class="btn btn-inverse"><span class="fa fa-search"></span></button>
+				        </li>
+				    </ul>
+				    <a href="#" id="pull">Just For You</a>
+				</nav>
+				<div class="row">
