@@ -13,11 +13,12 @@
 					
 					<img class="col col_5" src="img/the_blueprint.jpg">
 					<div class="col col_7">
-						<h2>Jay z</h2>
-						<h6>Album:The Blueprint</h6>
+						<h2>The Blueprint</h2>
+						<h4>de Jay z </h4>
 						<h6>Premios: Soul Train Music Award al Mejor Álbum R&B/Soul del Año</h6>
 						<h6>Fecha de publicación: 11 de septiembre de 2001</h6>
-						
+						<button type="button">Favoritos</button>
+						<button type="button">Compartir</button>
 					</div>
 				</div>
 				
