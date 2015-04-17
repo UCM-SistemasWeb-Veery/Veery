@@ -76,7 +76,7 @@
 				</div>
 			</div>
 			
-			<div id="left-sidebar" class="col col_3">
+			<div id="left-sidebar" class="col col-3">
 				<?php
 					include_once('includes/right_sidebar.php');
 				?>
