@@ -39,7 +39,7 @@
 					include_once('left_sidebar.php');
 				?>
 			</div>
-			<div id="app-content" class="container-full">
+			<div id="app-content" class="col col-10">
 				<nav class="clearfix">
 				    <ul class="clearfix">
 				        <li><a href="#">My Veery</a></li>

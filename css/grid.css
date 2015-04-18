@@ -53,7 +53,6 @@ CONTAINER - CONTAINER-FULL
 }
 .container-full {
   display: block;
-  overflow: auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -85,7 +84,8 @@ GENERAL .COL STYLING
 }
 @media (max-width: 768px) {
   .col {
-    width: 100%;
+    width: 100% !important;
+    padding: 0;
   }
 }
 .col-1 {
@@ -259,6 +259,7 @@ GENERAL .COL STYLING
 @media (max-width: 767px) {
   .medium-down {
     display: block;
+    text-align: center;
   }
 }
 /* TEXT STYLES */
