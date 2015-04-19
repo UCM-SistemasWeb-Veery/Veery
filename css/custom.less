@@ -121,15 +121,13 @@ RIGHT SIDEBAR
   }
 }
 
-
-/*** Cards ***/
 @card-padding: 20px;
 @card-bg-color: #fff;
 @element-top-margin: 1.5rem/3;
-@element-bottom-margin: (1.5rem/3*2)/3;
+@element-margin: (1.5rem/3*2)/3;
 
 .card-panel {
-  margin: @element-top-margin 0 @element-bottom-margin 0;
+  margin: @element-top-margin @element-margin @element-margin @element-margin;
   border-radius: 2px;
   background-color: @card-bg-color;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -158,7 +156,7 @@ RIGHT SIDEBAR
 .card {
   position: relative;
   overflow: hidden;
-  margin: @element-top-margin 0 @element-bottom-margin 0;
+  margin: @element-top-margin @element-margin @element-margin @element-margin;
   background-color: @card-bg-color;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -715,7 +713,7 @@ button.btn, a.btn {
               top: 50%;
               left: 50%;
               z-index: 1;
-              //height: 120px;
+              min-height: 120px;
               width: 150%;
               -webkit-transform: translate3d(-50%,-50%,0);
               transform: translate3d(-50%,-50%,0);

@@ -68,26 +68,22 @@
 									</div>																												
 								</div>
 							</div> -->
-							<div class="col col-6"	style="padding: 1%;">
+							<div class="col col-9">
 								<div id="main" class="card-panel medium">
 									<img src="img/rhcp.jpg">
 								</div>
 							</div>
-							<div class="col col-3" style="padding: 1%;">
-								<div class="card medium">
-									
-								</div>
-							</div>
-							<div class="col col-3" style="padding: 1%;">
+
+							<div class="col col-3">
 								<div class="card medium">
 									
 								</div>
 							</div>							
 						</div>
 						<div class="row padding-top-10">
-	             <div class="col col-3">
+	             <div class="col col-6">
 	             	<div class="row">
-	                <div class="col-10 col-offset-1  feed-card">
+	                <div class="feed-card">
 	                    <div class="feed-heading">
 	                        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/t31.0-8/885259_10153456543870383_194557398_o.jpg" />
 	                        <button class="btn primary small shadow">Follow</button>
@@ -102,9 +98,9 @@
 	                </div> 
 	              </div> 
 	    		</div>
-			    <div class="col col-3">
+			    <div class="col col-6">
 			    	<div class="row">
-		        	    <div class="col-10 col-offset-1  feed-card">
+		        	    <div class="feed-card">
 		                    <div class="feed-heading">
 		                        <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1524845_10154241712765383_1601173067664658885_n.jpg?oh=c9663f9895789582b8d271be9c52d9f1&oe=55A5F107&__gda__=1436292926_d4c391ef13cf7a7026e0236e7813523f" />
 		                        <button class="btn primary small shadow">Follow</button>
@@ -119,9 +115,9 @@
 		            	</div> 
 		        </div>    	  
 	    		</div>
-	            <div class="col col-3">
+	            <div class="col col-6">
 	            	<div class="row">
-		                <div class="col-10 col-offset-1 primary feed-card">
+		                <div class="primary feed-card">
 		                    <div class="feed-heading">
 		                        <img src="img/pitbull.png" />
 		                        <button class="btn primary small shadow">Share</button>
@@ -137,9 +133,9 @@
 		            	</div>   
 		          </div>  	
 	    		</div>
-	            <div class="col col-3">
+	            <div class="col col-6">
 	            	<div class="row">
-		                <div class="col-10 col-offset-1  feed-card">
+		                <div class="feed-card">
 		                    <div class="feed-heading">
 		                        <img src="https://ununsplash.imgix.net/26/camera-keys.jpg?q=75&fm=jpg&s=b919d3158053cde8e9f0e37b4876c14f" />
 		                        <button class="btn primary small shadow">Follow</button>

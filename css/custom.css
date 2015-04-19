@@ -108,9 +108,8 @@ RIGHT SIDEBAR
 .row #right-sidebar {
   padding: 0;
 }
-/*** Cards ***/
 .card-panel {
-  margin: 0.5rem 0 0.33333333rem 0;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -135,7 +134,7 @@ RIGHT SIDEBAR
 .card {
   position: relative;
   overflow: hidden;
-  margin: 0.5rem 0 0.33333333rem 0;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
   background-color: #ffffff;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -620,7 +619,7 @@ a.btn.small {
   border-radius: 15px;
 }
 .feed-card {
-  margin: 0.5rem 0 0.33333333rem 0;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
   background-color: #ffffff;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -765,6 +764,7 @@ a.btn.small {
   top: 50%;
   left: 50%;
   z-index: 1;
+  min-height: 120px;
   width: 150%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
