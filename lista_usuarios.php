@@ -31,7 +31,7 @@
 							</div>
 							<div class="col col-4">
 								<div class="row center">Email</div>
-								<div class="row center"><p>Contrasena</p></div>
+								<div class="row center"><p>Contraseña</p></div>
 							</div>
 							<div class ="col col-2">
 								Utilidades

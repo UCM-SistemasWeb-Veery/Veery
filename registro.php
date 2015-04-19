@@ -36,17 +36,23 @@
 						</div>
 						<div class="col col-6">
 							<div class="row">
-								Email:
+								<input type="checkbox" name="artista" value="artista">Haz click si desea una cuenta de tipo artista
+							</div>
+							<div class="row">
+								<br>Email:
 								<input type="email" name="email" required><br>
 							</div>
 							<div class="row">
-								<br>Nueva contrasena:
+								<br>Nueva contraseña:
 								<input type="password" name="contrasena" required  onchange="form.contrasena2.pattern = this.value;" >
 								<!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" esto es para que meta diferentes elementos, letra, numero-->
 							</div>
 							<div class="row">
-								<br>Repita contrasena:
+								<br>Repita contraseña:
 								<input type="password" name="contrasena2" required >
+							</div>
+							<div class="row">
+								<input type="checkbox" name="condiciones" value="condiciones" required><br>Haz click para aceptar los términos y condiciones de uso<br>
 							</div>
 						</div>
 					</div>
