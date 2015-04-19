@@ -87,7 +87,9 @@
 
 		$(window).resize(function(){
 		  equalheight('.bottom-row .post');
-		});				
+		});			
+
+			
 	</script>
 </body>
 </html>

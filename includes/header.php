@@ -33,8 +33,8 @@
 		</div>
 		</header><!-- header role="banner" -->
 	</div><!-- container-fluid -->
-	<div class="container-full">
-			<div id="left-sidebar" class="col col-2">
+	<div id="wrapper" class="container-full">
+			<div id="left-sidebar" class="col-2">
 				<?php
 					include_once('left_sidebar.php');
 				?>
@@ -42,14 +42,22 @@
 			<div id="app-content" class="col col-10">
 				<nav class="clearfix">
 				    <ul class="clearfix">
-				        <li><a href="#">My Veery</a></li>
-				        <li><a class="bold" href="#">Just For You</a></li>
-				        <li><a href="#">Trending</a></li>
-				        <li><a href="#">Live</a></li>
-				        <li><a href="#">Browse</a></li>
+				        <li><a class="btn inverse" href="#">My Veery</a></li>
+				        <li><a class="btn inverse active" href="#">Just For You</a></li>
+				        <li><a class="btn inverse" href="#">Trending</a></li>
+				        <li><a class="btn inverse" href="#">Live</a></li>
+				        <li><a class="btn inverse" href="#">Browse</a></li>
 				        <li id="search-box">
-				        	<input type="text" name="search" placeholder="Search">
-				        	<button type="submit" class="btn btn-inverse"><span class="fa fa-search"></span></button>
+<!-- 									<a class="searchtoggler"><span class="fa fa-search"></span></a>
+
+									<div class="searchcontainer">
+  
+									   <div class="searchsmall">
+									      <input type="text" placeholder="Where to go?"/>
+									   </div>
+									</div>		    -->     
+				        	<!-- <input type="text" name="search" placeholder="Search">
+				        	<button type="submit" class="btn inverse"><span class="fa fa-search"></span></button> -->
 				        </li>
 				    </ul>
 				    <a href="#" id="pull">Just For You</a>

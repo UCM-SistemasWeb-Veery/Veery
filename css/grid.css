@@ -233,17 +233,37 @@ GENERAL .COL STYLING
   left: 100%;
 }
 /* UNIVERSAL */
+.shadow {
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4);
+}
+.no-shadow {
+  box-shadow: none !important;
+}
 .block {
   display: block;
 }
+.hide {
+  display: none;
+}
 .float-right {
-  float: right;
+  float: right !important;
 }
 .float-left {
-  float: left;
+  float: left !important;
 }
 .invisible {
-  display: none;
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .medium-up {
   display: none;
@@ -277,4 +297,12 @@ GENERAL .COL STYLING
 }
 .italic {
   font-style: italic;
+}
+img.responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+img.circle {
+  border-radius: 50%;
 }
