@@ -9,7 +9,34 @@
 			</div>
 
 			<div id="content-handler" class="col col-7">
-				<!-- CONTENIDO DE LA PÁGINA -->				
+				<div class="row">
+					<form id="formulario">
+						<fieldset>
+							<legend>Baja usuario</legend>
+								<div class="row">
+									<div class="col col-offset-1">
+										¿Deseas darte de baja?
+										<select name="Confirmación" value="No">
+										  <option value="si">Si</option>
+										  <option value="no">No</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-offset-1">
+										Motivo de baja:
+										<input class="col col-12" type="text" name="información" id="información" class="formulario">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-4 col-offset-1">
+										<button class="col">Modificar</button>
+										<button class="col">Cancelar</button>
+									</div>
+								</div>
+						</fieldset>
+					</form>
+				</div>		
 			</div>
 			
 			<div id="left-sidebar" class="col col-3">

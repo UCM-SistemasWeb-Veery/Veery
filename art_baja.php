@@ -12,7 +12,7 @@
 				<div class="row">
 					<form id="formulario">
 						<fieldset>
-							<legend>Baja artísta</legend>
+							<legend>Baja artista</legend>
 								<div class="row">
 									<div class="col col-offset-1">
 										¿Deseas darte de baja?

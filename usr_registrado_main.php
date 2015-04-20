@@ -27,7 +27,7 @@
 				<div id="userspace-content" class="row">
 					<div class="col col-3">
 						<div  class="row">
-							<img class="col col-9 col-offset-1" src="../img/disco1.bmp">
+							<img class="col col-9 col-offset-1" src="../img/caratula1.bmp">
 						</div>
 						<div  class="row">
 							<p class="tracklist-title col col-12">Pink Floyd</p>
@@ -39,7 +39,7 @@
 
 					<div class="col col-3">
 						<div  class="row">
-							<img class="col col-9 col-offset-1" src="../img/disco2.bmp">
+							<img class="col col-9 col-offset-1" src="../img/caratula2.bmp">
 						</div>
 						<div  class="row">
 							<p class="tracklist-title col col-12">Guns and roses</p>
@@ -51,7 +51,7 @@
 
 					<div class="col col-3">
 						<div  class="row">
-							<img class="col col-9 col_offset-1" src="../img/disco3.bmp">
+							<img class="col col-9 col_offset-1" src="../img/caratula3.bmp">
 						</div>
 						<div  class="row">
 							<p class="tracklist-title col col-12">Metallica</p>
@@ -63,13 +63,13 @@
 
 					<div class="col col-3">
 						<div  class="row">
-							<img class="col col-9 col-offset-1" src="../img/disco4.bmp">
+							<img class="col col-9 col-offset-1" src="../img/caratula4.bmp">
 						</div>
 						<div  class="row">
 							<p class="tracklist-title col col-12">Led zeppelin</p>
 						</div>
 						<div  class="row">
-							<p class="tracklist-description col col-12">Led zeppelin IV</p>
+							<p class="tracklist-description col col-12">Led zeppelin</p>
 						</div>		
 					</div>
 
