@@ -80,7 +80,6 @@ GENERAL .COL STYLING
   position: relative;
   min-height: 1px;
   margin: 0;
-  padding: 2.5%;
 }
 @media (max-width: 768px) {
   .col {

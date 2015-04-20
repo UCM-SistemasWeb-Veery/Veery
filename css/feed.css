@@ -1,0 +1,343 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.module-panel {
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+.module-panel img {
+  border-radius: 2px;
+  min-height: 150%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -25%;
+}
+.module-panel.small {
+  height: 300px;
+}
+.module-panel.medium {
+  height: 400px;
+}
+.module-panel.large {
+  height: 500px;
+}
+.module {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+.module .module-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.module .module-title.activator {
+  cursor: pointer;
+}
+.module.small,
+.module.medium,
+.module.large {
+  position: relative;
+}
+.module.small .module-image,
+.module.medium .module-image,
+.module.large .module-image {
+  overflow: hidden;
+}
+.module.small .module-content,
+.module.medium .module-content,
+.module.large .module-content {
+  overflow: hidden;
+}
+.module.small .module-action,
+.module.medium .module-action,
+.module.large .module-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.module.small {
+  height: 300px;
+}
+.module.small .module-image {
+  height: 150px;
+}
+.module.small .module-content {
+  height: 150px;
+}
+.module.medium {
+  height: 400px;
+}
+.module.medium .module-image {
+  height: 250px;
+}
+.module.medium .module-content {
+  height: 150px;
+}
+.module.large {
+  height: 500px;
+}
+.module.large .module-image {
+  height: 330px;
+}
+.module.large .module-content {
+  height: 170px;
+}
+.module .module-image {
+  position: relative;
+}
+.module .module-image img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.module .module-image .module-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.module .module-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+.module .module-content p {
+  margin: 0;
+  color: inherit;
+}
+.module .module-content .module-title {
+  line-height: 48px;
+}
+.module .module-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+.module .module-action a {
+  color: #f3d458;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.module .module-action a:hover {
+  color: #faedb7;
+}
+.module .module-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.module .module-reveal .module-title {
+  cursor: pointer;
+  display: block;
+}
+.feed-card {
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  position: relative;
+  height: 275px;
+  border: none;
+  overflow: hidden;
+}
+.feed-card .module-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.feed-card .module-title.activator {
+  cursor: pointer;
+}
+.feed-card.small,
+.feed-card.medium,
+.feed-card.large {
+  position: relative;
+}
+.feed-card.small .module-image,
+.feed-card.medium .module-image,
+.feed-card.large .module-image {
+  overflow: hidden;
+}
+.feed-card.small .module-content,
+.feed-card.medium .module-content,
+.feed-card.large .module-content {
+  overflow: hidden;
+}
+.feed-card.small .module-action,
+.feed-card.medium .module-action,
+.feed-card.large .module-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.feed-card.small {
+  height: 300px;
+}
+.feed-card.small .module-image {
+  height: 150px;
+}
+.feed-card.small .module-content {
+  height: 150px;
+}
+.feed-card.medium {
+  height: 400px;
+}
+.feed-card.medium .module-image {
+  height: 250px;
+}
+.feed-card.medium .module-content {
+  height: 150px;
+}
+.feed-card.large {
+  height: 500px;
+}
+.feed-card.large .module-image {
+  height: 330px;
+}
+.feed-card.large .module-content {
+  height: 170px;
+}
+.feed-card .module-image {
+  position: relative;
+}
+.feed-card .module-image img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.feed-card .module-image .module-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.feed-card .module-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+.feed-card .module-content p {
+  margin: 0;
+  color: inherit;
+}
+.feed-card .module-content .module-title {
+  line-height: 48px;
+}
+.feed-card .module-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+.feed-card .module-action a {
+  color: #f3d458;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.feed-card .module-action a:hover {
+  color: #faedb7;
+}
+.feed-card .module-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.feed-card .module-reveal .module-title {
+  cursor: pointer;
+  display: block;
+}
+.feed-card.primary {
+  background-color: white;
+  color: #e7e7e7;
+}
+.feed-card.inverse {
+  background-color: #f3d458;
+  color: white;
+}
+.feed-card .feed-heading {
+  position: relative;
+  z-index: 2;
+  height: 120px;
+  border-bottom-color: #fff;
+  overflow: hidden;
+  -webkit-transition: height 600ms ease-in-out;
+  transition: height 600ms ease-in-out;
+}
+.feed-card .feed-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-height: 120px;
+  width: 150%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.feed-card .feed-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.feed-card .feed-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  background-color: #f3d458;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+.feed-card .feed-figure img {
+  width: 70px;
+}
+.feed-card .feed-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
+.feed-card:hover .feed-heading {
+  height: 55px;
+  -webkit-transition: height 400ms ease-in-out;
+  transition: height 400ms ease-in-out;
+}
+.feed-card:hover .feed-figure {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+.feed-card:hover .feed-body {
+  padding-top: 20px;
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
