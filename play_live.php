@@ -12,16 +12,18 @@
 				<!-- row video -->
 				<div class="row">
 					<div class="col col-12">
-						<!-- TODO: ¿Hay que quitar el width y el height y hacerlo responsive?-->
 						<h3>Directo de artista X</h3>
-						<iframe src="https://www.youtube.com/embed/ceoqlnoa_HU" width="640" height="480"></iframe>
+						<div class="videoWrapper">
+							<iframe src="https://www.youtube.com/embed/ceoqlnoa_HU" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>																
 				</div>
 				<!-- ./ row video -->
 				<!-- row chat-->
 				<div class="row">
 					<div class="col col-12">
-						<ul class="ul-plain">
+						<!--<ul class="ul-plain">-->
+						<ul>
 							<li>Usuario 1: ¡Qué bien están tocando!</li>
 							<li>Usuario 2: Se nota que han ensayado mucho...</li>
 							<li>Usuario 1: Hace un año estaban más verdes</li>
@@ -34,9 +36,13 @@
 				<div class="row">
 					<div class="col col-12">
 						<form action="procesa_comentario.php" method="post">
-							<div class="comment-wrapper">
+							<!--<div class="comment-wrapper">
 								<input class="comment-field" type="text" name="texto_mensaje" value="Mensaje...">
 								<input class="comment-button" type="submit" name="enviar" value="Enviar">
+							</div>-->
+							<div>
+								<input type="text" name="texto_mensaje" value="Mensaje...">
+								<input type="submit" name="enviar" value="Enviar">
 							</div>
 						</form>
 					</div>
