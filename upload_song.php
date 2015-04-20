@@ -7,67 +7,76 @@
 					include_once('includes/left_sidebar.php');
 				?>
 			</div>
-			<div id="content-handler" class="col col-7 img-background">
+			<div id="content-handler" class="col col-7">
 				<div class="row">
+					<!-- div: col col-12 -->
 					<div class="col col-12">
 						<!-- Formulario con información sobre el archivo -->
 						<form action="algo_que_procesa_el_formulario.php" method="post" enctype="multipart/form-data">
-							<!--<fieldset>-->
+							<fieldset>
 								<legend><h3>Subir una canción</h3></legend>
-								<!--<div>
-									<div class="co col-12">
-										<img src="img/veery_concert2.jpg" alt="concert header" width="600" height="200">
-									</div>
-								</div>-->
-								<div>
+								<!-- row Nombre canción -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Nombre de la canción:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Gasolina" size="20"></input>
+										<input class="float-left" type="text" name="nombre_cancion" value="Gasolina">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Nombre canción -->
+								<!-- row Seleccionar archivo -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Seleccionar archivo:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="file" name="archivo"/>
+										<input class="float-left" type="file" name="archivo">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Seleccionar archivo -->
+								<!-- row Nombre álbum -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Nombre del álbum:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Barrio Fino" size="20"></input>
+										<input class="float-left" type="text" name="nombre_album" value="Barrio Fino">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Nombre álbum -->
+								<!-- row Portada álbum -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Portada del álbum:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="file" name="img_album"/>
+										<input class="float-left" type="file" name="img_album">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Portada álbum -->
+								<!-- row Nombre artista -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Nombre del artista:</lable>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Daddy Yankee" size="20"></input>
+										<input class="float-left" type="text" name="nombre_artista" value="Daddy Yankee">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Nombre artista -->
+								<!-- row Duración -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Duración:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="3:13" size="6"></input>
+										<input class="float-left" type="text" name="duracion" value="3:13">
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Duración -->
+								<!-- row Género -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Género:</label>
 									</div>
@@ -82,24 +91,29 @@
 										</select>
 									</div>
 								</div>
-								<div>
+								<!-- ./ row Género -->
+								<!-- row Explicit content -->
+								<div class="row">
 									<div class="col col-6">
 										<label class="float-right">Contenido explítico:</label>
 									</div>
 									<div class="col col-6">
-										<input class="float-left" name="explicit" type="checkbox" value="off" checked="checked"/>
+										<input class="float-left" name="explicit" type="checkbox" value="off" checked="checked">
 									</div>
 								</div>
-								<div>
-									<div class="col col-6">
-									</div>
-									<div class="col col-6">
-										<input class="btn btn-lg btn-orange float-left" type="submit" name="enviar" value="SUBIR"/>
+								<!-- ./ row Explicit content -->
+								<!-- row Subir archivo -->
+								<div class="row">
+									<div class="col col-6 col-offset-6">
+										<input class="btn float-left" type="submit" name="subir_archivo" value="SUBIR">
 									</div>
 								</div>
-							<!--</fieldset>-->
+								<!-- ./ row Subir archivo -->
+							</fieldset>
 						</form>
-					</div>																
+						<!-- ./ Formulario con información sobre el archivo -->
+					</div>
+					<!-- ./ div: col col-12 -->																
 				</div>				
 			</div>
 			

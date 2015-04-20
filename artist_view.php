@@ -13,16 +13,16 @@
 					<a href="index.php"><img class="col col-5" src="img/jay-z.jpg"></a>
 					<div class="col col-7">
 						<p><h1>JAY_Z</h1></p>
-						<button type="button" disabled>Play!</button>
-						<button type="button" disabled>Favoritos</button>
-						<button type="button" disabled>Compartir</button>
+						<button class="btn" type="button" disabled>Favoritos</button>
+						<button class="btn" type="button" disabled>Compartir</button>
 					</div>															
 				</div>				
 				<div class="row ">
-					<div class="col col-4">
-						<h2>Discografía</h2>
-					</div>
+					<h2 class="col col-2">Discografía</h2>
 					<div class="col col-12">
+						<div class="col col-12">
+							<button class="btn" type="button" disabled>Play!</button>
+						</div>
 						<a href="index.php"><img class="col col-3" src="img/album1.jpg"></a>
 						<a href="index.php"><img class="col col-3" src="img/album2.jpg"></a>
 						<a href="index.php"><img class="col col-3" src="img/album3.jpg"></a>

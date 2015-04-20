@@ -17,31 +17,76 @@
 						<h4>de Jay z </h4>
 						<h6>Premios: Soul Train Music Award al Mejor Álbum R&B/Soul del Año</h6>
 						<h6>Fecha de publicación: 11 de septiembre de 2001</h6>
-						<button type="button">Favoritos</button>
-						<button type="button">Compartir</button>
-					</div>
+						<button class="btn" type="button">Favoritos</button>
+						<button class="btn" type="button">Compartir</button>
+					</div> 
 				</div>
 				
 				<div class="row">
+
 					<div class="col col-12">
-						<h2>Tracklist:</h2>
-						<ol>
-							<li>The Ruler's Back</li>
-							<li>Izzo (H.O.V.A)</li>
-							<li>Jigga That Nigga</li>
-							<li>U Don't Know</li>
-							<li>Hola' Hovito</li>
-							<li>Heart of the City</li>
-							<li>Never Change</li>
-							<li>Song Cry</li>
-							<li>All I Need</li>
-							<li>Renegade</li>
-							<li>Blueprint (Momma Loves Me)</li>
-							<li>Blueprint</li>
-							<li>Breathe Easy</li>
-							<li>Girls, Girls, Girls</li>
-						</ol>	
+						<h2>Tracklist:</h2>	
 					</div>
+					<div class="col col-12">
+							<button class="col col-2 btn"  type="button">Escuchar</button>
+							<div class="col col-12">
+							<table>
+					            <thead>
+					            </thead>
+					            <tfoot>
+					            </tfoot>
+					            <tbody>
+					                  <tr>
+					                     <td>The Ruler's Back</td>
+					                     <td>03:54</td>
+					                  </tr>
+					                  <tr>
+					                     <td>Izzo (H.O.V.A)</td>
+					                     <td>03:54</td>
+					                     
+					                  </tr>
+					                  <tr>
+					                     <td>Jigga That Nigga</td>
+					                     <td>03:54</td>
+					                  </tr>
+					                  <tr>
+					                     <td>U Don't Know</td>
+					                     <td>03:54</td>
+					                     
+					                  </tr>
+					                  <tr>
+					                     <td>Hola' Hovito</td>
+					                     <td>03:54</td>
+					                     
+					                  </tr>
+					                  <tr>
+					                     <td>Heart of the City</td>
+					                     <td>03:54</td>
+					                    
+					                  </tr>
+					                  <tr>
+					                     <td>Never Change</td>
+					                     <td>03:54</td>
+					                    
+					                  </tr>
+					                   <tr>
+					                     <td>Song Cry</td>
+					                     <td>03:54</td>
+					                  </tr>
+					                   <tr>
+					                     <td>All I Need</td>
+					                     <td>03:54</td>
+					                  </tr>
+					                  <tr>
+					                     <td>Renegade</td>
+					                     <td>03:54</td>
+					                  </tr>
+					                 
+					            </tbody>
+		        			</table>
+		        			</div>
+					</div>
+					
 				</div>	
 			</div>
 			
