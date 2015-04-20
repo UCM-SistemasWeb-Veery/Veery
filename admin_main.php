@@ -1,7 +1,7 @@
 <?php
 	include_once('includes/header.php');
 ?>
-<link href="<?php echo PATH; ?> /css/admin.css" rel="stylesheet" type="text/css">
+<link href="<?php echo PATH; ?>/css/admin.css" rel="stylesheet" type="text/css">
 
 		<div class="row">
 			<div id="right-sidebar" class="col col-2">
@@ -17,7 +17,7 @@
 					</a>
 				
 					<a type="btn" class = "col col-3 btn">
-						aprobar video/cancion
+						aprobar video/canción
 					</a>
 					
 					<a type="btn" class = "col col-2 btn">
@@ -30,7 +30,7 @@
 				
 				<div class="row">
 					<div clas = "col col-12">
-						<h1>Grafico sobre el numero de entradas a la pagina al año</h1>
+						<h1>Gráfico sobre el numero de entradas a la página al año</h1>
 						<dl  class ="graph">
 							<dt>2008</dt>
 							<dd><div id="data-one" class="bar">60,000</div></dd>

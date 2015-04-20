@@ -14,7 +14,7 @@
 					<form action="busqueda.php" method="get">
 						<input type="text" name="q" class = "input col col-7 center" value= ""/>
 						<select name="busqueda" class="btn">
-							<option>Cancion</option>
+							<option>Canción</option>
 							<option>Video</option>
 							<option>Artista</option>
 						</select>
@@ -48,7 +48,7 @@
 									</div>
 									<div class="row">
 										<a type="btn" class = "col col-10 btn">
-											anadir
+											añadir
 										</a>
 									</div>
 								</div>	
@@ -77,7 +77,7 @@
 									</div>
 									<div class="row">
 										<a type="btn" class = "col col-10 btn">
-											anadir
+											añadir
 										</a>
 									</div>
 								</div>	
@@ -106,7 +106,7 @@
 									</div>
 									<div class="row">
 										<a type="btn" class = "col col-10 btn">
-											anadir
+											añadir
 										</a>
 									</div>
 								</div>	
