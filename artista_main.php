@@ -6,14 +6,16 @@
 			<div class="col col-10">
 				<div class="row">
 					<div class="col col-offset-9 col-3">
-							<button><a href="art_modificar_info.php">Modificar perfil</a></button>
+							<button type="button">
+								<a href="art_modificar_info.php">Modificar perfil</a>
+							</button>
 
 					</div>
 				</div>										
 				<div class="row">
 					<a href="artista_main.php"><img class="col col-5" src="img/jay-z.jpg"></a>
 					<div class="col col-7">
-						<p><h1>JAY_Z</h1></p>
+						<h1>JAY_Z</h1>
 					</div>															
 				</div>				
 				<div class="row">
@@ -27,7 +29,7 @@
 				<div class="row">
 					<div class="col col-4">
 						<h2>Álbumnes</h2>
-						<button><a href="upload_song.php">Añadir canciones</a></button>
+						<button type="button"><a href="upload_song.php">Añadir canciones</a></button>
 					</div>
 					<div class="col col-12">
 						<a href="artista_main.php"><img class="col col-3" src="img/album1.jpg"></a>
@@ -39,17 +41,23 @@
 				<div class="row">
 					<div class="col col-4">
 						<h2>Video</h2>
-						<button><a href="upload_videos.php">Añadir videos</a></button>
+						<button type="button">
+							<a href="upload_video.php">Añadir video</a>
+						</button>
 					</div>
-					<iframe height="315" class="col col-8 col-offset-2" src="https://www.youtube.com/embed/8rnr2wuAhYc?rel=0&amp;showinfo=0"		frameborder="0" allowfullscreen></iframe>
+					<iframe class="col col-8 col-offset-2" src="https://www.youtube.com/embed/8rnr2wuAhYc?rel=0&amp;showinfo=0"		frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="row">
 					<div class="col col-4 ">
 						<h2>Streamings</h2>
-						<button class="col col-5"><a href="html/empezar_ensayo.php">Empezar ensayo</a></button>
-						<button class="col col-5 col-offset-2"><a href="html/empezar_concierto.php">Empezar concierto</a></button>
+						<button class="col col-5" type="button">
+							<a href="empezar_ensayo.php">Empezar ensayo</a>
+						</button>
+						<button class="col col-5 col-offset-2" type="button">
+							<a href="empezar_concierto.php">Empezar concierto</a>
+						</button>
 					</div>
-					<iframe height="315" class="col col-8 col-offset-2" src="https://www.youtube.com/embed/Rk-7Ql_5fZo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<iframe class="col col-8 col-offset-2" src="https://www.youtube.com/embed/Rk-7Ql_5fZo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 				<?php
