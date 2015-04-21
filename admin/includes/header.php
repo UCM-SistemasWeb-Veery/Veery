@@ -19,7 +19,8 @@
 	<meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<title><?php echo SITETITLE; ?></title> 
 	<meta name="description" content="">
-	<link href="css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../css/custom.css" rel="stylesheet" type="text/css">
+	<link href="css/admin.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,32 +42,8 @@
 			          <div id="menu-button">
 			              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
 			          </div>            
-            		<img id="logo" src="img/veryLogo.png" alt="Veery">
+            		<img id="logo" src="<?php echo PATH; ?>img/veryLogo.png" alt="Veery">
             </header>
             <!-- header-->     
         </div>     
-        <div class="row">    				
-					<nav class="clearfix">
-					    <ul class="clearfix">
-					        <li><a class="btn inverse" href="#">My Veery</a></li>
-					        <li><a class="btn inverse active" href="#">Just For You</a></li>
-					        <li><a class="btn inverse" href="#">Trending</a></li>
-					        <li><a class="btn inverse" href="#">Live</a></li>
-					        <li><a class="btn inverse" href="#">Browse</a></li>
-					        <li id="search-box">
-	<!-- 									<a class="searchtoggler"><span class="fa fa-search"></span></a>
-
-										<div class="searchcontainer">
-	  
-										   <div class="searchsmall">
-										      <input type="text" placeholder="Where to go?"/>
-										   </div>
-										</div>		    -->     
-					        	<!-- <input type="text" name="search" placeholder="Search">
-					        	<button type="submit" class="btn inverse"><span class="fa fa-search"></span></button> -->
-					        </li>
-					    </ul>
-					    <a href="#" id="pull">Just For You</a>
-					</nav>
-				</div>	
 

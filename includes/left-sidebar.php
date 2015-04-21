@@ -1,16 +1,16 @@
         <div id="left-sidebar">
             <ul class="sidebar-nav">
                 <li>
-                    <a class="btn primary" href="#"><span class="fa fa-music"></span> Música</a>
+                    <a class="btn primary" href="#"><span class="fa fa-music"></span> <span class="tablet-hide">Música</span></a>
                 </li>
                 <li>
-                    <a class="btn primary" href="#"><span class="fa fa-video-camera"> Video</a>
+                    <a class="btn primary" href="#"><span class="fa fa-video-camera"> <span class="tablet-hide">Video</span></a>
                 </li>
                 <li>
-                    <a class="btn primary" href="#"><span class="fa fa-circle-o-notch"> Directo</a>
+                    <a class="btn primary" href="#"><span class="fa fa-circle-o-notch"> <span class="tablet-hide">Directo</span></a>
                 </li>
                 <li>
-                    <a class="btn primary" href="#"><span class="fa fa-search"></span> Búsqueda</a>
+                    <a class="btn primary" href="#"><span class="fa fa-search"></span> <span class="tablet-hide">Búsqueda</span></a>
                 </li>
-            </ul>
+            </ul>           
         </div>

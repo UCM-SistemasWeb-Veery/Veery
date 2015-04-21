@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+  .desktop-visible {
+    display: none;
+  }
+  .tablet-visible {
+    display: none;
+  }
+  .phone-visible {
+    display: inline-block;
+  }
+  .phone-hide {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desktop-visible {
+    display: none;
+  }
+  .tablet-visible {
+    display: inline-block;
+  }
+  .phone-visible {
+    display: none;
+  }
+  .tablet-hide {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  .desktop-visible {
+    display: inline-block;
+  }
+  .tablet-visible {
+    display: none;
+  }
+  .phone-visible {
+    display: none;
+  }
+  .desktop-hide {
+    display: none !important;
+  }
+}

@@ -1,5 +1,14 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+.yellow-base-background {
+  background-color: #f1c40f;
+}
+.yellow-dark-background {
+  background-color: #f39c12;
+}
+.yellow-light-background {
+  background-color: #f3d458;
+}
 .module-panel {
   margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
   border-radius: 2px;
@@ -10,9 +19,6 @@
 .module-panel img {
   border-radius: 2px;
   min-height: 150%;
-  width: 200%;
-  margin-left: -50%;
-  margin-top: -25%;
 }
 .module-panel.small {
   height: 300px;
@@ -33,7 +39,8 @@
 }
 .module .module-title {
   color: #fff;
-  font-size: 24px;
+  font-size: 14px;
+  text-transform: uppercase;
   font-weight: 300;
 }
 .module .module-title.activator {
@@ -44,9 +51,9 @@
 .module.large {
   position: relative;
 }
-.module.small .module-image,
-.module.medium .module-image,
-.module.large .module-image {
+.module.small .module-header,
+.module.medium .module-header,
+.module.large .module-header {
   overflow: hidden;
 }
 .module.small .module-content,
@@ -65,7 +72,13 @@
 .module.small {
   height: 300px;
 }
-.module.small .module-image {
+.module.small .module-header.small {
+  height: 32.5px;
+}
+.module.small .module-header.medium {
+  height: 75px;
+}
+.module.small .module-header.large {
   height: 150px;
 }
 .module.small .module-content {
@@ -74,25 +87,37 @@
 .module.medium {
   height: 400px;
 }
-.module.medium .module-image {
+.module.medium .module-header.small {
+  height: 62.5px;
+}
+.module.medium .module-header.medium {
+  height: 125px;
+}
+.module.medium .module-header.large {
   height: 250px;
 }
 .module.medium .module-content {
-  height: 150px;
+  height: auto;
 }
 .module.large {
   height: 500px;
 }
-.module.large .module-image {
+.module.large .module-header.small {
+  height: 82.5px;
+}
+.module.large .module-header.medium {
+  height: 165px;
+}
+.module.large .module-header.large {
   height: 330px;
 }
 .module.large .module-content {
   height: 170px;
 }
-.module .module-image {
+.module .module-header {
   position: relative;
 }
-.module .module-image img {
+.module .module-header img {
   border-radius: 2px 2px 0 0;
   position: relative;
   left: 0;
@@ -101,7 +126,7 @@
   bottom: 0;
   width: 100%;
 }
-.module .module-image .module-title {
+.module .module-header .module-title {
   position: absolute;
   bottom: 0;
   left: 0;

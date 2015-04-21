@@ -13,9 +13,6 @@
   img{
     border-radius: 2px;
     min-height: 150%;
-    width: 200%;
-    margin-left: -50%;
-    margin-top: -25%;
   }
   &.small {
     height: 300px;
@@ -41,18 +38,19 @@
 
   .module-title {
     color: #fff;
-    font-size: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
     font-weight: 300;
     &.activator {
       cursor: pointer;
     }
   }
 
-  // module Sizes
+  // module sizes
   &.small, &.medium, &.large {
     position: relative;
 
-    .module-image {
+    .module-header {
       overflow: hidden;
     }
     .module-content {
@@ -69,8 +67,16 @@
   &.small {
     height: 300px;
 
-    .module-image {
-      height: 150px;
+    .module-header {
+      &.small{
+        height: 32.5px;
+      }
+      &.medium{
+        height: 75px;
+      }
+      &.large{
+        height: 150px;
+      }
     }
     .module-content {
       height: 150px;
@@ -81,19 +87,36 @@
   &.medium {
     height: 400px;
 
-    .module-image {
-      height: 250px;
+    .module-header {
+      &.small{
+        height: 62.5px;
+      }
+      &.medium{
+        height: 125px;
+      }
+      &.large{
+        height: 250px;
+      }
     }
     .module-content {
-      height: 150px;
+      //height: 150px;
+      height: auto;
     }
   }
 
   &.large {
     height: 500px;
 
-    .module-image {
-      height: 330px;
+    .module-header {
+      &.small{
+        height: 82.5px;
+      }
+      &.medium{
+        height: 165px;
+      }
+      &.large{
+        height: 330px;
+      }
     }
     .module-content {
       height: 170px;
@@ -101,7 +124,7 @@
   }
 
 
-  .module-image {
+  .module-header {
     position: relative;
 
     // Image background for content
@@ -127,7 +150,6 @@
   .module-content {
     padding: @module-padding;
     border-radius: 0 0 2px 2px;
-
 
     p {
       margin: 0;

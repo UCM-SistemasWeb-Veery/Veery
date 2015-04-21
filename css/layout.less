@@ -23,7 +23,9 @@
         display: block;
         width: 35px; 
         height: 15px;  
-        margin-top: 15px;      
+        position: absolute;
+        top: 35px;
+        left: 15px;      
     }
 }
 
@@ -123,6 +125,9 @@
     width: 100%;
     position: absolute;
     margin-bottom: 15%;
+    #feed-stream{
+        padding-bottom: 75px;
+    }
 }
 
 /* Sidebar Styles */
@@ -159,21 +164,55 @@
         }    
 
     }
-    .sidebar-brand {
-        height: 65px;
-        font-size: 18px;
-        line-height: 60px;
-        a {
-            color: #999999;
-            &:hover {
-                color: #fff;
-                background: none;
-            }            
-        }        
-    }
 }
 
-@media(min-width:768px){
+
+//Phone
+@media (max-width: 767px){
+
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px){
+    #wrapper {
+        padding-left: 50px;
+        &.toggled {
+            padding-left: 0;
+            #left-sidebar {
+                width: 0;
+            }  
+            #app-content {
+                    position: relative;
+                    margin-right: 0;
+            }                      
+        }
+    
+    
+    }
+    #left-sidebar {
+        width: 50px;
+        .sidebar-nav{
+            width: 50px;
+
+                display: block;             
+                li{
+                    a{
+                        max-width: 50px !important;
+                        padding-left: 0;
+                        .fa{
+                            display: block;
+                        }
+                    }
+                }               
+                        
+        }
+    }
+    #app-content {
+        position: relative;
+    }
+}
+// Desktop
+@media(min-width: 1025px){
     #wrapper {
         padding-left: 250px;
         &.toggled {
@@ -196,5 +235,4 @@
         position: relative;
     }
 }
-
 
