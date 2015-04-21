@@ -37,10 +37,38 @@
 		.module;
 		margin:0;
 		width: 100%;
-		tr, td{
+		th{
+			text-align: center;
 			padding: 15px;
+			border-bottom: 1px solid @gray-medium;
+		}
+		tr, td{
+			padding: 10px;
 			text-transform: uppercase;
 			font-size: 12px;
+			img{
+				width: 75px;
+			}
+		}
+		td{
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		@media(max-width: 767px){
+			td{
+				font-size: 10px;
+				padding: 15px;
+				display: block;
+				float: left;
+				width: 100%;
+				text-align: center;
+				button{
+					margin: 0 auto;
+					display: block;
+					float: none;
+				}
+			}
 		}
 	}
 }
