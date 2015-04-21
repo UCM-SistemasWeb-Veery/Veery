@@ -50,8 +50,8 @@
 					</form>
 				</div>
 				<div class="row">
-					<b><p>Solo debes de cambiar los datos que creas necesarios,cualquier dato que dejes en blanco o sin
-						modificar,se quedará en su estado actual.</b></p>
+					<p>Solo debes de cambiar los datos que creas necesarios,cualquier dato que dejes en blanco o sin
+						modificar,se quedará en su estado actual.</p>
 				</div>
 			</div>
 			<div id="left-sidebar" class="col col-3">
