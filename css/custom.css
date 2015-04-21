@@ -331,17 +331,10 @@ a.btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
-  transition: background 1s ease-in-out;
+  transition: background 0.5s ease-in-out;
   overflow: hidden;
-  background: white;
-  color: black;
+  background: transparent;
   min-width: 150px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 button.btn.primary,
 a.btn.primary {
@@ -357,7 +350,7 @@ a.btn.inverse {
   background-color: transparent;
   color: #4f4f4f;
   -webkit-transition-property: all;
-  -webkit-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.5s;
   -webkit-transition-timing-function: ease;
   -webkit-transition-delay: 0s;
 }
@@ -368,6 +361,24 @@ a.btn.inverse:hover {
 button.btn.inverse.active,
 a.btn.inverse.active {
   border-bottom: 2px solid #f3d458;
+}
+button.btn.alternate,
+a.btn.alternate {
+  border: 2px solid #f3d458;
+  color: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+button.btn.alternate:hover,
+a.btn.alternate:hover {
+  color: white;
+  background: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+}
+button.btn.alternate.active,
+a.btn.alternate.active {
+  color: white;
+  background: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
 }
 button.btn.shadow,
 a.btn.shadow {
@@ -1159,6 +1170,9 @@ html {
   .phone-hide {
     display: none !important;
   }
+  .col {
+    margin: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .desktop-visible {
@@ -1197,4 +1211,307 @@ html {
   list-style: none;
   padding: 7.5px;
   color: #4f4f4f;
+}
+#page-handler {
+  padding: 25px;
+}
+#page-handler .btn {
+  margin: 15px;
+  display: block;
+}
+#page-handler #artwork {
+  border: 2px solid #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+#page-handler #artwork .module-title {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#page-handler #artwork .module-title.activator {
+  cursor: pointer;
+}
+#page-handler #artwork.small,
+#page-handler #artwork.medium,
+#page-handler #artwork.large {
+  position: relative;
+}
+#page-handler #artwork.small .module-header,
+#page-handler #artwork.medium .module-header,
+#page-handler #artwork.large .module-header {
+  overflow: hidden;
+}
+#page-handler #artwork.small .module-content,
+#page-handler #artwork.medium .module-content,
+#page-handler #artwork.large .module-content {
+  overflow: hidden;
+}
+#page-handler #artwork.small .module-action,
+#page-handler #artwork.medium .module-action,
+#page-handler #artwork.large .module-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#page-handler #artwork.small {
+  height: 300px;
+}
+#page-handler #artwork.small .module-header.small {
+  height: 32.5px;
+}
+#page-handler #artwork.small .module-header.medium {
+  height: 75px;
+}
+#page-handler #artwork.small .module-header.large {
+  height: 150px;
+}
+#page-handler #artwork.small .module-content {
+  height: 150px;
+}
+#page-handler #artwork.medium {
+  height: 400px;
+}
+#page-handler #artwork.medium .module-header.small {
+  height: 62.5px;
+}
+#page-handler #artwork.medium .module-header.medium {
+  height: 125px;
+}
+#page-handler #artwork.medium .module-header.large {
+  height: 250px;
+}
+#page-handler #artwork.medium .module-content {
+  height: auto;
+}
+#page-handler #artwork.large {
+  height: 500px;
+}
+#page-handler #artwork.large .module-header.small {
+  height: 82.5px;
+}
+#page-handler #artwork.large .module-header.medium {
+  height: 165px;
+}
+#page-handler #artwork.large .module-header.large {
+  height: 330px;
+}
+#page-handler #artwork.large .module-content {
+  height: 170px;
+}
+#page-handler #artwork .module-header {
+  position: relative;
+}
+#page-handler #artwork .module-header img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#page-handler #artwork .module-header .module-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+#page-handler #artwork .module-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+#page-handler #artwork .module-content p {
+  margin: 0;
+  color: inherit;
+}
+#page-handler #artwork .module-content .module-title {
+  line-height: 48px;
+}
+#page-handler #artwork .module-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+#page-handler #artwork .module-action a {
+  color: #f3d458;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+#page-handler #artwork .module-action a:hover {
+  color: #faedb7;
+}
+#page-handler #artwork .module-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+#page-handler #artwork .module-reveal .module-title {
+  cursor: pointer;
+  display: block;
+}
+#page-handler #artwork img {
+  padding: 7.5px;
+  max-width: 100%;
+  min-height: 0;
+}
+#page-handler table#tracklist {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  margin: 0;
+  width: 100%;
+}
+#page-handler table#tracklist .module-title {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#page-handler table#tracklist .module-title.activator {
+  cursor: pointer;
+}
+#page-handler table#tracklist.small,
+#page-handler table#tracklist.medium,
+#page-handler table#tracklist.large {
+  position: relative;
+}
+#page-handler table#tracklist.small .module-header,
+#page-handler table#tracklist.medium .module-header,
+#page-handler table#tracklist.large .module-header {
+  overflow: hidden;
+}
+#page-handler table#tracklist.small .module-content,
+#page-handler table#tracklist.medium .module-content,
+#page-handler table#tracklist.large .module-content {
+  overflow: hidden;
+}
+#page-handler table#tracklist.small .module-action,
+#page-handler table#tracklist.medium .module-action,
+#page-handler table#tracklist.large .module-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#page-handler table#tracklist.small {
+  height: 300px;
+}
+#page-handler table#tracklist.small .module-header.small {
+  height: 32.5px;
+}
+#page-handler table#tracklist.small .module-header.medium {
+  height: 75px;
+}
+#page-handler table#tracklist.small .module-header.large {
+  height: 150px;
+}
+#page-handler table#tracklist.small .module-content {
+  height: 150px;
+}
+#page-handler table#tracklist.medium {
+  height: 400px;
+}
+#page-handler table#tracklist.medium .module-header.small {
+  height: 62.5px;
+}
+#page-handler table#tracklist.medium .module-header.medium {
+  height: 125px;
+}
+#page-handler table#tracklist.medium .module-header.large {
+  height: 250px;
+}
+#page-handler table#tracklist.medium .module-content {
+  height: auto;
+}
+#page-handler table#tracklist.large {
+  height: 500px;
+}
+#page-handler table#tracklist.large .module-header.small {
+  height: 82.5px;
+}
+#page-handler table#tracklist.large .module-header.medium {
+  height: 165px;
+}
+#page-handler table#tracklist.large .module-header.large {
+  height: 330px;
+}
+#page-handler table#tracklist.large .module-content {
+  height: 170px;
+}
+#page-handler table#tracklist .module-header {
+  position: relative;
+}
+#page-handler table#tracklist .module-header img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#page-handler table#tracklist .module-header .module-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+#page-handler table#tracklist .module-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+#page-handler table#tracklist .module-content p {
+  margin: 0;
+  color: inherit;
+}
+#page-handler table#tracklist .module-content .module-title {
+  line-height: 48px;
+}
+#page-handler table#tracklist .module-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+#page-handler table#tracklist .module-action a {
+  color: #f3d458;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+#page-handler table#tracklist .module-action a:hover {
+  color: #faedb7;
+}
+#page-handler table#tracklist .module-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+#page-handler table#tracklist .module-reveal .module-title {
+  cursor: pointer;
+  display: block;
+}
+#page-handler table#tracklist tr,
+#page-handler table#tracklist td {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
 }

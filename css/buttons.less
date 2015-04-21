@@ -9,25 +9,15 @@ button.btn, a.btn {
   border: none;
   cursor: pointer;
   outline: none;
-  padding: 16px;
+  padding: 15px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
-  transition: background 1s ease-in-out;
+  transition: background 0.5s ease-in-out;
   overflow:hidden;
-
-  background: white;
-  color: black;
+  background: transparent;
   min-width: 150px;
-  
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
   &.primary{
     background-color: @yellow-base;
     color: white;
@@ -40,15 +30,29 @@ button.btn, a.btn {
     color: @gray-dark;
     &:hover{
       background-color: rgba(99,99,99,0.2);
-
     }
     -webkit-transition-property: all;
-    -webkit-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.5s;
     -webkit-transition-timing-function: ease;
     -webkit-transition-delay: 0s;  
     &.active{
       border-bottom: 2px solid @yellow-light;
     }  
+  }
+  &.alternate{
+    border: 2px solid @yellow-light; 
+    color: @yellow-dark;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    &:hover{
+      color: white;
+      background: @yellow-dark;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+    }  
+    &.active{
+      color: white;
+      background: @yellow-dark;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+    }     
   }  
   &.shadow{
     box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4);

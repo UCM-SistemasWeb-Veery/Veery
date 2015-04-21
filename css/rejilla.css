@@ -11,6 +11,9 @@
   .phone-hide {
     display: none !important;
   }
+  .col {
+    margin: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .desktop-visible {
