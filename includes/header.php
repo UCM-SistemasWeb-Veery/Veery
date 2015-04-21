@@ -26,7 +26,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
 	<div id="wrapper">
@@ -47,14 +46,14 @@
         </div>     
         <div class="row">    				
 					<nav class="clearfix">
-					    <ul class="clearfix">
+					    <ul>
 					        <li><a class="btn inverse" href="#">My Veery</a></li>
-					        <li><a class="btn inverse active" href="#">Just For You</a></li>
+					        <li class="active"><a class="btn inverse active" href="#">Just For You</a></li>
 					        <li><a class="btn inverse" href="#">Trending</a></li>
 					        <li><a class="btn inverse" href="#">Live</a></li>
 					        <li><a class="btn inverse" href="#">Browse</a></li>
-					        <li id="search-box">
-	<!-- 									<a class="searchtoggler"><span class="fa fa-search"></span></a>
+	<!--					        <li id="search-box">
+ 									<a class="searchtoggler"><span class="fa fa-search"></span></a>
 
 										<div class="searchcontainer">
 	  
@@ -63,8 +62,8 @@
 										   </div>
 										</div>		    -->     
 					        	<!-- <input type="text" name="search" placeholder="Search">
-					        	<button type="submit" class="btn inverse"><span class="fa fa-search"></span></button> -->
-					        </li>
+					        	<button type="submit" class="btn inverse"><span class="fa fa-search"></span></button> 
+					        </li>-->
 					    </ul>
 					    <a href="#" id="pull">Just For You</a>
 					</nav>

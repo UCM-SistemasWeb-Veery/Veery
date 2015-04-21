@@ -326,7 +326,7 @@ a.btn {
   border: none;
   cursor: pointer;
   outline: none;
-  padding: 16px;
+  padding: 15px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -451,49 +451,66 @@ nav a:active {
 nav a#pull {
   display: none;
 }
-/* Mobile menu 
-@media only screen and (max-width : 480px) {
+@media (max-width: 767px) {
   nav {
-    border-bottom: 0;
-    background-color: @yellow-base;
-    color: white;
+    position: relative;
+    min-height: 40px;
+    margin: 10px 0;
+    padding-bottom: 10px;
   }
   nav ul {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    border: solid 1px #f3d458;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  nav ul li {
+    width: 100%;
     display: none;
-    height: auto;
+    margin: 0;
   }
-  nav a#pull {
+  nav ul li.active {
     display: block;
-    background-color: @yellow-base;
+  }
+  nav ul li.active a {
+    background: none;
+  }
+  nav ul li.active a.active {
+    border-bottom: none !important;
+  }
+  nav ul li a {
     width: 100%;
-    position: relative;
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-  }
-  nav a#pull:after {
-    content:"\f0c9";
-    font-family: FontAwesome;
-    display: inline-block;
-    float: right;
-    margin-right: 25px;
-  }
-  nav li {
     display: block;
-    float: none;
-    width: 100%;
-    border-bottom: 1px solid white;
-    margin-left: 0 !important;
-    margin-left: 0 !important;
-  }
-  nav li a {
-    width: 100%;
     text-align: center;
-    color: white;
-    line-height: 2.75em; 
-    font-size: 0.85em;
-  }  
-}*/
+  }
+  nav ul li a:hover {
+    background-color: transparent !important;
+  }
+  nav ul:hover {
+    border: none;
+    box-shadow: none;
+  }
+  nav ul:hover li {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+  }
+  nav ul:hover li:last-child {
+    border-bottom: none !important;
+  }
+}
+/* on nav hover 
+  nav ul:hover {
+    background-image: none;
+  }
+  nav ul:hover li {
+    display: block;
+    transition: display 1s ease;
+    margin: 0 0 5px;
+  }/*
+  nav ul:hover .active {
+    background:  no-repeat 10px 7px;
+  }       */
 body,
 html {
   margin: 0;

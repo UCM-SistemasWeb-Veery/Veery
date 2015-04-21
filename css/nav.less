@@ -52,47 +52,63 @@ nav a:hover, nav a:active {
 nav a#pull {
   display: none;
 }
-
-/* Mobile menu 
-@media only screen and (max-width : 480px) {
+@media (max-width: 767px) {
   nav {
-    border-bottom: 0;
-    background-color: @yellow-base;
-    color: white;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-  }
-  nav a#pull {
-    display: block;
-    background-color: @yellow-base;
-    width: 100%;
     position: relative;
-    color: white;
-    text-align: left;
-    padding-left: 10px;
+    min-height: 40px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    ul {
+      width: 95%;
+      margin: 0 auto;
+      display: block;
+      border: solid 1px @yellow-light;
+      box-shadow: 0 1px 2px rgba(0,0,0,.3);
+      li {
+        width: 100%;
+        display: none; 
+        margin: 0;
+        &.active {
+          display: block;
+          a {
+            background: none;
+            &.active{
+              border-bottom: none !important;
+            }            
+          }            
+        } 
+        a {
+          width: 100%;
+          display: block;
+          text-align: center;
+          &:hover{
+            background-color: transparent !important;
+          }          
+        }               
+      }
+      &:hover{
+        border: none;
+        box-shadow: none;
+        li{
+          display: block;
+          border-bottom: 1px solid darken(@gray-light, 5%);
+          &:last-child{
+            border-bottom: none !important;
+          }
+        }
+      }      
+    }    
+  } 
+}
+  /* on nav hover 
+  nav ul:hover {
+    background-image: none;
   }
-  nav a#pull:after {
-    content:"\f0c9";
-    font-family: FontAwesome;
-    display: inline-block;
-    float: right;
-    margin-right: 25px;
-  }
-  nav li {
+  nav ul:hover li {
     display: block;
-    float: none;
-    width: 100%;
-    border-bottom: 1px solid white;
-    margin-left: 0 !important;
-    margin-left: 0 !important;
-  }
-  nav li a {
-    width: 100%;
-    text-align: center;
-    color: white;
-    line-height: 2.75em; 
-    font-size: 0.85em;
-  }  
-}*/
+    transition: display 1s ease;
+    margin: 0 0 5px;
+  }/*
+  nav ul:hover .active {
+    background:  no-repeat 10px 7px;
+  }       */
