@@ -6,53 +6,55 @@
 			<div class="col col-10">
 				<form action="#" >
 					<div class="row">
-						<div class="col col-6">
+						<div class="col col-7 col-push-4">
 							<div class="row">
-									Nombre:
-								<input type="text" name="nombre" required>
+									<p>Nombre:
+								<input type="text" name="nombre" required></p>
 							</div>
 							<div class="row">
-									<br>
-									Apellidos:
-								<input type="text" name="apellidos"required>
+									<p>Apellidos:
+								<input type="text" name="apellidos"required></p>
 							</div>
-							<div class="row"><br>
-								<input type="radio" name="genero" value="H" checked class=" float-left">
-								<label class="float-left">Hombre</label>
-								<br><br>
-								<input type="radio" name="genero" value="F" class="float-left">
-								<label class="float-left">Mujer</label>
+							<div class="row">
+								<p><input type="radio" name="genero" value="H" checked class=" float-left">
+								<label class="float-left">H</label>
+								<input type="radio" name="genero" value="F" class="center">
+								<label class="center">M</label></p>
 							</div>
 							<div class="row col-push-2">
-								<br><label> Fecha de nacimiento</label>
-								<input type="date" name="bday">
+								<p> Fecha de nacimiento
+								<input type="date" name="bday"></p>
 							</div>
-						</div>
-						<div class="col col-6">
+						
 							<div class="row">
-								<input type="checkbox" name="artista" value="artista">Haz click si desea una cuenta de tipo artista
-							</div>
-							<div class="row">
-								<br>Email:
-								<input type="email" name="email" required><br>
+								<p>Email:
+								<input type="email" name="email" required></p>
 							</div>
 							<div class="row">
-								<br>Nueva contraseña:
-								<input type="password" name="contrasena" required  onchange="form.contrasena2.pattern = this.value;" >
+								<p>Nueva contraseña:
+								<input type="password" name="contrasena" required  onchange="form.contrasena2.pattern = this.value;" ></p>
 								<!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" esto es para que meta diferentes elementos, letra, numero-->
 							</div>
 							<div class="row">
-								<br>Repita contraseña:
-								<input type="password" name="contrasena2" required >
+								<p>Repita contraseña:
+								<input type="password" name="contrasena2" required ></p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-8 col-push-3">
+							<div class="row">
+									<p><input type="checkbox" name="artista" value="artista">Haz click si desea una cuenta de tipo artista </p>
 							</div>
 							<div class="row">
-								<input type="checkbox" name="condiciones" value="condiciones" required><br>Haz click para aceptar los términos y condiciones de uso<br>
+									<p><input type="checkbox" name="condiciones" value="condiciones" required>Haz click para aceptar los términos y condiciones de uso</p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col col-12 col-push-9">
-							<input type="submit" value="Registrar" class="btn">
+						<div class="col col-12 col-push-7">
+							<p><input type="submit" value="Registrar" class="btn primary"></p>
 						</div>
 					</div>
 				</form>

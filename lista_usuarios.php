@@ -6,13 +6,13 @@
 			<div class="col col-10">
 				<div class = "row">
 					<form action="lista_usuarios.php" method="get">
-						<input type="text" name="q" class = "input col col-8 center" value= ""/>
-						<input type="submit" name="buscar" value="buscar" class="col col-2 btn left" />
+						<input type="text" name="q" class = "input col col-6 col-push-2 form-module" placeholder= "Introduzca usuario"/>
+						<input type="submit" name="buscar" value="buscar" class="col col-2 btn primary col-push-2" />
 					</form>
 				</div>
 				<div class = "row">
-					<div class = "col col-12">
-						<div class = "row">
+					<div class = "col col-10 col-push-1">
+						<p><div class = "row module-content">
 							<div class ="col col-2">
 								Imagen
 							</div>	
@@ -30,9 +30,9 @@
 							<div class ="col col-2">
 								Utilidades
 							</div>	
-						</div>
-						<div class = "row">
-							<fieldset>
+						</div></p>
+						<div class = "row module">
+							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
@@ -49,20 +49,20 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											eliminar
-										</a>
+										</a></p>
 									</div>
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											mensaje
-										</a>
+										</a></p>
 									</div>
 								</div>	
-							</fieldset>
+							</p>
 						</div>
-						<div class = "row">
-							<fieldset>
+						<div class = "row module">
+							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
@@ -79,20 +79,20 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											eliminar
-										</a>
+										</a></p>
 									</div>
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											mensaje
-										</a>
+										</a></p>
 									</div>
 								</div>	
-							</fieldset>
+							</p>
 						</div>
-						<div class = "row">
-							<fieldset>
+						<div class = "row module">
+							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
@@ -109,17 +109,17 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											eliminar
-										</a>
+										</a></p>
 									</div>
 									<div class="row">
-										<a type="btn" class = "col col-12 btn">
+										<p><a type="btn" class = "col col-12 btn inverse">
 											mensaje
-										</a>
+										</a></p>
 									</div>
 								</div>	
-							</fieldset>
+							</p>
 						</div>
 					</div>
 				</div>

@@ -6,10 +6,9 @@
 			<div class="col col-10 col-offset-1">			
 				<h1>Bienvenido al panel de administración</h1>
 				<div class="row">
-					<div class="col col-10 col-offset-1">
-						
+					<div class="col col-10 ">
 						<h2>Gráfico sobre el numero de entradas a la página al año</h2>
-						<dl class ="graph col-12">
+						<dl class ="graph col-12 module col-push-1">
 								<dt>2008</dt>
 								<dd><div id="data-one" class="bar">60,000</div></dd>
 								<dt>2009</dt>
@@ -22,8 +21,8 @@
 					</div>
 				</div>
 				<div class = "row">
-					<h2>Visitas segun region</h2>
-					<img class = "col col-12" alt = "Mapa del mundo" src="../img/Real-Time-Visitor-Map.png">
+					<h2>Visitas segun región</h2>
+					<img class = "col col-12 module-panel img" alt = "Mapa del mundo" src="../img/Real-Time-Visitor-Map.png">
 				</div>
 				
 			</div>
