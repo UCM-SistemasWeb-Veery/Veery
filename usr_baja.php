@@ -1,42 +1,60 @@
 <?php
 	include_once('includes/header.php');
 ?>
+<div class="row">
+	<div class="col col-10">
 		<div class="row">
-			<div class="col col-10">
+			<!-- row for title -->
 				<div class="row">
-					<form id="formulario">
-						<fieldset>
-							<legend>Baja usuario</legend>
+				<!-- col -->
+				<div class="col col-8 col-offset-2">
+					<div class="module center">
+						<h1> Cancelar cuenta usuario </h1>
+					</div>
+				</div>
+			<!-- ./ col -->
+			</div>
+		</div>
+		<!-- ./ row -->
+		<div class="row">
+			<div class="col col-8 col-offset-2">
+				<div class="module form-module">	
 								<div class="row">
 									<div class="col col-offset-1">
-										¿Deseas darte de baja?
+										<p>¿Deseas darte de baja?</p>
 										<select name="Confirmación" value="No">
 										  <option value="si">Si</option>
 										  <option value="no">No</option>
 										</select>
 									</div>
 								</div>
+
 								<div class="row">
 									<div class="col col-offset-1">
-										Motivo de baja:
-										<input class="col col-12" type="text" name="información" id="información" class="formulario">
+										<p>Motivo de baja</p>
+										<textarea rows="8" cols="50">
+										</textarea>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col col-4 col-offset-1">
-										<button class="col">Modificar</button>
-										<button class="col">Cancelar</button>
+									<div class="col col-3 col-offset-2">
+										<input class="btn primary" type="submit" name="Aceptar" value="Aceptar">
+									</div>
+									<div class="col col-3 col-offset-1">
+										<input class="btn primary " type="submit" name="Cancelar" value="Cancelar">
 									</div>
 								</div>
-						</fieldset>
-					</form>
-				</div>		
+				</div>
+			<!-- ./ col col-8 col-offset-2 -->																
 			</div>
-			
-				<?php
-					include_once('includes/right-sidebar.php');
-				?>
+		<!-- ./ row form -->				
 		</div>
+		<!-- ./ row col-col-10 -->
+	</div>
+	<?php
+	include_once('includes/right-sidebar.php');
+	?>	
+</div>
 	
 <?php
 	include_once('includes/footer.php');
