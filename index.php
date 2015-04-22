@@ -5,7 +5,9 @@
         <div id="feed-stream" class="col col-10">
             <div class="row">
                 <div class="col col-9">
-                    <div id="main" class="module-panel medium">
+                    <div id="main" class="module-panel medium">      
+                        <h2 class="main-title">Red Hot Chili Peppers</h2>           
+                        <a href"#" class="btn alternate shadow">Live Session</a>
                         <img src="img/rhcp.jpg">
                     </div>
                 </div>
