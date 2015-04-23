@@ -318,7 +318,8 @@ img.circle {
 }
 /* BUTTON */
 button.btn,
-a.btn {
+a.btn,
+input.btn {
   float: left;
   position: relative;
   display: block;
@@ -337,16 +338,19 @@ a.btn {
   min-width: 150px;
 }
 button.btn.primary,
-a.btn.primary {
+a.btn.primary,
+input.btn.primary {
   background-color: #f1c40f;
   color: white;
 }
 button.btn.primary:hover,
-a.btn.primary:hover {
+a.btn.primary:hover,
+input.btn.primary:hover {
   background-color: #f39c12;
 }
 button.btn.inverse,
-a.btn.inverse {
+a.btn.inverse,
+input.btn.inverse {
   background-color: transparent;
   color: #4f4f4f;
   -webkit-transition-property: all;
@@ -355,45 +359,54 @@ a.btn.inverse {
   -webkit-transition-delay: 0s;
 }
 button.btn.inverse:hover,
-a.btn.inverse:hover {
+a.btn.inverse:hover,
+input.btn.inverse:hover {
   background-color: rgba(99, 99, 99, 0.2);
 }
 button.btn.inverse.active,
-a.btn.inverse.active {
+a.btn.inverse.active,
+input.btn.inverse.active {
   border-bottom: 2px solid #f3d458;
 }
 button.btn.alternate,
-a.btn.alternate {
+a.btn.alternate,
+input.btn.alternate {
   border: 2px solid #f3d458;
   color: #f39c12;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 button.btn.alternate:hover,
-a.btn.alternate:hover {
+a.btn.alternate:hover,
+input.btn.alternate:hover {
   color: white;
   background: #f39c12;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
 }
 button.btn.alternate.active,
-a.btn.alternate.active {
+a.btn.alternate.active,
+input.btn.alternate.active {
   color: white;
   background: #f39c12;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
 }
 button.btn.shadow,
-a.btn.shadow {
+a.btn.shadow,
+input.btn.shadow {
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4);
 }
 button.btn.shadow:active,
-a.btn.shadow:active {
+a.btn.shadow:active,
+input.btn.shadow:active {
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
 }
 button.btn.active,
-a.btn.active {
+a.btn.active,
+input.btn.active {
   font-weight: bold;
 }
 button.btn.small,
-a.btn.small {
+a.btn.small,
+input.btn.small {
   min-height: 0;
   min-width: 0;
   font-size: 10px;
@@ -758,7 +771,7 @@ html {
 }
 .module-panel img {
   border-radius: 2px;
-  min-height: 150%;
+  height: 150%;
 }
 .module-panel.small {
   height: 300px;
@@ -768,6 +781,26 @@ html {
 }
 .module-panel.large {
   height: 500px;
+}
+.module-panel#main {
+  position: relative;
+}
+.module-panel#main h2.main-title {
+  position: absolute;
+  bottom: 85px;
+  left: 5%;
+  font-size: 3.5em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #4f4f4f;
+}
+.module-panel#main a.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px #4f4f4f;
 }
 .module {
   position: relative;
@@ -1558,4 +1591,41 @@ html {
     display: block;
     float: none;
   }
+}
+/* Responsive YouTube videos */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Forms */
+.form-module {
+  padding: 25px;
+}
+@media (max-width: 1023px) {
+  .form-module * {
+    float: none !important;
+  }
+}
+.form-module .col {
+  padding: 10px;
+}
+.form-module textarea {
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 3px;
+}
+.form-module input[type=text] {
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 3px;
 }
