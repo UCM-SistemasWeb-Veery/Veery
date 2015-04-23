@@ -35,35 +35,31 @@
     ?>
     <!-- /#left-sidebar -->
 			<div id="app-content">
-        <div id="banner" class="row" style="background:white;">
+        <div id="banner" class="row">
             <header>
-			          <div id="menu-button">
-			              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
-			          </div>            
-            		<img id="logo" src="img/veryLogo.png" alt="Veery">
+            	<div class="row">
+            		<div class="col col-4">
+				          <div id="menu-button">
+				              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
+				          </div> 
+				          <a href="index.php"><img id="logo" src="img/veryLogo.png" alt="Veery"></a> 
+			          </div>
+			          <div class="col col-5 col-offset-3">
+	            		<div id="session-controls">
+	            			<a href="registro.php" class="btn alternate small">Registro</a>	            		
+	            			<a href="login.php" class="btn alternate small">Login</a>
+	            		</div>
+			          </div> 		
+            	</div>
             </header>
             <!-- header-->     
         </div>     
         <div class="row">    				
 					<nav class="clearfix">
 					    <ul>
-					        <li><a class="btn inverse" href="#">My Veery</a></li>
-					        <li class="active"><a class="btn inverse active" href="#">Just For You</a></li>
-					        <li><a class="btn inverse" href="#">Trending</a></li>
-					        <li><a class="btn inverse" href="#">Live</a></li>
-					        <li><a class="btn inverse" href="#">Browse</a></li>
-	<!--					        <li id="search-box">
- 									<a class="searchtoggler"><span class="fa fa-search"></span></a>
-
-										<div class="searchcontainer">
-	  
-										   <div class="searchsmall">
-										      <input type="text" placeholder="Where to go?"/>
-										   </div>
-										</div>		    -->     
-					        	<!-- <input type="text" name="search" placeholder="Search">
-					        	<button type="submit" class="btn inverse"><span class="fa fa-search"></span></button> 
-					        </li>-->
+					        <li><a class="btn inverse" href="artist_view.php">My Veery</a></li>
+					        <li class="active"><a class="btn inverse active" href="index.php">Just For You</a></li>
+					        <li><a class="btn inverse" href="genero_view.php">Trending</a></li>
 					    </ul>
 					    <a href="#" id="pull">Just For You</a>
 					</nav>

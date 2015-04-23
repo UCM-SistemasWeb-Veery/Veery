@@ -7,24 +7,24 @@
                 	<div class="module-content">
                 		<ul>
                 			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
+                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
+                				<p class="italic">Wiz Khalifa</p>
                 			</li>
                 			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
+                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Uptown Funk!</p>
+                				<p class="italic">Mark Ronson</p>
                 			</li>
                 			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
+                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Sugar</p>
+                				<p class="italic">Maroon 5</p>
                 			</li>
                 			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
+                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Trap Queen</p>
+                				<p class="italic">Fetty Wap</p>
                 			</li>
                 			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
+                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Thinking Out Loud</p>
+                				<p class="italic">The Weeknd</p>
                 			</li>
                 		</ul>
                 	</div>
@@ -36,26 +36,26 @@
                 	</div>
                 	<div class="module-content">
                 		<ul>
-                			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
-                			</li>
-                			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
-                			</li>
-                			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
-                			</li>
-                			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
-                			</li>
-                			<li>
-                				<p class="bold"><span class="fa fa-play"></span> Cancion</p>
-                				<p class="italic">Artista</p>
-                			</li>
+                            <li>
+                                <p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
+                                <p class="italic">Wiz Khalifa</p>
+                            </li>
+                            <li>
+                                <p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Uptown Funk!</p>
+                                <p class="italic">Mark Ronson</p>
+                            </li>
+                            <li>
+                                <p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Sugar</p>
+                                <p class="italic">Maroon 5</p>
+                            </li>
+                            <li>
+                                <p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Trap Queen</p>
+                                <p class="italic">Fetty Wap</p>
+                            </li>
+                            <li>
+                                <p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Thinking Out Loud</p>
+                                <p class="italic">The Weeknd</p>
+                            </li>
                 		</ul>
                 	</div>
                 </div>  

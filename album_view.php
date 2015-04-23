@@ -5,7 +5,7 @@ include_once('includes/header.php');
 		<div id="page-handler" class="col col-10">
 			<div class="row">
 				<div class="col col-3 col-offset-2">
-					<div id="artwork">
+					<div class="artwork">
 						<img src="<?php echo PATH ?>img/the_blueprint.jpg">
 					</div>
 				</div>

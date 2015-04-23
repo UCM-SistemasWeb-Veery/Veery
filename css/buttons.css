@@ -28,7 +28,14 @@ input.btn {
   transition: background 0.5s ease-in-out;
   overflow: hidden;
   background: transparent;
+  text-decoration: none;
   min-width: 150px;
+}
+button.btn.circle,
+a.btn.circle,
+input.btn.circle {
+  border-radius: 50%;
+  min-width: 0;
 }
 button.btn.primary,
 a.btn.primary,

@@ -5,12 +5,14 @@
 		<div class="row">
 			<div class="col col-10">
 				<div class = "row">
-					<form action="lista_usuarios.php" method="get">
-						<input type="text" name="q" class = "input col col-6 col-push-2 form-module" placeholder= "Introduzca usuario"/>
-						<input type="submit" name="buscar" value="buscar" class="col col-2 btn primary col-push-2" />
-					</form>
+					<div class="col col-8 col-offset-2">
+						<form action="lista_usuarios.php" method="get">
+							<input type="text" name="q" class = "btn inverse col-8" placeholder= "Introduzca usuario"/>
+							<input type="submit" name="buscar" value="buscar" class="col col-2 col-push-2 btn alternate" />
+						</form>
+					</div>	
 				</div>
-				<div class = "row">
+				<div class = "row module">
 					<div class = "col col-10 col-push-1">
 						<p><div class = "row module-content">
 							<div class ="col col-2">
@@ -31,7 +33,7 @@
 								<p>Utilidades</p>
 							</div>	
 						</div></p>
-						<div class = "row module">
+						<div class = "row ">
 							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
@@ -49,19 +51,19 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-minus"></span>
 											eliminar
 										</a></p>
 									</div>
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-envelope-o"></span>
 											mensaje/ticket
 										</a></p>
 									</div>
 								</div>	
 							</p>
 						</div>
-						<div class = "row module">
+						<div class = "row ">
 							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
@@ -79,19 +81,19 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-minus"></span>
 											eliminar
 										</a></p>
 									</div>
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-envelope-o"></span>
 											mensaje/ticket
 										</a></p>
 									</div>
 								</div>	
 							</p>
 						</div>
-						<div class = "row module">
+						<div class = "row ">
 							<p>
 								<div class ="col col-2">
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
@@ -109,12 +111,12 @@
 								</div>
 								<div class ="col col-2">
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-minus"></span>
 											eliminar
 										</a></p>
 									</div>
 									<div class="row">
-										<p><a type="btn" class = "col col-12 btn inverse">
+										<p><a type="btn" class = "col col-12 btn inverse"><span class="fa fa-envelope-o"></span>
 											mensaje/ticket
 										</a></p>
 									</div>

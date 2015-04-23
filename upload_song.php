@@ -8,9 +8,7 @@
 			<!-- col -->
 			<div class="col col-8 col-offset-2">
 				<div class="col col-10 col-offset-1">
-					<div class="center">
-						<h1>Subir una canción</h1>
-					</div>
+					<h1>Subir una canción</h1>
 				</div>
 			</div>
 			<!-- ./ col -->

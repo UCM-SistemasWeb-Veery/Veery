@@ -18,7 +18,8 @@
 }
 .module-panel img {
   border-radius: 2px;
-  height: 150%;
+  min-height: 150%;
+  width: 100%;
 }
 .module-panel.small {
   height: 300px;

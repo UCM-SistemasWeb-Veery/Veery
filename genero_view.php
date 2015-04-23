@@ -22,7 +22,7 @@ include_once('includes/header.php');
 				<button class="btn alternate" type="button"><span class="fa fa-play"></span> Escuchar</button>
 			</div>
 			<div class="col col-6 col-offset-2">		
-				<input type="search" name="busqueda" placeholder="Buscar">
+				<input class="btn inverse" type="search" name="busqueda" placeholder="Buscar">
 				<button class="btn alternate" type="button"><span class="fa fa-play"></span> Buscar</button>
 			</div>
 		</div>

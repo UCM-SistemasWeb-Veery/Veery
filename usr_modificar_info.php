@@ -8,9 +8,7 @@ include_once('includes/header.php');
 				<div class="row">
 					<!-- col -->
 					<div class="col col-8 col-offset-2">
-						<div class="module center">
-							<h1> Modificar información usuario</h1>
-						</div>
+						<h1>Modificar información usuario</h1>
 					</div>
 					<!-- ./ col -->
 				</div>

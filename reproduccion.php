@@ -94,8 +94,8 @@
                             <img class="circle" src="https://scontent-mad.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10606409_10204051669686377_4614721905569936789_n.jpg?oh=bcf7dc082075f5e8f28916d486744349&amp;oe=55DC5F8A" /> 
                         </div>
                         <div class="feed-body center">
-                            <h4 class="feed-header title"><a href="reproduccion.php">Time of our lives</a></h4>
-                            <p class="artist"><a href="artist_view.php" class="btn inverse small col col-12">Pitbull &amp; NeYo</a></p>
+                            <h4 class="feed-header title"><a href="#">Time of our lives</a></h4>
+                            <p class="artist"><a href="reproduccion.php" class="btn inverse small col col-12">Pitbull &amp; NeYo</a></p>
                             <div class="show-on-hover">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</p>
                                 <div class="social-buttons">
@@ -182,6 +182,19 @@
             include_once('includes/right-sidebar.php');
         ?>
     </div>
+    <footer>
+        <div class="row">
+            <div id="controls" class="col">
+                <img src="img/play.png">                
+            </div>
+            <div id="song-timer" class="col">
+                
+            </div>
+            <div id="album-art" class="col">
+                <img src="img/the_blueprint.jpg">
+            </div>
+        </div>
+    </footer>
 
 <?php
     include_once('includes/footer.php');

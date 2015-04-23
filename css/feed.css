@@ -19,6 +19,7 @@
 .module-panel img {
   border-radius: 2px;
   min-height: 150%;
+  width: 100%;
 }
 .module-panel.small {
   height: 300px;
@@ -28,6 +29,26 @@
 }
 .module-panel.large {
   height: 500px;
+}
+.module-panel#main {
+  position: relative;
+}
+.module-panel#main h2.main-title {
+  position: absolute;
+  bottom: 85px;
+  left: 5%;
+  font-size: 3.5em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #4f4f4f;
+}
+.module-panel#main a.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px #4f4f4f;
 }
 .module {
   position: relative;
@@ -169,6 +190,20 @@
 .module .module-reveal .module-title {
   cursor: pointer;
   display: block;
+}
+#feed-update {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+  padding: 1em;
+}
+#feed-update .feed-card {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
 }
 .feed-card {
   margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
@@ -418,6 +453,43 @@
   padding-bottom: 20px;
   -webkit-transition: padding 400ms ease-in-out;
   transition: padding 400ms ease-in-out;
+  color: #4f4f4f;
+  font-size: 12px;
+}
+.feed-card .feed-body .feed-header {
+  text-transform: uppercase;
+}
+.feed-card .feed-body .feed-header a {
+  text-decoration: none;
+  color: #f39c12;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.feed-card .feed-body .feed-header a:hover {
+  color: #e08e0b;
+}
+.feed-card .feed-body .show-on-hover {
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+}
+.feed-card .feed-body .show-on-hover .social-buttons a {
+  margin-right: 5px;
+  float: right;
+}
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block ;
+    opacity: 0;
+  }
+  100% {
+    display: block ;
+    opacity: 1;
+  }
 }
 .feed-card:hover .feed-heading {
   height: 55px;
@@ -433,4 +505,9 @@
   padding-top: 20px;
   -webkit-transition: padding 400ms ease-in-out;
   transition: padding 400ms ease-in-out;
+}
+.feed-card:hover .feed-body .show-on-hover {
+  display: block;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fadeInFromNone;
 }

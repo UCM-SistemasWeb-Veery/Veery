@@ -1,11 +1,23 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+.yellow-base-background {
+  background-color: #f1c40f;
+}
+.yellow-dark-background {
+  background-color: #f39c12;
+}
+.yellow-light-background {
+  background-color: #f3d458;
+}
 body,
 html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   background: #f8f8f8;
+}
+body {
+  padding-bottom: 100px;
 }
 #banner {
   background: white;
@@ -28,5 +40,10 @@ html {
     margin: 0 auto;
     padding-top: 5px;
     padding-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #banner header {
+    height: 125px;
   }
 }

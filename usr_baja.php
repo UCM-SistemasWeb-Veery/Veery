@@ -8,9 +8,7 @@
 				<div class="row">
 				<!-- col -->
 				<div class="col col-8 col-offset-2">
-					<div class="module center">
-						<h1> Cancelar cuenta usuario </h1>
-					</div>
+					<h1> Cancelar cuenta usuario </h1>
 				</div>
 			<!-- ./ col -->
 			</div>
@@ -37,11 +35,11 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col col-3 col-offset-2">
-										<input class="btn primary" type="submit" name="Aceptar" value="Aceptar">
-									</div>
 									<div class="col col-3 col-offset-1">
 										<input class="btn primary " type="submit" name="Cancelar" value="Cancelar">
+									</div>
+									<div class="col col-3 col-offset-2">
+										<input class="btn primary" type="submit" name="Aceptar" value="Aceptar">
 									</div>
 								</div>
 				</div>

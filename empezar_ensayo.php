@@ -7,9 +7,7 @@
 		<div class="row">
 			<div class="col col-10 col-offset-1">
 				<div class="col col-10 col-offset-1">
-					<div class="center">
-						<h1>Empezar un ensayo en directo</h1>
-					</div>
+					<h1>Empezar un ensayo en directo</h1>
 				</div>
 			</div>
 		</div>

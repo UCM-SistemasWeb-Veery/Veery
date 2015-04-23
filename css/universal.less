@@ -5,6 +5,9 @@ body, html{
     overflow-x: hidden;
     background: @gray-light;
 }
+body{
+	padding-bottom: 100px;
+}
 #banner{
 	background: white;
 	border-bottom: 1px solid @yellow-base;
@@ -23,6 +26,9 @@ body, html{
 				padding-top: 5px;
 				padding-left: 15px;
 			}
+		}
+		@media(max-width: 767px){
+			height: 125px;
 		}
 	}
 }
