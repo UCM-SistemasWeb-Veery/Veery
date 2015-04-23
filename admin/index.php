@@ -3,8 +3,16 @@
 ?>
 
 		<div class="row">
-			<div class="col col-10 col-offset-1">			
-				<h1>Bienvenido al panel de administración</h1>
+			<div class="col col-10 col-offset-1">
+				<div class="row">
+					<!-- col -->
+					<div class="col col-8 col-offset-2">
+						<div class="module center">
+							<h2> Bienvenido al panel de administración </h2>
+						</div>
+					</div>
+					<!-- ./ col -->
+				</div>	
 				<div class="row">
 					<div class="col col-10 ">
 						<h2>Gráfico sobre el numero de entradas a la página al año</h2>
