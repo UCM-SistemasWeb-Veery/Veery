@@ -1567,8 +1567,12 @@ html {
 .form-module {
   padding: 25px;
 }
+@media (max-width: 1023px) {
+  .form-module * {
+    float: none !important;
+  }
+}
 .form-module .col {
-  /*margin: 10px;*/
   padding: 10px;
 }
 .form-module textarea {

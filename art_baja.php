@@ -41,7 +41,7 @@
 										<input class="btn primary" type="submit" name="Aceptar" value="Aceptar">
 									</div>
 									<div class="col col-3 col-offset-1">
-										<input class="btn primary " type="submit" name="Cancelar" value="Cancelar">
+										<a href="art_modificar_info.php" class="btn primary">Cancelar</a>
 									</div>
 								</div>
 				</div>
