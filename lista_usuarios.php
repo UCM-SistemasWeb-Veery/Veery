@@ -14,21 +14,21 @@
 					<div class = "col col-10 col-push-1">
 						<p><div class = "row module-content">
 							<div class ="col col-2">
-								Imagen
+								<p class="center">Imagen</p>
 							</div>	
 							<div class ="col col-2" >
-								Nombre Usuario
+								<p class="center">Nombre Usuario</p>
 							</div>	
 							<div class="col col-2">
-								<div class="row center">Fecha</div>
-								<div class="row center"><p>Genero (H/M)</p></div>
+								<div class="row center"><p class="center">Fecha</p></div>
+								<div class="row center"><p class="center">Genero (H/M)</p></div>
 							</div>
 							<div class="col col-4">
-								<div class="row center">Email</div>
-								<div class="row center"><p>Contraseña</p></div>
+								<div class="row center"><p class="center">Email</p></div>
+								<div class="row center"><p class="center">Contraseña</p></div>
 							</div>
 							<div class ="col col-2">
-								Utilidades
+								<p>Utilidades</p>
 							</div>	
 						</div></p>
 						<div class = "row module">
@@ -37,14 +37,14 @@
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
 								<div class ="col col-2">
-									Joselito Martinez
+									<p>Joselito Martinez</p>
 								</div>	
 								<div class="col col-2">
-									<div class="row center">15/3/1993</div>
+									<div class="row center"><p>15/3/1993</p></div>
 									<div class="row center"><p>M</p></div>
 								</div>
 								<div class="col col-4">
-									<div class="row center">emailprueba@email.com</div>
+									<div class="row center"><p>emailprueba@email.com</p></div>
 									<div class="row center"><p>*******</p></div>
 								</div>
 								<div class ="col col-2">
@@ -67,14 +67,14 @@
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
 								<div class ="col col-2">
-									Joselito Martinez
+									<p>Joselito Martinez</p>
 								</div>	
 								<div class="col col-2">
-									<div class="row center">15/3/1993</div>
+									<div class="row center"><p>15/3/1993</p></div>
 									<div class="row center"><p>M</p></div>
 								</div>
 								<div class="col col-4">
-									<div class="row center">emailprueba@email.com</div>
+									<div class="row center"><p>emailprueba@email.com</p></div>
 									<div class="row center"><p>*******</p></div>
 								</div>
 								<div class ="col col-2">
@@ -85,7 +85,7 @@
 									</div>
 									<div class="row">
 										<p><a type="btn" class = "col col-12 btn inverse">
-											mensaje
+											mensaje/ticket
 										</a></p>
 									</div>
 								</div>	
@@ -97,14 +97,14 @@
 									<img src="<?php echo PATH; ?>/img/user.jpg" class="col col-12">
 								</div>	
 								<div class ="col col-2">
-									Joselito Martinez
+									<p>Joselito Martinez</p>
 								</div>	
 								<div class="col col-2">
-									<div class="row center">15/3/1993</div>
+									<div class="row center"><p>15/3/1993</p></div>
 									<div class="row center"><p>M</p></div>
 								</div>
 								<div class="col col-4">
-									<div class="row center">emailprueba@email.com</div>
+									<div class="row center"><p>emailprueba@email.com</p></div>
 									<div class="row center"><p>*******</p></div>
 								</div>
 								<div class ="col col-2">
