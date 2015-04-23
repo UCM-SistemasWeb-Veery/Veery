@@ -112,7 +112,11 @@
 						<!-- ./ row Explicit content -->
 						<!-- row Subir archivo -->
 						<div class="row">
-							<div class="col col-6 col-offset-6">
+							<div class="col col-6">
+								<!--<input class="btn primary" type="submit" name="subir_archivo" value="Ca">-->
+								<a href="artista_main.php" class="btn primary float-right center">Cancelar</a>
+							</div>
+							<div class="col col-6">
 								<input class="btn primary float-left" type="submit" name="subir_archivo" value="Subir">
 							</div>
 						</div>

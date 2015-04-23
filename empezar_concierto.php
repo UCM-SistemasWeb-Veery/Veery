@@ -100,7 +100,10 @@
 						<!-- ./ Previsualización-->
 						<!-- row Empezar emisión -->
 						<div class="row">
-							<div class="col col-12">
+							<div class="col col-6">
+								<a href="artista_main.php" class="btn primary float-left center">Cancelar</a>
+							</div>
+							<div class="col col-6">
 								<input class="btn primary float-right" type="submit" name="empezar_emision" value="Empezar">
 							</div>
 						</div>
