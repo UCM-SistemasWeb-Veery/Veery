@@ -9,7 +9,7 @@ include_once('includes/header.php');
 				<div id="userspace-header" class="row">
 					<div class="col col-4">
 						<div id = "artwork">
-							<img src="../img/koala.jpg">
+							<img src="<?php echo PATH ?>img/koala.jpg">
 						</div>
 					</div>
 					<div class="col col-4">
@@ -40,7 +40,7 @@ include_once('includes/header.php');
 								<div class="col col-3">
 									<div  class="row">
 										<div class="col col-9 col-offset-1">
-											<img class="col-12" src="img/caratula1.bmp">
+											<img class="col-12" src="<?php echo PATH ?>img/caratula1.jpg">
 										</div>
 									</div>
 									<div  class="row">
@@ -58,7 +58,7 @@ include_once('includes/header.php');
 
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col-offset-1" src="../img/caratula2.bmp">
+										<img class="col col-9 col-offset-1" src="<?php echo PATH ?>img/caratula2.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Guns and roses</p>
@@ -70,7 +70,7 @@ include_once('includes/header.php');
 
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col_offset-1" src="../img/caratula3.bmp">
+										<img class="col col-9 col_offset-1" src="<?php echo PATH ?>img/caratula3.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Metallica</p>
@@ -82,7 +82,7 @@ include_once('includes/header.php');
 								
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col-offset-1" src="../img/caratula4.bmp">
+										<img class="col col-9 col-offset-1" src="<?php echo PATH ?>img/caratula4.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Led zeppelin</p>
@@ -97,7 +97,7 @@ include_once('includes/header.php');
 								<div class="col col-3">
 									<div  class="row">
 										<div class="col col-9 col-offset-1">
-											<img class="col-12" src="img/caratula1.bmp">
+											<img class="col-12" src="<?php echo PATH ?>img/caratula1.jpg">
 										</div>
 									</div>
 									<div  class="row">
@@ -115,7 +115,7 @@ include_once('includes/header.php');
 
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col-offset-1" src="../img/caratula2.bmp">
+										<img class="col col-9 col-offset-1" src="<?php echo PATH ?>img/caratula2.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Guns and roses</p>
@@ -127,7 +127,7 @@ include_once('includes/header.php');
 
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col_offset-1" src="../img/caratula3.bmp">
+										<img class="col col-9 col_offset-1" src="<?php echo PATH ?>img/caratula3.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Metallica</p>
@@ -139,7 +139,7 @@ include_once('includes/header.php');
 								
 								<div class="col col-3">
 									<div  class="row">
-										<img class="col col-9 col-offset-1" src="../img/caratula4.bmp">
+										<img class="col col-9 col-offset-1" src="<?php echo PATH ?>img/caratula4.jpg">
 									</div>
 									<div  class="row">
 										<p class="tracklist-title col col-12">Led zeppelin</p>
