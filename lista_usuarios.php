@@ -55,7 +55,7 @@
 									</div>
 									<div class="row">
 										<p><a type="btn" class = "col col-12 btn inverse">
-											mensaje
+											mensaje/ticket
 										</a></p>
 									</div>
 								</div>	
@@ -115,7 +115,7 @@
 									</div>
 									<div class="row">
 										<p><a type="btn" class = "col col-12 btn inverse">
-											mensaje
+											mensaje/ticket
 										</a></p>
 									</div>
 								</div>	
