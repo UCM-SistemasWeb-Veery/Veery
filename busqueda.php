@@ -16,19 +16,19 @@
 									<img src="<?php echo PATH; ?>/img/the_blueprint.jpg" class="col col-11 module">
 								</div>	
 								<div class ="col col-3">
-									<p>Jigga that nigga</p>
+									Jigga that nigga
 								</div>	
 								<div class="col col-3">
-									<p><a href ="album_view.php">The blueprint
-									</a></p>
+									<a href ="album_view.php">The blueprint
+									</a>
 								</div>
 								<div class="col col-2">
-									<p><a href="artist_view.php">
+									<a href="artist_view.php">
 										Jay Z
-									</a></p>
+									</a>
 								</div>
 								<div class ="col col-2">
-									<p><div class="row">
+									<div class="row">
 										<a type="btn" class = "col col-10 btn inverse">
 											escuchar
 										</a>
@@ -37,7 +37,7 @@
 										<a type="btn" class = "col col-10 btn inverse">
 											añadir
 										</a>
-									</div></p>
+									</div>
 								</div>	
 							</div>
 							<div class = "row">
@@ -45,19 +45,19 @@
 									<img src="<?php echo PATH; ?>/img/the_blueprint.jpg" class="col col-11 module">
 								</div>	
 								<div class ="col col-3">
-									<p>Song Cry</p>
+									Song Cry
 								</div>	
 								<div class="col col-3">
-									<p><a href ="album_view.php">The blueprint
-									</a></p>
+									<a href ="album_view.php">The blueprint
+									</a>
 								</div>
 								<div class="col col-2">
-									<p><a href="artist_view.php">
+									<a href="artist_view.php">
 										Jay Z
-									</a></p>
+									</a>
 								</div>
 								<div class ="col col-2">
-									<p><div class="row">
+									<div class="row">
 										<a type="btn" class = "col col-10 btn inverse">
 											escuchar
 										</a>
@@ -66,7 +66,7 @@
 										<a type="btn" class = "col col-10 btn inverse">
 											añadir
 										</a>
-									</div></p>
+									</div>
 								</div>	
 							</div>
 							<div class = "row">
@@ -74,19 +74,19 @@
 									<img src="<?php echo PATH; ?>/img/album1.jpg" class="col col-11 module">
 								</div>	
 								<div class ="col col-3">
-									<p>Encore</p>
+									Encore
 								</div>	
 								<div class="col col-3">
-									<p><a href ="album_view.php">THe Grey Album
-									</a></p>
+									<a href ="album_view.php">THe Grey Album
+									</a>
 								</div>
 								<div class="col col-2">
-									<p><a href="artist_view.php">
+									<a href="artist_view.php">
 										<span class	="center">Jay Z </span>
-									</a></p>
+									</a>
 								</div>
 								<div class ="col col-2">
-									<p><div class="row">
+									<div class="row">
 										<a type="btn" class = "col col-10 btn inverse">
 											escuchar
 										</a>
@@ -95,7 +95,7 @@
 										<a type="btn" class = "col col-10 btn inverse">
 											añadir
 										</a>
-									</div></p>
+									</div>
 								</div>	
 							</div>
 					</div>
