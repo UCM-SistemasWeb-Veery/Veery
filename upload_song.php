@@ -20,7 +20,7 @@
 			<div class="col col-8 col-offset-2">
 				<div class="module form-module">
 					<!-- Formulario con información sobre el archivo -->
-					<form action="algo_que_procesa_el_formulario.php" method="post" enctype="multipart/form-data">
+					<form action="algo_que_procesa_el_formulario.php" method="post" enctype="multipart/form-data" >
 						<!-- row Nombre canción -->
 						<div class="row">
 							<div class="col col-6">
