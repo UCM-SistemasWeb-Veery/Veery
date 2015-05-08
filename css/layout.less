@@ -1,0 +1,238 @@
+@import url(constants.less);
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &.toggled {
+        padding-left: 250px;
+        #left-sidebar {
+            width: 250px;
+        }
+        #app-content {
+            position: absolute;
+            margin-right: -250px;
+        }        
+    }    
+}
+
+#menu-button{
+    display: none;
+    @media(max-width: 767px){
+        display: block;
+        width: 35px; 
+        height: 15px;  
+        position: absolute;
+        top: 35px;
+        left: 15px;      
+    }
+}
+
+.menu-lines {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: @yellow-light;
+}
+
+#menu-toggle{
+  margin: 0 auto;
+  padding-top: 10px;
+  cursor: pointer;
+  
+  span {
+    .menu-lines;
+    
+    &:before {
+      .menu-lines;
+      transform: translate(0, -10px);
+    }
+    
+    &:after {
+      .menu-lines;
+      transform: translate(0, 5px);
+    }
+  }
+  
+  &.open {
+    span {
+      transform: rotate(180deg);
+      transition: 0.8s ease-in-out;
+
+      &:before {
+        width: 60%;
+        transform: rotate(45deg) translate(8px, -17px);
+        transition: 0.8s ease-in-out;
+      }
+
+      &:after {
+        width: 60%;
+        transform: rotate(-45deg) translate(12px, 14px);
+        transition: 0.8s ease-in-out;
+      }
+    }
+  }
+  
+  &.close {
+    span {
+      transform: rotate(360deg);
+      transition: 0.8s ease-in-out;
+
+      &:before {
+        width: 100%;
+        transform: rotate(0deg) translate(0, -10px);
+        transition: 0.8s ease-in-out;
+      }
+
+      &:after {
+        width: 100%;
+        transform: rotate(0deg) translate(0, 5px);
+        transition: 0.8s ease-in-out;
+      }
+    }
+  }
+}
+
+#left-sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: @yellow-base;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    ul.sidebar-nav{
+        li{
+            width: 100%;
+            a{
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+#app-content {
+    width: 100%;
+    position: absolute;
+    margin-bottom: 15%;
+    #feed-stream{
+        padding-bottom: 75px;
+    }
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        text-indent: 20px;
+        line-height: 40px;
+        a{
+            display: block;
+            text-decoration: none;
+            color: #999999;
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+            }
+            &:active{
+                text-decoration: none;
+            }
+            &:focus{
+                text-decoration: none;
+            }
+            &:visited{
+                text-decoration: none;
+            }
+
+        }    
+
+    }
+}
+
+
+//Phone
+@media (max-width: 767px){
+
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px){
+    #wrapper {
+        padding-left: 50px;
+        &.toggled {
+            padding-left: 0;
+            #left-sidebar {
+                width: 0;
+            }  
+            #app-content {
+                    position: relative;
+                    margin-right: 0;
+            }                      
+        }
+    
+    
+    }
+    #left-sidebar {
+        width: 50px;
+        .sidebar-nav{
+            width: 50px;
+
+                display: block;             
+                li{
+                    a{
+                        max-width: 50px !important;
+                        padding-left: 0;
+                        .fa{
+                            display: block;
+                        }
+                    }
+                }               
+                        
+        }
+    }
+    #app-content {
+        position: relative;
+    }
+}
+// Desktop
+@media(min-width: 1025px){
+    #wrapper {
+        padding-left: 250px;
+        &.toggled {
+            padding-left: 0;
+            #left-sidebar {
+                width: 0;
+            }  
+            #app-content {
+                    position: relative;
+                    margin-right: 0;
+            }                      
+        }
+    
+    
+    }
+    #left-sidebar {
+        width: 250px;
+    }
+    #app-content {
+        position: relative;
+    }
+}
+

@@ -1,114 +1,138 @@
 <?php
 	include_once('includes/header.php');
 ?>
+<div class="row">
+	<div class="col col-10">
+		<!-- row for title -->
 		<div class="row">
-			<div id="right-sidebar" class="col col-2">
-				<?php
-					include_once('includes/left_sidebar.php');
-				?>
+			<!-- col -->
+			<div class="col col-8 col-offset-2">
+				<div class="col col-10 col-offset-1">
+					<h1>Subir una canción</h1>
+				</div>
 			</div>
-			<div id="content-handler" class="col col-7 img-background">
-				<div class="row">
-					<div class="col col-12">
-						<!-- Formulario con información sobre el archivo -->
-						<form action="algo_que_procesa_el_formulario.php" method="post" enctype="multipart/form-data">
-							<!--<fieldset>-->
-								<legend><h3>Subir una canción</h3></legend>
-								<!--<div>
-									<div class="co col-12">
-										<img src="img/veery_concert2.jpg" alt="concert header" width="600" height="200">
-									</div>
-								</div>-->
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Nombre de la canción:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Gasolina" size="20"></input>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Seleccionar archivo:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="file" name="archivo"/>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Nombre del álbum:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Barrio Fino" size="20"></input>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Portada del álbum:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="file" name="img_album"/>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Nombre del artista:</lable>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="Daddy Yankee" size="20"></input>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Duración:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" type="text" name="nombre_cancion" value="3:13" size="6"></input>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Género:</label>
-									</div>
-									<div class="col col-6">
-										<select name="genero">
-										  <option value="Rock">Rock</option>
-										  <option value="Pop">Pop</option>
-										  <option value="Hip-Hop">Hip-Hop</option>
-										  <option value="Reggaeton" selected>Reggaeton</option>
-										  <option value="Clásica">Clásica</option>
-										  <option value="Folk">Folk</option>
-										</select>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-										<label class="float-right">Contenido explítico:</label>
-									</div>
-									<div class="col col-6">
-										<input class="float-left" name="explicit" type="checkbox" value="off" checked="checked"/>
-									</div>
-								</div>
-								<div>
-									<div class="col col-6">
-									</div>
-									<div class="col col-6">
-										<input class="btn btn-lg btn-orange float-left" type="submit" name="enviar" value="SUBIR"/>
-									</div>
-								</div>
-							<!--</fieldset>-->
-						</form>
-					</div>																
-				</div>				
-			</div>
-			
-			<div id="left-sidebar" class="col col-3">
-				<?php
-					include_once('includes/right_sidebar.php');
-				?>
-			</div>
+			<!-- ./ col -->
 		</div>
+		<!-- ./ row -->
+
+		<!-- row form -->
+		<div class="row">
+			<div class="col col-8 col-offset-2">
+				<div class="module form-module">
+					<!-- Formulario con información sobre el archivo -->
+					<form action="algo_que_procesa_el_formulario.php" method="post" enctype="multipart/form-data" >
+						<!-- row Nombre canción -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Nombre de la canción:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="text" name="nombre_cancion" value="Gasolina">
+							</div>
+						</div>
+						<!-- ./ row Nombre canción -->
+						<!-- row Seleccionar archivo -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Seleccionar archivo:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="file" name="archivo">
+							</div>
+						</div>
+						<!-- ./ row Seleccionar archivo -->
+						<!-- row Nombre álbum -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Nombre del álbum:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="text" name="nombre_album" value="Barrio Fino">
+							</div>
+						</div>
+						<!-- ./ row Nombre álbum -->
+						<!-- row Portada álbum -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Portada del álbum:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="file" name="img_album">
+							</div>
+						</div>
+						<!-- ./ row Portada álbum -->
+						<!-- row Nombre artista -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Nombre del artista:</lable>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="text" name="nombre_artista" value="Daddy Yankee">
+							</div>
+						</div>
+						<!-- ./ row Nombre artista -->
+						<!-- row Duración -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Duración:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" type="text" name="duracion" value="3:13">
+							</div>
+						</div>
+						<!-- ./ row Duración -->
+						<!-- row Género -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Género:</label>
+							</div>
+							<div class="col col-6">
+								<select name="genero">
+								  <option value="Rock">Rock</option>
+								  <option value="Pop">Pop</option>
+								  <option value="Hip-Hop">Hip-Hop</option>
+								  <option value="Reggaeton" selected>Reggaeton</option>
+								  <option value="Clásica">Clásica</option>
+								  <option value="Folk">Folk</option>
+								</select>
+							</div>
+						</div>
+						<!-- ./ row Género -->
+						<!-- row Explicit content -->
+						<div class="row">
+							<div class="col col-6">
+								<label class="float-right">Contenido explítico:</label>
+							</div>
+							<div class="col col-6">
+								<input class="float-left" name="explicit" type="checkbox" value="off" checked="checked">
+							</div>
+						</div>
+						<!-- ./ row Explicit content -->
+						<!-- row Subir archivo -->
+						<div class="row">
+							<div class="col col-6">
+								<!--<input class="btn primary" type="submit" name="subir_archivo" value="Ca">-->
+								<a href="artista_main.php" class="btn primary float-right center">Cancelar</a>
+							</div>
+							<div class="col col-6">
+								<input class="btn primary float-left" type="submit" name="subir_archivo" value="Subir">
+							</div>
+						</div>
+						<!-- ./ row Subir archivo -->
+					</form>
+					<!-- ./ Formulario con información sobre el archivo -->
+				</div>
+				<!-- ./ module -->
+			</div>
+			<!-- ./ col col-8 col-offset-2 -->																
+		</div>
+		<!-- ./ row form -->				
+	</div>
+	<!-- ./ row col-col-10 -->
+	<?php
+	include_once('includes/right-sidebar.php');
+	?>
+</div>
 	
 <?php
 	include_once('includes/footer.php');

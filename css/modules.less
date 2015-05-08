@@ -1,0 +1,215 @@
+@import url(constants.less);
+@module-padding: 20px;
+@module-bg-color: #fff;
+@element-top-margin: 1.5rem/3;
+@element-margin: (1.5rem/3*2)/3;
+
+.module-panel {
+  margin: @element-top-margin @element-margin @element-margin @element-margin;
+  border-radius: 2px;
+  background-color: @module-bg-color;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  img{
+    border-radius: 2px;
+    min-height: 150%;
+    width: 100%;
+  }
+  &.small {
+    height: 300px;
+  }
+
+  &.medium {
+    height: 400px;
+  }
+
+  &.large {
+    height: 500px;
+  }
+  &#main{
+    position: relative;
+    h2.main-title{
+      position: absolute;
+      bottom: 85px;
+      left: 5%;
+      font-size: 3.5em;
+      color: white;
+      text-transform: uppercase;      
+      text-shadow: 1px 1px @gray-dark;
+    }
+    a.btn{
+      position: absolute;
+      bottom: 20px;
+      left: 5%;
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 1px 1px @gray-dark;
+    }
+  }
+
+}
+
+.module {
+  position: relative;
+  overflow: hidden;
+  margin: @element-top-margin @element-margin @element-margin @element-margin;
+  background-color: @module-bg-color;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+
+  .module-title {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    &.activator {
+      cursor: pointer;
+    }
+  }
+
+  // module sizes
+  &.small, &.medium, &.large {
+    position: relative;
+
+    .module-header {
+      overflow: hidden;
+    }
+    .module-content {
+      overflow: hidden;
+    }
+    .module-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &.small {
+    height: 300px;
+
+    .module-header {
+      &.small{
+        height: 32.5px;
+      }
+      &.medium{
+        height: 75px;
+      }
+      &.large{
+        height: 150px;
+      }
+    }
+    .module-content {
+      height: 150px;
+    }
+
+  }
+
+  &.medium {
+    height: 400px;
+
+    .module-header {
+      &.small{
+        height: 62.5px;
+      }
+      &.medium{
+        height: 125px;
+      }
+      &.large{
+        height: 250px;
+      }
+    }
+    .module-content {
+      //height: 150px;
+      height: auto;
+    }
+  }
+
+  &.large {
+    height: 500px;
+
+    .module-header {
+      &.small{
+        height: 82.5px;
+      }
+      &.medium{
+        height: 165px;
+      }
+      &.large{
+        height: 330px;
+      }
+    }
+    .module-content {
+      height: 170px;
+    }
+  }
+
+
+  .module-header {
+    position: relative;
+
+    // Image background for content
+    img {
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .module-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: @module-padding;
+    }
+
+  }
+
+  .module-content {
+    padding: @module-padding;
+    border-radius: 0 0 2px 2px;
+
+    p {
+      margin: 0;
+      color: inherit;
+    }
+    .module-title {
+      line-height: 48px;
+    }
+  }
+
+  .module-action {
+    border-top: 1px solid rgba(160,160,160,.2);
+    padding: @module-padding;
+
+    a {
+      color: @yellow-light;
+      margin-right: @module-padding;
+      //@include transition(color .3s ease);
+      text-transform: uppercase;
+
+      &:hover { color: lighten(@yellow-light, 20%); }
+    }
+  }
+
+  .module-reveal {
+    padding: @module-padding;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    overflow-y: auto;
+    top: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+
+    .module-title {
+      cursor: pointer;
+      display: block;
+    }
+
+  }
+}

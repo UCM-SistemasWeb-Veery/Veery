@@ -50,9 +50,6 @@ CONTAINER - CONTAINER-FULL
 }
 .container-full {
   display:block;
-  overflow: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -61,17 +58,15 @@ CONTAINER - CONTAINER-FULL
 
 GENERAL .ROW STYLING
 
-*/
+
 
 .row:after {
 	clear:both;
 }
-
+*/
 .row {
 	clear: both;
 	padding: 0;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 /*
@@ -85,9 +80,10 @@ GENERAL .COL STYLING
   position: relative;
   min-height: 1px;
   margin: 0;
-  padding: 2.5%;
+  //padding: 2.5%;
   @media (max-width: 768px) {
-      width: 100%;
+      width: 100% !important;
+      padding: 0;
   }  
 }
 
@@ -128,22 +124,55 @@ GENERAL .COL STYLING
 }
 
 /* UNIVERSAL */
-
+.shadow{
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4);
+}
+.no-shadow{
+  box-shadow: none !important;
+}
 .block{
   display: block;
 }
-
+.hide{
+  display: none;
+}
 .float-right{
-  float: right;
+  float: right !important;
 }
 
 .float-left{
-  float: left;
+  float: left !important;
 }
 
 .invisible{
-  display: none;
+  visibility: hidden;
 }
+.visible{
+  visibility: visible;
+}
+.absolute-center{
+  position: absolute;
+  margin: auto;
+  top:0; 
+  left:0;
+  right: 0;
+  bottom:0;
+}
+.medium-up{
+  display:none;
+  @media(min-width: 768px){
+    display: block;
+  }
+}
+
+.medium-down{
+  display:none;
+  @media(max-width: 767px){
+    display: block;
+    text-align: center;
+  }
+}
+
 /* TEXT STYLES */
 
 .center{
@@ -166,3 +195,14 @@ GENERAL .COL STYLING
   font-style: italic;
 }
 
+img{
+  &.responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.circle{
+    border-radius: 50%;
+  }
+}

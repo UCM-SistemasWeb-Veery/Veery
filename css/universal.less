@@ -1,0 +1,35 @@
+@import url(constants.less);
+body, html{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background: @gray-light;
+}
+body{
+	padding-bottom: 100px;
+}
+#banner{
+	background: white;
+	border-bottom: 1px solid @yellow-base;
+	header{
+		height: 75px;
+		background: white !important;
+		img#logo{
+			max-height: 60px;
+			margin-top: 5px;
+			margin-left: 50px;
+			@media(max-width: 767px){
+				max-height: 70px;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+				padding-top: 5px;
+				padding-left: 15px;
+			}
+		}
+		@media(max-width: 767px){
+			height: 125px;
+		}
+	}
+}
+
