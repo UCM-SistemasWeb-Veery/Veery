@@ -1,0 +1,114 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.yellow-base-background {
+  background-color: #f1c40f;
+}
+.yellow-dark-background {
+  background-color: #f39c12;
+}
+.yellow-light-background {
+  background-color: #f3d458;
+}
+/* BUTTON */
+button.btn,
+a.btn,
+input.btn {
+  float: left;
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.5s ease-in-out;
+  overflow: hidden;
+  background: transparent;
+  text-decoration: none;
+  min-width: 150px;
+}
+button.btn.circle,
+a.btn.circle,
+input.btn.circle {
+  border-radius: 50%;
+  min-width: 0;
+}
+button.btn.primary,
+a.btn.primary,
+input.btn.primary {
+  background-color: #f1c40f;
+  color: white;
+}
+button.btn.primary:hover,
+a.btn.primary:hover,
+input.btn.primary:hover {
+  background-color: #f39c12;
+}
+button.btn.inverse,
+a.btn.inverse,
+input.btn.inverse {
+  background-color: transparent;
+  color: #4f4f4f;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+}
+button.btn.inverse:hover,
+a.btn.inverse:hover,
+input.btn.inverse:hover {
+  background-color: rgba(99, 99, 99, 0.2);
+}
+button.btn.inverse.active,
+a.btn.inverse.active,
+input.btn.inverse.active {
+  border-bottom: 2px solid #f3d458;
+}
+button.btn.alternate,
+a.btn.alternate,
+input.btn.alternate {
+  border: 2px solid #f3d458;
+  color: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+button.btn.alternate:hover,
+a.btn.alternate:hover,
+input.btn.alternate:hover {
+  color: white;
+  background: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+}
+button.btn.alternate.active,
+a.btn.alternate.active,
+input.btn.alternate.active {
+  color: white;
+  background: #f39c12;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+}
+button.btn.shadow,
+a.btn.shadow,
+input.btn.shadow {
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.4);
+}
+button.btn.shadow:active,
+a.btn.shadow:active,
+input.btn.shadow:active {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+button.btn.active,
+a.btn.active,
+input.btn.active {
+  font-weight: bold;
+}
+button.btn.small,
+a.btn.small,
+input.btn.small {
+  min-height: 0;
+  min-width: 0;
+  font-size: 10px;
+  padding: 10px;
+}

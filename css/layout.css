@@ -1,0 +1,219 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.yellow-base-background {
+  background-color: #f1c40f;
+}
+.yellow-dark-background {
+  background-color: #f39c12;
+}
+.yellow-light-background {
+  background-color: #f3d458;
+}
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 250px;
+}
+#wrapper.toggled #left-sidebar {
+  width: 250px;
+}
+#wrapper.toggled #app-content {
+  position: absolute;
+  margin-right: -250px;
+}
+#menu-button {
+  display: none;
+}
+@media (max-width: 767px) {
+  #menu-button {
+    display: block;
+    width: 35px;
+    height: 15px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+  }
+}
+.menu-lines {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #f3d458;
+}
+#menu-toggle {
+  margin: 0 auto;
+  padding-top: 10px;
+  cursor: pointer;
+}
+#menu-toggle span {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #f3d458;
+}
+#menu-toggle span:before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #f3d458;
+  transform: translate(0, -10px);
+}
+#menu-toggle span:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #f3d458;
+  transform: translate(0, 5px);
+}
+#menu-toggle.open span {
+  transform: rotate(180deg);
+  transition: 0.8s ease-in-out;
+}
+#menu-toggle.open span:before {
+  width: 60%;
+  transform: rotate(45deg) translate(8px, -17px);
+  transition: 0.8s ease-in-out;
+}
+#menu-toggle.open span:after {
+  width: 60%;
+  transform: rotate(-45deg) translate(12px, 14px);
+  transition: 0.8s ease-in-out;
+}
+#menu-toggle.close span {
+  transform: rotate(360deg);
+  transition: 0.8s ease-in-out;
+}
+#menu-toggle.close span:before {
+  width: 100%;
+  transform: rotate(0deg) translate(0, -10px);
+  transition: 0.8s ease-in-out;
+}
+#menu-toggle.close span:after {
+  width: 100%;
+  transform: rotate(0deg) translate(0, 5px);
+  transition: 0.8s ease-in-out;
+}
+#left-sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f1c40f;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#left-sidebar ul.sidebar-nav li {
+  width: 100%;
+}
+#left-sidebar ul.sidebar-nav li a {
+  width: 100%;
+  text-align: left;
+}
+#app-content {
+  width: 100%;
+  position: absolute;
+  margin-bottom: 15%;
+}
+#app-content #feed-stream {
+  padding-bottom: 75px;
+}
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.sidebar-nav li a:active {
+  text-decoration: none;
+}
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-nav li a:visited {
+  text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #wrapper {
+    padding-left: 50px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #wrapper.toggled #left-sidebar {
+    width: 0;
+  }
+  #wrapper.toggled #app-content {
+    position: relative;
+    margin-right: 0;
+  }
+  #left-sidebar {
+    width: 50px;
+  }
+  #left-sidebar .sidebar-nav {
+    width: 50px;
+    display: block;
+  }
+  #left-sidebar .sidebar-nav li a {
+    max-width: 50px !important;
+    padding-left: 0;
+  }
+  #left-sidebar .sidebar-nav li a .fa {
+    display: block;
+  }
+  #app-content {
+    position: relative;
+  }
+}
+@media (min-width: 1025px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #wrapper.toggled #left-sidebar {
+    width: 0;
+  }
+  #wrapper.toggled #app-content {
+    position: relative;
+    margin-right: 0;
+  }
+  #left-sidebar {
+    width: 250px;
+  }
+  #app-content {
+    position: relative;
+  }
+}
