@@ -48,12 +48,24 @@
 	            		<div id="session-controls">
 						    <?php
 							if(!session_id()) session_start();
-								if($_SESSION['logeado']==false){
-									echo "<a href='registro.php' class='btn alternate small'>Registro</a>	            		
-									  <a href='login.php' class='btn alternate small'>Login</a>";
+								if(isset($_SESSION['logeado'])){
+									if($_SESSION['logeado']==false){
+										if(isset($_SESSION['Error'])){
+											if($_SESSION['Error']==true){
+												echo $_SESSION["Sentences_error"];
+											}
+											echo "<a href='registro.php' class='btn alternate small'>Registro</a>	            		
+											<a href='login.php' class='btn alternate small'>Login</a>";
+										}
+									}
+									else{
+										echo "Bienvenido,".$_SESSION["User"].".<a href='logout.php'>(Salir)</a>";
+									}
 								}
 								else{
-									echo "Bienvenido,".$_SESSION["User"].".<a href='logout.php'>(Salir)</a>";
+									echo "<a href='registro.php' class='btn alternate small'>Registro</a>	            		
+									  <a href='login.php' class='btn alternate small'>Login</a>";
+									  echo "Hola";
 								}
 							?>
 	            		</div>

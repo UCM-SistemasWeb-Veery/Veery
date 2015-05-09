@@ -27,12 +27,12 @@ class datos{
 			$values = $resultado->fetch_assoc();
 			
 			if($this->tipo=='user'){
-				$consulta_tipo="INSERT INTO user (id,name,surname,birthdate,email) VALUES ('{$values["id"]}','{$this->nombre}','{$this->apellido}','{$this->fecha_nacimiento}','{$this->email}')";
+				$consulta_tipo="INSERT INTO user (id,name,surname,birthdate,sexo,email) VALUES ('{$values["id"]}','{$this->nombre}','{$this->apellido}','{$this->fecha_nacimiento}','{$this->sexo}','{$this->email}')";
 			}
 			else if($this->tipo=='art'){
 				$consulta_tipo="INSERT INTO art (id,name,email) VALUES ('{$values["id"]}','{$this->nombre}','{$this->email}')";
 			}
-
+			
 			$_SESSION['objConexion']->no_dev_query($consulta_tipo);
 			$_SESSION['User']=$this->nombre;
 			$_SESSION['Type']=$this->tipo;

@@ -14,11 +14,14 @@ if($values==TRUE){
 		}
 		else{
 			$_SESSION['logeado']=false;
-			echo "Usuario o login incorrecto";
+			$_SESSION['Error']=true;
+			$_SESSION['Sentences_error']="Contraseña incorrecta";
 		}
 }
 else{
 	$_SESSION['logeado']=false;
+	$_SESSION['Sentences_error']="Usario incorrecto";
+	$_SESSION['Error']=true;
 }
 include("index.php");
 ?>

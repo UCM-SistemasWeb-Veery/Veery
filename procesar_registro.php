@@ -8,7 +8,6 @@ $login=new datos();
 	$login->tipo=$_REQUEST['tipo'];
 	$login->fecha_nacimiento=$_REQUEST['bday'];
 	$login->email=$_REQUEST['email'];
-	echo $login->nombre;
 	if($login->guardar()==1){
 		include('registrado.php');
 	}
