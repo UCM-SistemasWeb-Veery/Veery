@@ -21,9 +21,8 @@ use \core\router,
 //define routes
 Router::any('', '\controllers\pagesController@index');
 
-//if no route found
-//Router::error('\core\error@index');
 //turn on old style routing
 Router::$fallback = false;
+
 //execute matched routes
 Router::dispatch();

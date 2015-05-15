@@ -9,7 +9,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="<?php echo PATH;?>app/assets/javascript/app.js"></script>
+    <script src="<?php echo js_path?>app.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
