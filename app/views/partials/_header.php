@@ -1,6 +1,3 @@
-<?php
-	include_once('constants.php');
-?>
 <!DOCTYPE html>
 <!-- HTML5 Boilerplate -->
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es-ES>"> <![endif]-->
@@ -19,7 +16,8 @@
 	<meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<title><?php echo SITETITLE; ?></title> 
 	<meta name="description" content="">
-	<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+	<link href="<?php echo PATH;?>app/assets/stylesheets/custom.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,7 +29,7 @@
 	<div id="wrapper">
     <!-- left-sidebar -->
     <?php 
-        include_once('includes/left-sidebar.php'); 
+        include_once('_left-sidebar.php'); 
     ?>
     <!-- /#left-sidebar -->
 			<div id="app-content">
@@ -42,19 +40,19 @@
 				          <div id="menu-button">
 				              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
 				          </div> 
-				          <a href="index.php"><img id="logo" src="img/veryLogo.png" alt="Veery"></a> 
+				          <a href="index.php"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
 			          </div>
 			          <div class="col col-5 col-offset-3">
 	            		<div id="session-controls">
 						    <?php
-							if(!session_id()) session_start();
+							/*if(!session_id()) session_start();
 								if(isset($_SESSION['logeado'])){
 									if($_SESSION['logeado']==false){
 										if(isset($_SESSION['Error'])){
 											if($_SESSION['Error']==true){
 												echo $_SESSION["Sentences_error"];
 											}
-											echo "<a href='registro.php' class='btn alternate small'>Registro</a>	            		
+											echo "<a href='registro.php' class='btn alternate small'>Registro</a>
 											<a href='login.php' class='btn alternate small'>Login</a>";
 										}
 									}
@@ -63,18 +61,18 @@
 									}
 								}
 								else{
-									echo "<a href='registro.php' class='btn alternate small'>Registro</a>	            		
+									echo "<a href='registro.php' class='btn alternate small'>Registro</a>
 									  <a href='login.php' class='btn alternate small'>Login</a>";
 									  echo "Hola";
-								}
+								}*/
 							?>
 	            		</div>
-			          </div> 		
+			          </div>
             	</div>
             </header>
-            <!-- header-->     
-        </div>     
-        <div class="row">    				
+            <!-- /#header-->
+        </div>
+        <div class="row">
 					<nav class="clearfix">
 					    <ul>
 					        <li><a class="btn inverse" href="artist_view.php">My Veery</a></li>
@@ -83,5 +81,5 @@
 					    </ul>
 					    <a href="#" id="pull">Just For You</a>
 					</nav>
-				</div>	
-
+		</div>
+        <div class="row">

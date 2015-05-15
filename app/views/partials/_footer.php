@@ -1,3 +1,7 @@
+              <?php 
+                  include_once('_right-sidebar.php');
+              ?>
+          </div>
         </div>
         <!-- /#app-content -->
     </div>
@@ -5,6 +9,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo PATH;?>app/assets/javascript/app.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -20,7 +25,7 @@
 
           } else {
              $("#menu-toggle").addClass('open');
-          }        
+          }
     });
     </script>
 

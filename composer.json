@@ -1,0 +1,22 @@
+{
+    "name": "veery",
+    "type": "project",
+    "description": "A social music streaming website",
+    "homepage": "https://github.com/UCM-SistemasWeb-Veery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafa Ramirez",
+            "email": "r.ramirez@veery.es",
+            "homepage": "http://iamraffe.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {"": "app/"}
+    },
+    "minimum-stability": "dev"
+}

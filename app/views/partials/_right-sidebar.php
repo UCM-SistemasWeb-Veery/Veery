@@ -28,7 +28,7 @@
                 			</li>
                 		</ul>
                 	</div>
-                    
+
                 </div>
                 <div class="module medium top-video">
                 	<div class="module-header small yellow-dark-background">
@@ -58,6 +58,6 @@
                             </li>
                 		</ul>
                 	</div>
-                </div>  
+                </div>
             </div>
         </div>
