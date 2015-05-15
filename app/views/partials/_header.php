@@ -40,7 +40,7 @@
 				          <div id="menu-button">
 				              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
 				          </div> 
-				          <a href="index.php"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
+				          <a href="/"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
 			          </div>
 			          <div class="col col-5 col-offset-3">
 	            		<div id="session-controls">

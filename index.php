@@ -20,6 +20,7 @@ use \core\router,
     \helpers\url;
 //define routes
 Router::any('', '\controllers\pagesController@index');
+Router::any('start-broadcast', '\controllers\pagesController@startBroadcast');
 
 //turn on old style routing
 Router::$fallback = false;

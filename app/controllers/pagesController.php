@@ -19,4 +19,12 @@ class PagesController extends Controller{
         View::renderpartial('footer', $data);
     }
 
+    public function startBroadcast(){
+        $data['title'] = 'Start Broadcast';
+
+        View::renderpartial('header', $data);
+        View::render('start-broadcast', $data);
+        View::renderpartial('footer', $data);
+    }
+
 }
