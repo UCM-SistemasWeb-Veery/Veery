@@ -12,6 +12,6 @@ abstract class Model{
      */
     public function __construct(){
         //connect to PDO here.
-        $this->_db = \helpers\database::get();
+        $this->_db = \core\database::get();
     }
 }
