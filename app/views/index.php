@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div id="feed-grid" class="row">
             <?php
                 if($data['feed']){
                     $size = array('large', 'medium', 'small');

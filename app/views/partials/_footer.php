@@ -10,6 +10,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="<?php echo js_path?>app.js"></script>
+    <script src="<?php echo js_path?>pinterest_grid.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -28,7 +29,11 @@
           }
     });
     </script>
-
+    <script>
+      var container = document.querySelector('#feed-grid');
+      var msnry = new Masonry( container, {
+      });
+    </script>
 </body>
 
 </html>
