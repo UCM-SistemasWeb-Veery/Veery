@@ -43,7 +43,23 @@
 				          <a href="/"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
 			          </div>
 			          <div class="col col-5 col-offset-3">
-	            		<div id="session-controls">
+			          <?php if(!\core\session::get('loggedin')){
+			          		echo '
+			            		<div id="session-controls">
+			            			<div id="login-form">
+			            				<form action="login" method="post">
+			            					<input class="btn inverse small" type="text" name="username" placeholder="Usuario">
+			            					<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
+														<input class="btn primary small center" method="post" type="submit" name="submit" value="acceder">
+			            				</form>
+			            			</div>	            		
+			            		<a href="" class="btn alternate small">Registro</a>
+											<button id="login-button" class="btn alternate small">Login</button>
+											</div>
+			          		';
+
+			          	} ?>
+
 						    <?php
 							/*if(!session_id()) session_start();
 								if(isset($_SESSION['logeado'])){
@@ -66,7 +82,7 @@
 									  echo "Hola";
 								}*/
 							?>
-	            		</div>
+	            		
 			          </div>
             	</div>
             </header>

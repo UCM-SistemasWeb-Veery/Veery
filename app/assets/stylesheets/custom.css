@@ -2539,6 +2539,9 @@ footer #song-timer {
     margin-top: 10px;
   }
 }
+#banner header #session-controls #login-form {
+  display: none;
+}
 #banner header #session-controls input {
   border-bottom: 1px solid #ebebeb;
   margin-top: 15px;

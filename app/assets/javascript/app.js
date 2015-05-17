@@ -14,3 +14,9 @@
              $("#menu-toggle").addClass('open');
           }
     });
+
+    $("#login-button").click(function(e){
+      e.preventDefault();
+      $("#login-form").css('display', 'block');
+      $("#login-button").css('display', 'none');
+    });

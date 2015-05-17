@@ -30,10 +30,10 @@ class Session{
         */
         if(is_array($key) && $value === false){
             foreach ($key as $name => $value) {
-                $_SESSION[SESSION_PREFIX.$name] = $value;
+                $_SESSION[$name] = $value;
             }
         } else {
-            $_SESSION[SESSION_PREFIX.$key] = $value;
+            $_SESSION[$key] = $value;
         }
     }
 
@@ -43,8 +43,8 @@ class Session{
      * @return string      return item
      */
     public static function pull($key){
-        $value = $_SESSION[SESSION_PREFIX.$key];
-        unset($_SESSION[SESSION_PREFIX.$key]);
+        $value = $_SESSION[$key];
+        unset($_SESSION[$key]);
         return $value;
     }
 
@@ -57,12 +57,12 @@ class Session{
      */
     public static function get($key,$secondkey = false){
         if($secondkey == true){
-            if(isset($_SESSION[SESSION_PREFIX.$key][$secondkey])){
-                return $_SESSION[SESSION_PREFIX.$key][$secondkey];
+            if(isset($_SESSION[$key][$secondkey])){
+                return $_SESSION[$key][$secondkey];
             }
         } else {
-            if(isset($_SESSION[SESSION_PREFIX.$key])){
-                return $_SESSION[SESSION_PREFIX.$key];
+            if(isset($_SESSION[$key])){
+                return $_SESSION[$key];
             }
         }
         return false;
@@ -101,7 +101,7 @@ class Session{
                 session_unset();
                 session_destroy();
             } else {
-                unset($_SESSION[SESSION_PREFIX.$key]);
+                unset($_SESSION[$key]);
             }
         }
     }

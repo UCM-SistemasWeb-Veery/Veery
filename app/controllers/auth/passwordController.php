@@ -1,4 +1,4 @@
-<?php namespace \controllers\auth;
+<?php namespace controllers\auth;
 
 /**
  * A Compatibility library with PHP 5.5's simplified password hashing API.
@@ -11,7 +11,7 @@ if (!defined('PASSWORD_DEFAULT')) {
     define('PASSWORD_BCRYPT', 1);
     define('PASSWORD_DEFAULT', PASSWORD_BCRYPT);
 }
-class Password {
+class PasswordController {
     /**
      * Hash the password using the specified algorithm
      *
