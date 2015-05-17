@@ -77,9 +77,7 @@ class UsersController extends Controller{
             $userLastName = $_POST['userLastName'];
             //$userDoB = $_POST['userDoB'];
             $userBio = $_POST['userBio'];
-            $userSlug = strtolower($userName).'-'.strtolower($userLastName);
-            //$userHeader = '';
-            //$userProfilePicture = '';
+            $userSlug = Url::generateSlug(strtolower($userName).'-'.strtolower($userLastName));
             $userProfilePicture = 'img/profilePictures/'.$_FILES['userProfilePicture']['name'];
             move_uploaded_file($_FILES['userProfilePicture']['tmp_name'], $userProfilePicture);
             $userHeader = 'img/headerPictures/'.$_FILES['userHeader']['name'];
@@ -93,7 +91,9 @@ class UsersController extends Controller{
                     'userProfilePicture' => $userProfilePicture,
                     'userHeader' => $userHeader,
             );
-            $this->_model->verifyUser($user);
+            $data['user'] = $this->_model->getUserByEmail($userEmail);
+            $where = array('userID' => $data['user'][0]->userID);
+            $this->_model->verifyUser($user, $where);
             Url::redirect('users/'.$userSlug);
            /* if($username == ''){
                 $error[] = 'Username is required.';

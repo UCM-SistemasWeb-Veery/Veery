@@ -14,7 +14,6 @@ class PagesController extends Controller{
      * Define Index page title and load template files
      */
     public function index() {
-        $data['title'] = '';
         $data['feed'] = $this->_model->getFeed();
         $data['js'] = "
             <script>
