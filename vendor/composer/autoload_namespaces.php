@@ -6,5 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Mandrill' => array($vendorDir . '/mandrill/mandrill/src'),
+    'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),
+    'Guzzle' => array($vendorDir . '/guzzle/guzzle/src'),
+    'ComponentInstaller' => array($vendorDir . '/robloach/component-installer/src'),
     'Carbon' => array($vendorDir . '/nesbot/carbon/src'),
+    'Aws' => array($vendorDir . '/aws/aws-sdk-php/src'),
+    'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),
 );

@@ -7,5 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
+    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
+    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
+    'League\\Flysystem\\AwsS3v2\\' => array($vendorDir . '/league/flysystem-aws-s3-v2/src'),
+    'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     '' => array($baseDir . '/app'),
 );

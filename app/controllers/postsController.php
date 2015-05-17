@@ -34,7 +34,7 @@ class PostsController extends Controller{
         $data['title'] = 'Edit Post';
         $data['js'] = "";
         View::renderpartial('header', $data);
-        View::render('posts/update', $data);
+        View::render('view/update', $data);
         View::renderpartial('footer', $data);
     }
 

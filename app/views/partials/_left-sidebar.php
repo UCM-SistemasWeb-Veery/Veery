@@ -12,5 +12,5 @@
                 <li>
                     <a class="btn primary" href="busqueda.php"><span class="fa fa-search"></span> <span class="tablet-hide">Búsqueda</span></a>
                 </li>
-            </ul>
+            </ul> 
         </div>

@@ -51,7 +51,10 @@
     "require": {
         "php": ">=5.3.0",
         "google/apiclient": "1.1.*@dev",
-        "nesbot/carbon": "dev-master"
+        "nesbot/carbon": "dev-master",
+        "mandrill/mandrill": "dev-master",
+        "league/flysystem-aws-s3-v2": "^1.0@dev",
+        "happyworm/jPlayer": "dev-master"
     },
     "autoload": {
         "psr-4": {"": "app/"}

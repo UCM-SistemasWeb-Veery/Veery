@@ -20,9 +20,17 @@ use \core\router,
     \helpers\url;
 //define routes
 Router::any('', '\controllers\pagesController@index');
-Router::any('login', '\controllers\auth\authController@login');
-Router::any('users/(:any)', '\controllers\usersController@view');
 Router::any('start-broadcast', '\controllers\pagesController@startBroadcast');
+
+Router::any('login', '\controllers\auth\authController@login');
+Router::any('logout', '\controllers\auth\authController@logout');
+Router::any('register', '\controllers\auth\authController@register');
+
+
+Router::any('users/new', '\controllers\usersController@create');
+Router::any('users/verify/(:any)/(:any)', '\controllers\usersController@verify');
+Router::any('users/(:any)', '\controllers\usersController@view');
+
 
 //turn on old style routing
 Router::$fallback = false;

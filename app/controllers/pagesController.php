@@ -17,7 +17,6 @@ class PagesController extends Controller{
         $data['title'] = '';
         $data['feed'] = $this->_model->getFeed();
         $data['js'] = "
-
             <script>
               var container = document.querySelector('#feed-grid');
               var msnry = new Masonry( container, {

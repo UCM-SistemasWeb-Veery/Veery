@@ -18,12 +18,14 @@
 	<meta name="description" content="">
 
 	<link href="<?php echo css_path;?>custom.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo css_path;?>player.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   
 </head>
 <body>
 	<div id="wrapper">
@@ -43,22 +45,29 @@
 				          <a href="/"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
 			          </div>
 			          <div class="col col-5 col-offset-3">
-			          <?php if(!\core\session::get('loggedin')){
-			          		echo '
-			            		<div id="session-controls">
-			            			<div id="login-form">
-			            				<form action="login" method="post">
-			            					<input class="btn inverse small" type="text" name="username" placeholder="Usuario">
-			            					<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
-														<input class="btn primary small center" method="post" type="submit" name="submit" value="acceder">
-			            				</form>
-			            			</div>	            		
-			            		<a href="" class="btn alternate small">Registro</a>
-											<button id="login-button" class="btn alternate small">Login</button>
-											</div>
-			          		';
-
-			          	} ?>
+			          <?php 
+					          if(!\core\session::get('loggedin')){
+					          		echo '
+					            		<div id="session-controls">
+					            			<div id="login-form">
+					            				<form action="login" method="post">
+					            					<input class="btn inverse small" type="text" name="username" placeholder="Usuario">
+					            					<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
+																<input class="btn primary small center" method="post" type="submit" name="submit" value="acceder"></input>
+					            				</form>
+					            			</div>	            		
+						            		<a href="register" class="btn alternate small"><span class="fa fa-pencil-square-o"></span> Registro</a>
+														<a href="" id="login-button" class="btn alternate small"><span class="fa fa-sign-in"></span> Login</a>
+													</div>
+					          		';
+					          	} else {
+					          		echo '
+					            		<div id="session-controls">           		
+														<a href="logout" class="btn alternate small"><span class="fa fa-sign-out"></span> Logout</a>
+													</div>
+					          		';
+					          	} 
+			          	?>
 
 						    <?php
 							/*if(!session_id()) session_start();

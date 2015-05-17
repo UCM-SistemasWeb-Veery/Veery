@@ -2176,8 +2176,8 @@ ul#chat-messages li {
 }
 footer {
   position: fixed;
-  height: 200px;
-  z-index: 999;
+  height: 111px;
+  z-index: 99999;
   width: 100%;
   bottom: 0;
 }
@@ -2546,4 +2546,55 @@ footer #song-timer {
   border-bottom: 1px solid #ebebeb;
   margin-top: 15px;
   margin-right: 5%;
+}
+#banner header #session-controls input .btn.inverse.error {
+  border: 2px solid #e60000 !important;
+}
+#session-controls a.btn {
+  margin: 15px;
+  float: right;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #session-controls a.btn {
+    width: 45%;
+    margin: 2.5px;
+    margin-right: 2.5%;
+    margin-top: 10px;
+  }
+}
+#session-controls input {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 15px;
+  margin-right: 5%;
+}
+#session-controls input.error {
+  border-bottom: 2px solid #e60000 !important;
+}
+.message {
+  width: 83.33333333%;
+  margin-left: 16.66666667%;
+  margin: 0 auto;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.message.error {
+  border: 2px solid #cc0000;
+  background: #e60000;
+  color: white;
+}
+form#complete-registration input {
+  width: 100%;
+  float: none;
+  display: block;
+  margin-left: 0 !important;
+  margin-top: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+form#complete-registration textarea {
+  width: 100%;
+  margin-left: 0 !important;
+  float: none;
+  display: block;
 }

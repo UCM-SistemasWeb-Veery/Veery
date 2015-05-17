@@ -7,7 +7,7 @@
                 	<div class="module-content">
                 		<ul>
                 			<li>
-                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
+                				<p class="bold"><a href="#" data-source="music/seeyouagain.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
                 				<p class="italic">Wiz Khalifa</p>
                 			</li>
                 			<li>
