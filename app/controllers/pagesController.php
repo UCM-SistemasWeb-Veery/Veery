@@ -8,7 +8,7 @@ class PagesController extends Controller{
 
     public function __construct(){
         parent::__construct();
-        $this->_model = new \models\veery();
+        $this->_model = new \models\veeryModel();
     }
     /**
      * Define Index page title and load template files
@@ -16,6 +16,14 @@ class PagesController extends Controller{
     public function index() {
         $data['title'] = '';
         $data['feed'] = $this->_model->getFeed();
+        $data['js'] = "
+
+            <script>
+              var container = document.querySelector('#feed-grid');
+              var msnry = new Masonry( container, {
+              });
+            </script>
+        ";
         View::renderpartial('header', $data);
         View::render('index', $data);
         View::renderpartial('footer', $data);

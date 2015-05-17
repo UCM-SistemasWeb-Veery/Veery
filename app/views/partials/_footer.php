@@ -11,29 +11,7 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="<?php echo js_path?>app.js"></script>
     <script src="<?php echo js_path?>pinterest_grid.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-          if ( $("#menu-toggle").hasClass('open')) {
-
-             $("#menu-toggle").addClass('close');
-             $("#menu-toggle").one('transitionend', function() {
-               $("#menu-toggle").removeClass('open close');
-            });
-
-          } else {
-             $("#menu-toggle").addClass('open');
-          }
-    });
-    </script>
-    <script>
-      var container = document.querySelector('#feed-grid');
-      var msnry = new Masonry( container, {
-      });
-    </script>
+    <?php echo $data['js']; ?>
 </body>
 
 </html>

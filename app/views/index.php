@@ -44,21 +44,21 @@
                             <div class="feed-card '.$size[array_rand($size, 1)].'">
                                 <div class="feed-heading">
                                     <img src="'.$post->userHeader.'" />
-                                    <button class="btn primary small shadow">Follow</button>
+                                    <!--<button class="btn primary small shadow">Follow</button>-->
                                 </div>
                                 <div class="feed-figure shadow">
                                     <img class="circle" src="'.$post->userProfilePicture.'" />
                                 </div>
                                 <div class="feed-body center">
-                                    <h4 class="feed-header"><a href="'.$post->postSlug.'">@usher</a></h4>
+                                    <h4 class="feed-header"><a href="users/'.$post->userSlug.'">@'.$post->userHandle.'</a></h4>
                                     <p>Lulz</p>
                                     <div class="show-on-hover">
                                         <p>'.$post->postContent.'</p>
-                                        <div class="social-buttons">
+                                        <!-- <div class="social-buttons">
                                             <a href="#" class="btn alternate circle"><span class="fa fa-gears"></span></a>
                                             <a href="#" class="btn alternate circle"><span class="fa fa-heart"></span></a>
                                             <a href="#" class="btn alternate circle"><span class="fa fa-bullhorn"></span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
-	<title><?php echo SITETITLE; ?></title> 
+	<title><?php if(isset($data['title'])){ echo $data['title'].' | ';} echo SITETITLE; ?></title> 
 	<meta name="description" content="">
 
 	<link href="<?php echo css_path;?>custom.css" rel="stylesheet" type="text/css">
@@ -72,7 +72,7 @@
             </header>
             <!-- /#header-->
         </div>
-        <div class="row">
+<!--         <div class="row">
 					<nav class="clearfix">
 					    <ul>
 					        <li><a class="btn inverse" href="artist_view.php">My Veery</a></li>
@@ -81,5 +81,5 @@
 					    </ul>
 					    <a href="#" id="pull">Just For You</a>
 					</nav>
-		</div>
+				</div> -->
         <div class="row">
