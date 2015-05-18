@@ -29,6 +29,29 @@ class UserModel extends Model{
 		}
     }
 
+    public function getFollowers($userID)
+    {
+        return $this->_db->select("SELECT followerID FROM vry_followers WHERE userID = :userID", array(':userID' => $userID));
+    }
+
+    public function isFollowing($userID, $followerID)
+    {
+        $isFollowing = false;
+
+        $foundSomething = $this->_db->select("SELECT * FROM vry_followers WHERE userID = :userID AND followerID = :followerID", array(':userID' => $userID, ':followerID' => $followerID));
+
+        if(!empty($foundSomething)){
+            $isFollowing = true;
+        }
+
+        return $isFollowing;
+    }
+
+    public function getFollowing($userID)
+    {
+        return $this->_db->select("SELECT userID FROM vry_followers WHERE followerID = :userID", array(':userID' => $userID));
+    }
+
     public function getAlbums($artistID)
     {
 		return $this->_db->select("SELECT * FROM vry_albums WHERE artistID = :artistID", array(':artistID' => $artistID));    	
@@ -42,14 +65,14 @@ class UserModel extends Model{
     public function getStreams($artistID)
     {
 		return $this->_db->select("SELECT * FROM vry_streams WHERE artistID = :artistID", array(':artistID' => $artistID));    	
-    }   
+    }
 
     public function uniqueUser($userHandle, $userEmail)
     {
         $matchFound = true;
-        
+
         $foundSomething = $this->_db->select("SELECT * FROM vry_users WHERE userHandle = :userHandle OR userEmail = :userEmail", array(':userHandle' => $userHandle, ':userEmail' => $userEmail));
-        
+
         if(!empty($foundSomething)){
             $matchFound = false;
         }

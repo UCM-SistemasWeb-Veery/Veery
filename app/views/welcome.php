@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
-	<title><?php echo 'Welcome | '.SITETITLE; ?></title> 
+	<title><?php echo 'Welcome | '.SITETITLE; ?></title>
 	<meta name="description" content="Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.">
 	<link href="<?php echo css_path;?>custom.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,7 +23,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-   
 </head>
 <body id="welcome">
 	<div id="banner" class="row">
@@ -47,8 +46,8 @@
 	        			<h2>Returning users</h2>
 	        			<div id="login-form">
 	        				<form action="<?php echo PATH.'login'; ?>" method="post">
-	        					<input class="btn inverse small" type="text" name="username" placeholder="Usuario">
-	        					<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
+	        					<input class="btn inverse small" type="text" name="userHandle" placeholder="Usuario">
+	        					<input class="btn inverse small" type="password" name="userPassword" placeholder="Contraseña">
 										<input class="btn alternate small center" type="submit" name="submit" value="acceder">
 	        				</form>
 	        			</div>
@@ -56,20 +55,20 @@
 	        		<div class="welcome-form">
 								<h2>New users</h2>
 								<form id="register" action="<?php echo PATH.'users/new'; ?>" method="post">
-						  		<input class="btn inverse small <?php if(!empty($data['userHandle'])){echo 'error';} ?>" type="text" name="userHandle" placeholder="<?php if(!empty($data['username'])){echo $data['userHandle'];}else{echo 'Usuario';} ?>">
-						  		<input class="btn inverse small <?php if(!empty($data['userEmail'])){echo 'error';} ?>" type="text" name="userEmail" placeholder="<?php if(!empty($data['username'])){echo $data['userHandle'];}else{echo 'Email';} ?>">
-									<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
+						  		<input class="btn inverse small <?php if(!empty($data['userHandle'])){echo 'error';} ?>" type="text" name="userHandle" placeholder="<?php if(!empty($data['userHandle'])){echo $data['userHandle'];}else{echo 'Usuario';} ?>">
+						  		<input class="btn inverse small <?php if(!empty($data['userEmail'])){echo 'error';} ?>" type="text" name="userEmail" placeholder="<?php if(!empty($data['userHandle'])){echo $data['userHandle'];}else{echo 'Email';} ?>">
+									<input class="btn inverse small" type="password" name="userPassword" placeholder="Contraseña">
 									<input class="btn alternate small center" type="submit" name="submit" value="Registrarse">
-								</form>	        		
-							</div>	
-						</div>					
+								</form>
+							</div>
+						</div>
 	        </div>
 	        <div class="filter"></div>
 	        <video autoplay loop muted class="fillWidth">
 	            <source src="http://veery.es/video/uptownfunk.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
 	        <div class="poster">
 	            <img src="http://i.huffpost.com/gen/2629078/images/o-BRUNO-MARS-UPTOWN-FUNK-facebook.jpg" alt="">
-	        </div>    
+	        </div>
 	    </div>
 	</div>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -85,7 +84,7 @@
 			    initBannerVideoSize('.video-container .poster img');
 			    initBannerVideoSize('.video-container .filter');
 			    initBannerVideoSize('.video-container video');
-			        
+
 			    $(window).on('resize', function() {
 			        scaleVideoContainer();
 			        scaleBannerVideoSize('.video-container .poster img');
@@ -107,7 +106,7 @@
 			}
 
 			function initBannerVideoSize(element){
-			    
+
 			    $(element).each(function(){
 			        $(this).data('height', $(this).height());
 			        $(this).data('width', $(this).width());
@@ -123,7 +122,7 @@
 			        windowHeight = $(window).height(),
 			        videoWidth,
 			        videoHeight;
-			    
+
 			    console.log(windowHeight);
 
 			    $(element).each(function(){
@@ -143,11 +142,9 @@
 			        $(this).width(videoWidth).height(videoHeight);
 
 			        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-			        
-
 			    });
-			}  
+			}
   </script>
-	</body>
+</body>
 
-	</html>  
+</html>

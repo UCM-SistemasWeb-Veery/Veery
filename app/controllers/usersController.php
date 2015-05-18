@@ -14,8 +14,12 @@ class UsersController extends Controller{
         $this->_model = new \models\userModel();
     }
 
-    public function view($slug) {        
+    public function view($slug) {
         $data['user'] = $this->_model->getUser($slug);
+        $data['follower'] = false;
+        if($this->_model->isFollowing($data['user'][0]->userID, Session::get('currentUserID'))){
+            $data['follower'] = true;
+        }
         $data['title'] = $data['user'][0]->userName.' '.$data['user'][0]->userLastName;
         $data['posts'] = $this->_model->getUserPosts($data['user'][0]->userID);
         $artistID = $this->_model->isArtist($data['user'][0]->userID);
@@ -31,14 +35,14 @@ class UsersController extends Controller{
         View::renderpartial('footer', $data);
     }
 
-    public function create() {   
+    public function create() {
 
         if(isset($_POST['submit'])){
 
             $userHandle = $_POST['userHandle'];
 
             $userEmail = $_POST['userEmail'];
-            
+
             if(!$this->_model->uniqueUser($userHandle, $userEmail)){
 
 
@@ -49,7 +53,7 @@ class UsersController extends Controller{
                 Url::redirect('register');
                 //View::renderpartial('footer', $data);
 
-            } 
+            }
 
             $user = array(
                     'userHandle' => $userHandle,
@@ -66,7 +70,7 @@ class UsersController extends Controller{
             View::renderpartial('footer', $data);
 
         }
-    }   
+    }
 
     public function verify($userEmail, $userHash)
     {
@@ -115,7 +119,6 @@ class UsersController extends Controller{
                 Session::set('message', 'User Added');
                 Url::redirect('admin/users');
             }*/
-        
         }
 
         $data['user'] = $this->_model->getUserByEmail($userEmail);
@@ -123,6 +126,5 @@ class UsersController extends Controller{
         View::renderpartial('header', $data);
         View::render('complete-registration', $data);
         View::renderpartial('footer', $data);
-     } 
-
+     }
 }

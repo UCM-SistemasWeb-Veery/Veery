@@ -16,16 +16,19 @@ class AuthController extends \core\controller {
         $data['title'] = 'Login';
 
         if(isset($_POST['submit'])){
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            if(password::verify($password, $model->getHash($_POST['username'])) == 0){
+            $userHandle = $_POST['userHandle'];
+            $userPassword = $_POST['userPassword'];
+            if(password::verify($userPassword, $model->getHash($_POST['userHandle'])) == 0){
                 $error[] = 'Usuario o contraseña incorrectos';
-                $data['username'] = $username;
+                $data['userHandle'] = $userHandle;
                 View::renderpartial('header', $data);
                 View::render('register', $data, $error);
                 View::renderpartial('footer', $data);
             }
             else{
+                $userID = $model->getUserId($userHandle);
+                Session::set('currentUserHandle', $userHandle);
+                Session::set('currentUserID', $userID);
                 Session::set('loggedin', true);
                 Url::previous();
             }

@@ -6,10 +6,12 @@ use \core\view,
 
 class PagesController extends Controller{
     private $_model;
+    private $_user;
 
     public function __construct(){
         parent::__construct();
         $this->_model = new \models\veeryModel();
+        $this->_user = new \models\userModel();
     }
     /**
      * Define Index page title and load template files
@@ -19,7 +21,9 @@ class PagesController extends Controller{
         if(!Session::get('loggedin')){
             View::render('welcome');
         }else{
-            $data['feed'] = $this->_model->getFeed();
+            $data['following'] = $this->_user->getFollowing(Session::get('currentUserID'));
+            $data['feed'] = $this->_model->getFeed($data['following']);
+            //var_dump($data['feed']);
             $data['js'] = "
                 <script>
                   var container = document.querySelector('#feed-grid');

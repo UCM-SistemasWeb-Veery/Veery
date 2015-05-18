@@ -1,5 +1,5 @@
-
-	<div id="page-handler" class="col col-10">		
+	<?php var_dump ( $data['follower']); ?>
+	<div id="page-handler" class="col col-10">
 <!--         <div class="row">
 					<nav class="clearfix">
 					    <ul>
@@ -9,7 +9,7 @@
 					    </ul>
 					    <a href="#" id="pull">Just For You</a>
 					</nav>
-				</div> -->									
+				</div> -->
 		<div class="row">
 			<div id="cover-photo" class="phone-hide medium col col-12">
 				<img src="<?php echo PATH.'img/headerPictures/'.$data['user'][0]->userHeader; ?>">
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<?php if(!empty($data['artist']['albums'])){
-			
+
 			echo'
 				<div class="row">
 					<div class="col col-12">
@@ -43,14 +43,14 @@
 					}
 					echo
 					'
-					</div>					
+					</div>
 				</div>
 			';
 
 			} ?>
 
 		<?php if(!empty($data['artist']['videos'])){
-			
+
 			echo'
 				<div class="row">
 					<div class="col col-4">
