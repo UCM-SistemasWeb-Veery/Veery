@@ -37,7 +37,7 @@
 					foreach ($data['artist']['albums'] as $album) {
 						echo
 						'<div class="col col-2 col-offset-1">
-							<a class="artwork" href="albums/'.$album->albumID.'"><img src="'.PATH.'img/albumCovers/'.$album->albumCover.'"></a>
+							<a href="albums/'.$album->albumID.'"><img class="artwork"  src="'.PATH.'img/albumCovers/'.$album->albumCover.'"></a>
 						</div>
 						';
 					}
