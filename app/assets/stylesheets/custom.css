@@ -2759,6 +2759,12 @@ form#complete-registration textarea {
   font-size: 18px;
   color: black;
 }
+@media (max-width: 767px) {
+  .welcome-form h2 {
+    margin: 0;
+    font-size: 10px;
+  }
+}
 .welcome-form form input {
   border-bottom: 1px solid #ebebeb;
   float: none;
@@ -2766,20 +2772,46 @@ form#complete-registration textarea {
   padding: 5px;
   width: 90%;
 }
-.homepage-hero-module {
+@media (max-width: 767px) {
+  .welcome-form form input {
+    margin: 0;
+    font-size: 8px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .welcome-form {
+    padding: 10px;
+  }
+}
+#welcome {
+  padding-bottom: 0px;
+}
+#welcome #banner header {
+  height: 45px;
+}
+#welcome #banner header img#logo {
+  height: 40px;
+}
+#welcome .homepage-hero-module {
   border-right: none;
   border-left: none;
   position: relative;
 }
-.no-video .video-container video,
-.touch .video-container video {
+#welcome .no-video .video-container video,
+#welcome .touch .video-container video {
   display: none;
 }
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important;
+#welcome .poster {
+  display: none;
 }
-.video-container {
+#welcome .no-video .video-container .poster,
+#welcome .touch .video-container .poster {
+  display: block !important;
+  height: 100%;
+  width: auto;
+}
+#welcome .video-container {
   position: relative;
   bottom: 0%;
   left: 0%;
@@ -2788,45 +2820,60 @@ form#complete-registration textarea {
   overflow: hidden;
   background: #000;
 }
-.video-container .poster img {
+#welcome .video-container .poster img {
   width: 100%;
   bottom: 0;
   position: absolute;
 }
-.video-container .filter {
+#welcome .video-container .filter {
   z-index: 100;
   position: absolute;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-.video-container .title-container {
+#welcome .video-container .title-container {
   z-index: 1000;
   position: absolute;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-.video-container .title-container h1,
-.video-container .title-container p {
+#welcome .video-container .title-container h1,
+#welcome .video-container .title-container p {
   text-align: left;
   margin-top: 15%;
 }
-.video-container .title-container h1 {
+#welcome .video-container .title-container h1 {
   text-transform: uppercase;
   font-size: 32px;
   color: white;
 }
-.video-container .title-container p {
+@media (max-width: 767px) {
+  #welcome .video-container .title-container h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+#welcome .video-container .title-container p {
   text-transform: uppercase;
   font-size: 16px;
   color: white;
 }
-.video-container .description .inner {
+@media (max-width: 767px) {
+  #welcome .video-container .title-container p {
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+}
+#welcome .video-container .description .inner {
   font-size: 1em;
   width: 45%;
   margin: 0 auto;
 }
-.video-container .link {
+#welcome .video-container .link {
   position: absolute;
   bottom: 3em;
   width: 100%;
@@ -2835,14 +2882,14 @@ form#complete-registration textarea {
   font-size: 2em;
   color: #fff;
 }
-.video-container .link a {
+#welcome .video-container .link a {
   color: #fff;
 }
-.video-container video {
+#welcome .video-container video {
   position: absolute;
   z-index: 0;
   bottom: 0;
 }
-.video-container video .fillWidth {
+#welcome .video-container video .fillWidth {
   width: 100%;
 }

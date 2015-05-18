@@ -27,15 +27,12 @@
     <![endif]-->
    
 </head>
-<body>
+<body id="welcome">
 
 <div id="banner" class="row">
     <header>
     	<div class="row">
     		<div class="col col-4">
-          <div id="menu-button">
-              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
-          </div> 
           <a href="<?php echo PATH ?>"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
         </div>
     	</div>
@@ -73,6 +70,9 @@
         <div class="filter"></div>
         <video autoplay loop muted class="fillWidth">
             <source src="http://veery.es/video/uptownfunk.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+        <div class="poster">
+            <img src="http://i.huffpost.com/gen/2629078/images/o-BRUNO-MARS-UPTOWN-FUNK-facebook.jpg" alt="">
+        </div>    
     </div>
 </div>
 <!-- /container -->
