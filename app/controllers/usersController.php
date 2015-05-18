@@ -14,8 +14,8 @@ class UsersController extends Controller{
         $this->_model = new \models\userModel();
     }
 
-    public function view($slug) {
-        $data['user'] = $this->_model->getUser($slug);
+    public function view($userHandle) {
+        $data['user'] = $this->_model->getUser($userHandle);
         $data['follower'] = false;
         if($this->_model->isFollowing($data['user'][0]->userID, Session::get('currentUserID'))){
             $data['follower'] = true;
@@ -29,7 +29,34 @@ class UsersController extends Controller{
             $data['artist']['streams'] = $this->_model->getStreams($artistID);
         }
 
-        $data['js'] = "";
+        $data['js'] = "
+        <script>
+            $('#follow').on('click', function(){
+                $(this).removeAttr('id');
+                $(this).attr('id', 'unfollow');
+                $(this).removeClass('alternate');
+                $(this).addClass('primary');
+                $(this).empty();
+                $(this).html('Unfollow <span class=\"fa fa-check-square-o\"></span>');
+                $.ajax({
+                    type: 'POST',
+                    url: '".PATH."user/follow/{$data['user'][0]->userID}'
+                });
+            });
+            $('#unfollow').on('click', function(){
+                $(this).removeAttr('id');
+                $(this).attr('id', 'follow');
+                $(this).removeClass('primary');
+                $(this).addClass('alternate');
+                $(this).empty();
+                $(this).html('Follow <span class=\"fa fa-plus\"></span>');
+                $.ajax({
+                    type: 'POST',
+                    url: '".PATH."user/unfollow/{$data['user'][0]->userID}'
+                });
+            });
+        </script>
+        ";
         View::renderpartial('header', $data);
         View::render('user/view', $data);
         View::renderpartial('footer', $data);
@@ -126,5 +153,17 @@ class UsersController extends Controller{
         View::renderpartial('header', $data);
         View::render('complete-registration', $data);
         View::renderpartial('footer', $data);
+     }
+
+     public function followUser($userID)
+     {
+        if(!$this->_model->isFollowing($userID, Session::get('currentUserID'))){
+            $this->_model->followUser($userID, Session::get('currentUserID'));
+        }
+
+     }
+     public function unfollowUser($userID)
+     {
+        $this->_model->unfollowUser($userID, Session::get('currentUserID'));
      }
 }

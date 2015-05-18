@@ -1337,6 +1337,7 @@ body {
 }
 #page-handler {
   padding: 25px;
+  padding-top: 0;
 }
 #page-handler .btn {
   margin: 15px;
@@ -2902,4 +2903,49 @@ html#landing {
 }
 #welcome .video-container video .fillWidth {
   width: 100%;
+}
+#userPosts {
+  padding: 25px;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+#userPosts img {
+  border-radius: 2px;
+  min-height: 150%;
+  width: 100%;
+}
+#userPosts.small {
+  height: 300px;
+}
+#userPosts.medium {
+  height: 400px;
+}
+#userPosts.large {
+  height: 500px;
+}
+#userPosts#main {
+  position: relative;
+}
+#userPosts#main h2.main-title {
+  position: absolute;
+  bottom: 85px;
+  left: 5%;
+  font-size: 3.5em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #4f4f4f;
+}
+#userPosts#main a.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px #4f4f4f;
+}
+#userPosts .post {
+  border-bottom: 1px solid #ebebeb;
 }

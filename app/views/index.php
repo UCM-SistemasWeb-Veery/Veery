@@ -50,7 +50,7 @@
                                     <img class="circle" src="'.PATH.'img/profilePictures/'.$post->userProfilePicture.'" />
                                 </div>
                                 <div class="feed-body center">
-                                    <h4 class="feed-header"><a href="users/'.$post->userSlug.'">@'.$post->userHandle.'</a></h4>
+                                    <h4 class="feed-header"><a href="user/'.$post->userHandle.'">@'.$post->userHandle.'</a></h4>
                                     <p>Lulz</p>
                                     <div class="show-on-hover">
                                         <p>'.$post->postContent.'</p>

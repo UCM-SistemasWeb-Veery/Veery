@@ -3,9 +3,9 @@ require_once 'vendor/mandrill/mandrill/src/Mandrill.php';
 use \core\model as Model;
 
 class UserModel extends Model{
-    public function getUser($userSlug)
+    public function getUser($userHandle)
     {
-        return $this->_db->select("SELECT * FROM vry_users WHERE userSlug = :userSlug", array(':userSlug' => $userSlug));
+        return $this->_db->select("SELECT * FROM vry_users WHERE userHandle = :userHandle", array(':userHandle' => $userHandle));
     }
 
     public function getUserByEmail($userEmail)
@@ -45,6 +45,24 @@ class UserModel extends Model{
         }
 
         return $isFollowing;
+    }
+
+    public function followUser($userID, $followerID)
+    {
+        $relationID = array(
+            'userID' => $userID,
+            'followerID' => $followerID
+        );
+        $this->_db->insert('vry_followers', $relationID);
+    }
+
+    public function unfollowUser($userID, $followerID)
+    {
+        $relationID = array(
+            'userID' => $userID,
+            'followerID' => $followerID
+        );
+        $this->_db->delete('vry_followers', $relationID);
     }
 
     public function getFollowing($userID)
@@ -113,12 +131,12 @@ class UserModel extends Model{
             echo 'A mandrill error occurred: ' . get_class($e) . ' - ' . $e->getMessage();
             // A mandrill error occurred: Mandrill_Unknown_Subaccount - No subaccount exists with the id 'customer-123'
             throw $e;
-        }        
+        }
     }
 
     public function verifyUser($user,  $where)
      {
          $this->_db->update("vry_users", $user, $where);
-     }     
+     }
 }
 

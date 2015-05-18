@@ -10,7 +10,7 @@
 	  		<textarea name="userBio"><?php if(!empty($data['user'][0]->userBio)){echo $data['user'][0]->userBio;}else{echo '<p>This is your Bio</p>';}?></textarea>
 	  		<input type="file" name="userProfilePicture">
 	  		<input type="file" name="userHeader">
-				<input class="btn primary small center" type="submit" name="submit" value="Terminar">
+			<input class="btn primary small center" type="submit" name="submit" value="Terminar">
 			</form>
 		</div>
 	</div>
