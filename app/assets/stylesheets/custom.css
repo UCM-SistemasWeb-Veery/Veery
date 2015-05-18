@@ -2601,3 +2601,248 @@ form#complete-registration textarea {
   float: none;
   display: block;
 }
+.welcome-party {
+  margin-top: 25px;
+}
+.welcome-party h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: white;
+}
+.welcome-form {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0.33333333rem 0.33333333rem 0.33333333rem;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  display: block;
+  margin: 15px;
+  padding: 25px;
+}
+.welcome-form .module-title {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.welcome-form .module-title.activator {
+  cursor: pointer;
+}
+.welcome-form.small,
+.welcome-form.medium,
+.welcome-form.large {
+  position: relative;
+}
+.welcome-form.small .module-header,
+.welcome-form.medium .module-header,
+.welcome-form.large .module-header {
+  overflow: hidden;
+}
+.welcome-form.small .module-content,
+.welcome-form.medium .module-content,
+.welcome-form.large .module-content {
+  overflow: hidden;
+}
+.welcome-form.small .module-action,
+.welcome-form.medium .module-action,
+.welcome-form.large .module-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.welcome-form.small {
+  height: 300px;
+}
+.welcome-form.small .module-header.small {
+  height: 32.5px;
+}
+.welcome-form.small .module-header.medium {
+  height: 75px;
+}
+.welcome-form.small .module-header.large {
+  height: 150px;
+}
+.welcome-form.small .module-content {
+  height: 150px;
+}
+.welcome-form.medium {
+  height: 400px;
+}
+.welcome-form.medium .module-header.small {
+  height: 62.5px;
+}
+.welcome-form.medium .module-header.medium {
+  height: 125px;
+}
+.welcome-form.medium .module-header.large {
+  height: 250px;
+}
+.welcome-form.medium .module-content {
+  height: auto;
+}
+.welcome-form.large {
+  height: 500px;
+}
+.welcome-form.large .module-header.small {
+  height: 82.5px;
+}
+.welcome-form.large .module-header.medium {
+  height: 165px;
+}
+.welcome-form.large .module-header.large {
+  height: 330px;
+}
+.welcome-form.large .module-content {
+  height: 170px;
+}
+.welcome-form .module-header {
+  position: relative;
+}
+.welcome-form .module-header img {
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.welcome-form .module-header .module-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.welcome-form .module-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+.welcome-form .module-content p {
+  margin: 0;
+  color: inherit;
+}
+.welcome-form .module-content .module-title {
+  line-height: 48px;
+}
+.welcome-form .module-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+.welcome-form .module-action a {
+  color: #f3d458;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.welcome-form .module-action a:hover {
+  color: #faedb7;
+}
+.welcome-form .module-reveal {
+  padding: 20px;
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  overflow-y: auto;
+  top: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.welcome-form .module-reveal .module-title {
+  cursor: pointer;
+  display: block;
+}
+.welcome-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: black;
+}
+.welcome-form form input {
+  border-bottom: 1px solid #ebebeb;
+  float: none;
+  margin: 15px;
+  padding: 5px;
+  width: 90%;
+}
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .title-container h1,
+.video-container .title-container p {
+  text-align: left;
+  margin-top: 15%;
+}
+.video-container .title-container h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: white;
+}
+.video-container .title-container p {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video .fillWidth {
+  width: 100%;
+}
