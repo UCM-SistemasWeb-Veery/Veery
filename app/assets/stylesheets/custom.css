@@ -2784,11 +2784,19 @@ form#complete-registration textarea {
     padding: 10px;
   }
 }
+html#landing {
+  overflow: hidden;
+}
 #welcome {
   padding-bottom: 0px;
+  /*.no-video .video-container .poster{
+	  display: block !important;
+	  height: 100%;
+	  width: auto;
+	}*/
 }
 #welcome #banner header {
-  height: 45px;
+  height: 50px;
 }
 #welcome #banner header img#logo {
   height: 40px;
@@ -2798,18 +2806,20 @@ form#complete-registration textarea {
   border-left: none;
   position: relative;
 }
-#welcome .no-video .video-container video,
-#welcome .touch .video-container video {
-  display: none;
+@media (max-width: 767px) {
+  #welcome .video-container video {
+    display: none;
+  }
 }
 #welcome .poster {
   display: none;
 }
-#welcome .no-video .video-container .poster,
-#welcome .touch .video-container .poster {
-  display: block !important;
-  height: 100%;
-  width: auto;
+@media (max-width: 767px) {
+  #welcome .poster {
+    display: block !important;
+    height: 100%;
+    width: auto;
+  }
 }
 #welcome .video-container {
   position: relative;

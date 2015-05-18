@@ -363,9 +363,12 @@ form{
 		padding: 10px;
 	}
 }
+html#landing{
+	overflow:hidden;
+}
 #welcome{
 	#banner header{
-		height: 45px;
+		height: 50px;
 		img#logo{
 			height: 40px;
 		}
@@ -376,19 +379,25 @@ form{
 	  border-left: none;
 	  position: relative;
 	}
-	.no-video .video-container video,
-	.touch .video-container video {
-	  display: none;
+	.video-container video{
+		@media(max-width: 767px){
+	  	display: none;
+		}	
 	}
 	.poster{
 		display: none;
+
+		@media(max-width: 767px){
+		  display: block !important;
+		  height: 100%;
+		  width: auto;
+		}
 	}
-	.no-video .video-container .poster,
-	.touch .video-container .poster {
+	/*.no-video .video-container .poster{
 	  display: block !important;
 	  height: 100%;
 	  width: auto;
-	}
+	}*/
 	.video-container {
 	  position: relative;
 	  bottom: 0%;
