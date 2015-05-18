@@ -7,23 +7,23 @@
                 	<div class="module-content">
                 		<ul>
                 			<li>
-                				<p class="bold"><a href="#" data-source="music/seeyouagain.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
+                				<p class="bold"><a href="#" data-source="<?php echo PATH; ?>music/seeyouagain.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> See You Again (feat. Charlie Puth)</p>
                 				<p class="italic">Wiz Khalifa</p>
                 			</li>
                 			<li>
-                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Uptown Funk!</p>
+                				<p class="bold"><a href="#" data-source="<?php echo PATH; ?>music/uptownfunk.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> Uptown Funk!</p>
                 				<p class="italic">Mark Ronson</p>
                 			</li>
                 			<li>
-                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Sugar</p>
+                				<p class="bold"><a href="#" data-source="<?php echo PATH; ?>music/sugar.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> Sugar</p>
                 				<p class="italic">Maroon 5</p>
                 			</li>
                 			<li>
-                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Trap Queen</p>
+                				<p class="bold"><a href="#" data-source="<?php echo PATH; ?>music/trapqueen.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> Trap Queen</p>
                 				<p class="italic">Fetty Wap</p>
                 			</li>
                 			<li>
-                				<p class="bold"><a href="reproduccion.php" class="btn inverse circle"><span class="fa fa-play"></span></a> Thinking Out Loud</p>
+                				<p class="bold"><a href="#" data-source="<?php echo PATH; ?>music/thinkingoutloud.mp3" class="btn inverse circle music-link"><span class="fa fa-play"></span></a> Thinking Out Loud</p>
                 				<p class="italic">The Weeknd</p>
                 			</li>
                 		</ul>

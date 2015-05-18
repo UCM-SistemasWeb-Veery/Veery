@@ -1,6 +1,7 @@
 <?php namespace controllers;
 
 use \core\view as View,
+    \core\session as Session,
     \core\controller as Controller,
     \core\url as Url,
     controllers\auth\passwordController as password;
@@ -71,7 +72,7 @@ class UsersController extends Controller{
     {
 
         $data['title'] = 'Complete registration';
-
+        Session::set('loggedin', true);
         if(isset($_POST['submit'])){
             $userName = $_POST['userName'];
             $userLastName = $_POST['userLastName'];

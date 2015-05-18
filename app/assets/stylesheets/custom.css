@@ -1215,6 +1215,7 @@ body {
 }
 .feed-card .feed-figure img {
   width: 70px;
+  height: 70px;
 }
 .feed-card .feed-body {
   padding-top: 40px;

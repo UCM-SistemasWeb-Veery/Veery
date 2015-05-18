@@ -78,6 +78,7 @@
   <script type="text/javascript">
     $('.music-link').on('click', function(e) {
       e.preventDefault();
+      $("#jquery_jplayer_1").jPlayer("destroy");
       var mp3 = $(this).attr('data-source');
       //$('#jquery_jplayer_1').jPlayer('setMedia', {mp3:mp3}),jPlayer('play');
       $("#jquery_jplayer_1").jPlayer( {
@@ -85,11 +86,9 @@
           $(this).jPlayer("setMedia", { // Set the media
             mp3: mp3
           }).jPlayer("play"); // Attempt to auto play the media
-        },
-        ended: function() { // The $.jPlayer.event.ended event
-          $(this).jPlayer("play"); // Repeat the media
-        },
-        supplied: "mp3"
+        },       
+        supplied: "mp3",
+        keyEnabled: true,
       });        
     });
   </script>

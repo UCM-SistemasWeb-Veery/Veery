@@ -12,12 +12,12 @@
 				</div> -->									
 		<div class="row">
 			<div id="cover-photo" class="phone-hide medium col col-12">
-				<img src="<?php echo $data['user'][0]->userHeader; ?>">
+				<img src="<?php echo PATH.'img/headerPictures/'.$data['user'][0]->userHeader; ?>">
 			</div>
 		</div>	
 		<div id="profile-intro" class="row">	
 			<div id="profile-picture" class="col col-3 col-offset-1">
-				<img src="<?php echo $data['user'][0]->userProfilePicture; ?>">
+				<img src="<?php echo PATH.'img/profilePictures/'.$data['user'][0]->userProfilePicture; ?>">
 			</div>
 			<div class="col col-7 col-offset-1">
 				<h1><?php echo $data['user'][0]->userName.' '.$data['user'][0]->userLastName ?></h1>
@@ -37,7 +37,7 @@
 					foreach ($data['artist']['albums'] as $album) {
 						echo
 						'<div class="col col-2 col-offset-1">
-							<a class="artwork" href="albums/'.$album->albumID.'"><img src="'.$album->albumCover.'"></a>
+							<a class="artwork" href="albums/'.$album->albumID.'"><img src="'.PATH.'img/albumCovers/'.$album->albumCover.'"></a>
 						</div>
 						';
 					}
