@@ -38,7 +38,7 @@
 		<?php if(!empty($data['artist']['albums'])){
 
 			echo'
-				<div class="row">
+				<div class="row profile-content">
 					<div class="col col-12">
 						<h2>Discografía</h2>
 					</div>
@@ -62,7 +62,7 @@
 		<?php if(!empty($data['artist']['videos'])){
 
 			echo'
-				<div class="row">
+				<div class="row  profile-content">
 					<div class="col col-4">
 						<div class="col col-12">
 							<h2>Video</h2>
@@ -88,7 +88,7 @@
 
 			<?php if(!empty($data['artist']['streams'])){
 				echo'
-					<div class="row">
+					<div class="row  profile-content">
 						<div class="col col-4">
 							<div class="col col-12">
 								<h2>Streamings</h2>
@@ -111,7 +111,7 @@
 						';
 
 			} ?>
-			<div class="row">
+			<div class="row  profile-content">
 				<div class="col col-8 col-offset-2">
 					<div id="userPosts">
 						<h3><?php echo '@'.$data['user'][0]->userHandle; ?>'s Posts</h3>

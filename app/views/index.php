@@ -1,5 +1,14 @@
 
-
+         <div class="row">
+            <nav class="clearfix">
+                <ul>
+                    <li><a class="btn inverse active" href="<?php echo PATH; ?>">Home</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'user/'.\core\session::get('currentUserHandle'); ?>">My Veery</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'post/create'; ?>">Add Post</a></li>
+                </ul>
+                <a href="#" id="pull">Just For You</a>
+            </nav>
+        </div>
         <div id="feed-stream" class="col col-10">
             <div class="row">
                 <div class="col col-9">
