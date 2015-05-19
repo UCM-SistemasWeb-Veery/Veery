@@ -16,7 +16,7 @@ class Url{
 				$url = PATH.$url;
 
 			}
-			
+
 			header('Location: '.$url);
 		}
 
@@ -46,5 +46,5 @@ class Url{
 			//Removing more than one dashes
 			$slug = preg_replace('/\-{2,}/', '-', $slug);
 			return $slug;
-		}		
+		}
 }

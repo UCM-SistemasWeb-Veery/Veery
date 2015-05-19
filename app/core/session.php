@@ -67,31 +67,7 @@ class Session{
         }
         return false;
     }
-
-    /**
-     * @return string with the session id.
-     */
-    public static function id() {
-        return session_id();
-    }
-
-    /**
-     * regenerate session_id
-     * @return string session_id
-     */
-    public static function regenerate(){
-        session_regenerate_id();
-        return session_id();
-    }
-
-    /**
-     * return the session array
-     * @return array of session indexes
-     */
-    public static function display(){
-        return $_SESSION;
-    }
-
+    
     /**
      * empties and destroys the session
      */

@@ -189,12 +189,4 @@ class Database extends PDO{
 
     }
 
-    /**
-     * truncate table
-     * @param  string $table table name
-     */
-    public function truncate($table){
-        return $this->exec("TRUNCATE TABLE $table");
-    }
-
 }
