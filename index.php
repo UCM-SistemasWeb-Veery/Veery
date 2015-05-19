@@ -37,6 +37,7 @@ Router::any('user/(:any)', '\controllers\usersController@view');
 Router::any('post/create', '\controllers\postsController@create');
 Router::any('post/(:any)', '\controllers\postsController@view');
 
+Router::any('invite', '\controllers\invitesController@sendInvites');
 
 //turn on old style routing
 Router::$fallback = false;
