@@ -9,7 +9,6 @@ class VeeryModel extends Model{
         //$userFollowing[] = \models\userModel::getFollowers($userID);
         //return $userFollowing;
         //return $this->_db->select("SELECT * FROM vry_user_posts INNER JOIN vry_users ON vry_user_posts.userID=vry_users.userID ORDER BY vry_user_posts.postDate DESC LIMIT :limit ", array(':limit' => $limit));
-        
         //$in = join(',', $userID);
         $posts = array();
         $feed = array();
@@ -31,6 +30,10 @@ class VeeryModel extends Model{
 
     public function getPost($slug){
         return $this->_db->select("SELECT * FROM vry_user_posts WHERE slug = :slug", array(':slug' => $slug));
+    }
+
+    public function search($regex){
+        return $this->_db->select("SELECT * FROM vry_users WHERE userHandle like :userHandle", array(':userHandle' => '%'.$regex.'%'));
     }
 }
 

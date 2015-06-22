@@ -488,3 +488,40 @@ html#landing{
 		border-bottom: 1px solid darken(@gray-light, 5%);
 	}
 }
+.sidebar-nav{
+	form{
+		display: block;
+		float: none;
+		padding-left: 25px;
+		input{
+			display: block;
+			float: none;
+			background: white;
+			color: @gray-dark;
+			cursor: default;
+		}
+	}
+	#searchResults{
+		display: block;
+		list-style: none;
+		padding-left: 0;
+		background: white;
+		border: 2px solid @yellow-dark;
+		width: 190px;
+		font-size: 12px;
+		li{
+			> ul{
+				list-style: none;
+				padding-left: 0;
+				li{
+					a{
+						&:hover{
+							background-color: @yellow-light;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

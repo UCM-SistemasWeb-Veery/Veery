@@ -30,7 +30,7 @@
                 	</div>
 
                 </div>
-                <div class="module medium top-video">
+                <!--<div class="module medium top-video">
                 	<div class="module-header small yellow-dark-background">
                 		<span class="module-title"><span class="fa fa-video-camera"></span> Top Video </span>
                 	</div>
@@ -58,6 +58,6 @@
                             </li>
                 		</ul>
                 	</div>
-                </div>
+                </div>-->
             </div>
         </div>

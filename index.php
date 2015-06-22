@@ -21,6 +21,7 @@ use \core\router,
 //define routes
 Router::any('', '\controllers\pagesController@index');
 Router::any('start-broadcast', '\controllers\pagesController@startBroadcast');
+Router::any('search/(:any)', '\controllers\pagesController@search');
 
 Router::any('login', '\controllers\auth\authController@login');
 Router::any('logout', '\controllers\auth\authController@logout');
@@ -31,6 +32,7 @@ Router::any('users/create', '\controllers\usersController@create');
 Router::any('users/verify/(:any)/(:any)', '\controllers\usersController@verify');
 Router::any('users/follow/(:any)', '\controllers\usersController@followUser');
 Router::any('users/unfollow/(:any)', '\controllers\usersController@unfollowUser');
+Router::any('users/(:any)/edit', '\controllers\usersController@edit');
 Router::any('users/(:any)', '\controllers\usersController@view');
 
 

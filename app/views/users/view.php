@@ -3,9 +3,10 @@
          <div class="row">
 			<nav class="clearfix">
 			    <ul>
-			    	<li><a class="btn inverse" href="<?php echo PATH; ?>">Home</a></li>
-			    	<li><a class="btn inverse <?php if(!strcmp($data['user'][0]->userID, \core\session::get('currentUserID'))){ echo 'active';} ?>" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>">My Veery</a></li>
-			        <li><a class="btn inverse" href="<?php echo PATH.'posts/create'; ?>">Add Post</a></li>
+			    	<li><a class="btn inverse" href="<?php echo PATH; ?>"><span class="fa fa-home"></span> Home</a></li>
+			    	<li><a class="btn inverse <?php if(!strcmp($data['user'][0]->userID, \core\session::get('currentUserID'))){ echo 'active';} ?>" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>"><span class="fa fa-user"></span> My Veery</a></li>
+			        <li><a class="btn inverse" href="<?php echo PATH.'posts/create'; ?>"><span class="fa fa-plus"></span> Add Post</a></li>
+			        <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle').'/edit'; ?>"><span class="fa fa-pencil-square-o"></span> Editar</a></li>
 			    </ul>
 			    <a href="#" id="pull">Just For You</a>
 			</nav>

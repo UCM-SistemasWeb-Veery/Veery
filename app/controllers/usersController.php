@@ -40,7 +40,7 @@ class UsersController extends Controller{
                     $(this).html('Unfollow <span class=\"fa fa-check-square-o\"></span>');
                     $.ajax({
                         type: 'POST',
-                        url: '".PATH."user/follow/{$data['user'][0]->userID}'
+                        url: '".PATH."users/follow/{$data['user'][0]->userID}'
                     });
                 });
                 $('#unfollow').on('click', function(){
@@ -52,7 +52,7 @@ class UsersController extends Controller{
                     $(this).html('Follow <span class=\"fa fa-plus\"></span>');
                     $.ajax({
                         type: 'POST',
-                        url: '".PATH."user/unfollow/{$data['user'][0]->userID}'
+                        url: '".PATH."users/unfollow/{$data['user'][0]->userID}'
                     });
                 });
             </script>
@@ -96,11 +96,50 @@ class UsersController extends Controller{
         }
     }
 
+    public function edit($userHandle) {
+        $data['title'] = 'Editar perfil';
+        $data['user'] = $this->_model->getUser($userHandle);
+        if(isset($_POST['submit'])){
+
+            $userEmail = $_POST['userEmail'];
+            $user['userEmail'] = $userEmail;
+
+            $userName = $_POST['userName'];
+            $user['userName'] = $userName;
+
+            $userLastName = $_POST['userLastName'];
+            $user['userLastName'] = $userLastName;
+
+            $userBio = $_POST['userBio'];
+            $user['userBio'] = $userBio;
+            var_dump(empty($_FILES['userProfilePicture']['name']));
+            if(!empty($_FILES['userProfilePicture']['name'])){
+                $userProfilePicture = $_FILES['userProfilePicture']['name'];
+                move_uploaded_file($_FILES['userProfilePicture']['tmp_name'], 'img/profilePictures/'.$userProfilePicture);
+                $user['userProfilePicture'] = $userProfilePicture;
+            }
+            if(!empty($_FILES['userHeader']['name'])){
+                $userHeader = $_FILES['userHeader']['name'];
+                move_uploaded_file($_FILES['userHeader']['tmp_name'], 'img/headerPictures/'.$userHeader);
+                $user['userHeader'] = $userHeader;
+            }
+
+
+            $data['user'] = $this->_model->getUserByEmail($userEmail);
+            $where = array('userID' => $data['user'][0]->userID);
+            $this->_model->updateUser($user, $where);
+            $data['title'] = $data['user'][0]->userHandle;
+            Url::redirect('users/'.$data['user'][0]->userHandle);
+        }
+        View::renderpartial('header', $data);
+        View::render('users/edit', $data);
+        View::renderpartial('footer', $data);
+    }
+
     public function verify($userEmail, $userHash)
     {
 
         $data['title'] = 'Complete registration';
-        Session::set('loggedin', true);
         if(isset($_POST['submit'])){
             $userName = $_POST['userName'];
             $userLastName = $_POST['userLastName'];

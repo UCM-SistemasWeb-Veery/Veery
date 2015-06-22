@@ -134,9 +134,14 @@ class UserModel extends Model{
         }
     }
 
-    public function verifyUser($user,  $where)
-     {
+    public function updateUser($user,  $where)
+    {
          $this->_db->update("vry_users", $user, $where);
-     }
+    }
+
+    public function verifyUser($user,  $where)
+    {
+         $this->_db->update("vry_users", $user, $where);
+    }
 }
 

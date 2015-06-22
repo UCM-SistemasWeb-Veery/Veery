@@ -1,10 +1,10 @@
-
          <div class="row">
             <nav class="clearfix">
                 <ul>
-                    <li><a class="btn inverse active" href="<?php echo PATH; ?>">Home</a></li>
-                    <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>">My Veery</a></li>
-                    <li><a class="btn inverse" href="<?php echo PATH.'posts/create'; ?>">Add Post</a></li>
+                    <li><a class="btn inverse active" href="<?php echo PATH; ?>"><span class="fa fa-home"></span> Home</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>"><span class="fa fa-user"></span> My Veery</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'posts/create'; ?>"><span class="fa fa-plus"></span> Add Post</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle').'/edit'; ?>"><span class="fa fa-pencil-square-o"></span> Editar</a></li>
                 </ul>
                 <a href="#" id="pull">Just For You</a>
             </nav>
@@ -59,7 +59,7 @@
                                     <img class="circle" src="'.PATH.'img/profilePictures/'.$post->userProfilePicture.'" />
                                 </div>
                                 <div class="feed-body center">
-                                    <h4 class="feed-header"><a href="user/'.$post->userHandle.'">@'.$post->userHandle.'</a></h4>
+                                    <h4 class="feed-header"><a href="users/'.$post->userHandle.'">@'.$post->userHandle.'</a></h4>
                                     <p>Lulz</p>
                                     <div class="show-on-hover">
                                         <p>'.$post->postContent.'</p>

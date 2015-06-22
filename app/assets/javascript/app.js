@@ -21,4 +21,12 @@
       $("#login-button").css('display', 'none');
     });
 
-
+      function showResult(str) {
+          $.ajax({
+              url: "http://www.veery.es/search/"+str,
+              type: "get",
+              dataType: "html"
+          }).done(function(data) {
+              $("#livesearch").html(data);
+          });
+      }

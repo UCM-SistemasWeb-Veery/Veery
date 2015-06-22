@@ -24,17 +24,37 @@ class PagesController extends Controller{
             $data['following'] = $this->_user->getFollowing(Session::get('currentUserID'));
             $data['feed'] = $this->_model->getFeed($data['following']);
             //var_dump($data['feed']);
-            $data['js'] = "
+            $data['js'] = '
                 <script>
-                  var container = document.querySelector('#feed-grid');
+                  var container = document.querySelector("#feed-grid");
                   var msnry = new Masonry( container, {
                   });
+
                 </script>
-            ";
+            ';
             View::renderpartial('header', $data);
             View::render('index', $data);
             View::renderpartial('footer', $data);
         }
+    }
+
+    public function search($regex)
+    {
+        $results = $this->_model->search($regex);
+        $view = '<ul id="searchResults">';
+        $view .= '<li class="responseHeader"><span class="fa fa-users"></span> Usuarios</li>';
+        if($results == NULL){
+            $view .= '<li>No se encontraron resultados...</li>';
+        }
+            foreach ($results as $result) {
+                $view .= '<li>';
+                    $view .= '<ul>';
+                        $view .=  '<li><a href="'.PATH.'users/'.$result->userHandle.'"><span class="fa fa-user"></span> '.$result->userHandle.'</a></li>';
+                    $view .= '</ul>';
+                $view .= '</li>';
+            }
+        $view .= '</ul>';
+        echo $view;
     }
 
     /*public function startBroadcast(){

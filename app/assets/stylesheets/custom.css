@@ -2954,3 +2954,31 @@ html#landing {
 #userPosts .post {
   border-bottom: 1px solid #ebebeb;
 }
+.sidebar-nav form {
+  display: block;
+  float: none;
+  padding-left: 25px;
+}
+.sidebar-nav form input {
+  display: block;
+  float: none;
+  background: white;
+  color: #4f4f4f;
+  cursor: default;
+}
+.sidebar-nav #searchResults {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  background: white;
+  border: 2px solid #f39c12;
+  width: 190px;
+  font-size: 12px;
+}
+.sidebar-nav #searchResults li > ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar-nav #searchResults li > ul li a:hover {
+  background-color: #f3d458;
+}
