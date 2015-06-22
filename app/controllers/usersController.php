@@ -15,7 +15,9 @@ class UsersController extends Controller{
     }
 
     public function view($userHandle) {
+        var_dump($userHandle);
         $data['user'] = $this->_model->getUser($userHandle);
+        var_dump($data['user']);
         $data['follower'] = false;
         if($this->_model->isFollowing($data['user'][0]->userID, Session::get('currentUserID'))){
             $data['follower'] = true;
@@ -30,32 +32,32 @@ class UsersController extends Controller{
         }
 
         $data['js'] = "
-        <script>
-            $('#follow').on('click', function(){
-                $(this).removeAttr('id');
-                $(this).attr('id', 'unfollow');
-                $(this).removeClass('alternate');
-                $(this).addClass('primary');
-                $(this).empty();
-                $(this).html('Unfollow <span class=\"fa fa-check-square-o\"></span>');
-                $.ajax({
-                    type: 'POST',
-                    url: '".PATH."user/follow/{$data['user'][0]->userID}'
+            <script>
+                $('#follow').on('click', function(){
+                    $(this).removeAttr('id');
+                    $(this).attr('id', 'unfollow');
+                    $(this).removeClass('alternate');
+                    $(this).addClass('primary');
+                    $(this).empty();
+                    $(this).html('Unfollow <span class=\"fa fa-check-square-o\"></span>');
+                    $.ajax({
+                        type: 'POST',
+                        url: '".PATH."user/follow/{$data['user'][0]->userID}'
+                    });
                 });
-            });
-            $('#unfollow').on('click', function(){
-                $(this).removeAttr('id');
-                $(this).attr('id', 'follow');
-                $(this).removeClass('primary');
-                $(this).addClass('alternate');
-                $(this).empty();
-                $(this).html('Follow <span class=\"fa fa-plus\"></span>');
-                $.ajax({
-                    type: 'POST',
-                    url: '".PATH."user/unfollow/{$data['user'][0]->userID}'
+                $('#unfollow').on('click', function(){
+                    $(this).removeAttr('id');
+                    $(this).attr('id', 'follow');
+                    $(this).removeClass('primary');
+                    $(this).addClass('alternate');
+                    $(this).empty();
+                    $(this).html('Follow <span class=\"fa fa-plus\"></span>');
+                    $.ajax({
+                        type: 'POST',
+                        url: '".PATH."user/unfollow/{$data['user'][0]->userID}'
+                    });
                 });
-            });
-        </script>
+            </script>
         ";
         View::renderpartial('header', $data);
         View::render('user/view', $data);
@@ -71,31 +73,28 @@ class UsersController extends Controller{
             $userEmail = $_POST['userEmail'];
 
             if(!$this->_model->uniqueUser($userHandle, $userEmail)){
-
-
                 $data['title'] = 'Registro';
-                var_dump($this->_model->uniqueUser($userHandle, $userEmail));
                 $error[] = "El usuario ya existe.";
-                //View::renderpartial('header', $data);
-                Url::redirect('register');
-                //View::renderpartial('footer', $data);
+                View::renderpartial('header', $data);
+                View::render('register', $error);
+                View::renderpartial('footer', $data);
 
             }
+            else{
+                $user = array(
+                        'userHandle' => $userHandle,
+                        'userPassword' => password::make($_POST['userPassword']),
+                        'userEmail' => $userEmail,
+                        'userHash' => password::make($userHandle)
+                );
 
-            $user = array(
-                    'userHandle' => $userHandle,
-                    'userPassword' => password::make($_POST['password']),
-                    'userEmail' => $userEmail,
-                    'userHash' => password::make($userHandle)
-            );
+                $this->_model->createUser($user);
 
-            $this->_model->createUser($user);
-
-            $data['message'][0] = 'Your account has been created. Please verify your email to complete registration.';
-            View::renderpartial('header', $data);
-            View::render('register', $data);
-            View::renderpartial('footer', $data);
-
+                $data['message'][0] = 'Your account has been created. Please verify your email to complete registration.';
+                View::renderpartial('header', $data);
+                View::render('register', $data);
+                View::renderpartial('footer', $data);
+            }
         }
     }
 

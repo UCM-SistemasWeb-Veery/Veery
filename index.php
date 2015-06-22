@@ -27,15 +27,15 @@ Router::any('logout', '\controllers\auth\authController@logout');
 Router::any('register', '\controllers\auth\authController@register');
 
 
-Router::any('user/create', '\controllers\usersController@create');
-Router::any('user/verify/(:any)/(:any)', '\controllers\usersController@verify');
-Router::any('user/follow/(:any)', '\controllers\usersController@followUser');
-Router::any('user/unfollow/(:any)', '\controllers\usersController@unfollowUser');
-Router::any('user/(:any)', '\controllers\usersController@view');
+Router::any('users/create', '\controllers\usersController@create');
+Router::any('users/verify/(:any)/(:any)', '\controllers\usersController@verify');
+Router::any('users/follow/(:any)', '\controllers\usersController@followUser');
+Router::any('users/unfollow/(:any)', '\controllers\usersController@unfollowUser');
+Router::any('users/(:any)', '\controllers\usersController@view');
 
 
-Router::any('post/create', '\controllers\postsController@create');
-Router::any('post/(:any)', '\controllers\postsController@view');
+Router::any('posts/create', '\controllers\postsController@create');
+Router::any('posts/(:any)', '\controllers\postsController@view');
 
 Router::any('invite', '\controllers\invitesController@sendInvites');
 

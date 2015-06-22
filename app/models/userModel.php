@@ -105,13 +105,13 @@ class UserModel extends Model{
             $mandrill = new \Mandrill('UdCR1EPItIwbRlDq5VFu_w');
             $message = array(
                 'html' => '
-
-                    <p>Complete registration:</p>
+                    <img src="http://veery.es/img/veryLogo.png" alt="Veery Logo" style="max-width: 250px; display: block; margin: 50px auto;">
+                    <p>Complete su registro:</p>
                     <a href="'.PATH.'users/verify/'.$user['userEmail'].'/'.$user['userHash'].'">Click me!</a>
 
                 ',
-                'text' => 'Example text content',
-                'subject' => 'example subject',
+                'text' => 'Un último paso...',
+                'subject' => 'Bienvenido a Veery!',
                 'from_email' => 'noreply@veery.es',
                 'from_name' => 'Veery. Social Streaming',
                 'to' => array(

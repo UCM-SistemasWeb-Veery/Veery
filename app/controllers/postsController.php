@@ -26,7 +26,7 @@ class PostsController extends Controller{
                 $postData = array('postContent' => $postContent, 'userID' => \core\session::get('currentUserID'));
                 $this->_model->createPost($postData);
                 \core\session::set('message', 'Asistente agregado correctamente');
-                \core\url::redirect('user/'.\core\session::get('currentUserHandle'));
+                \core\url::redirect('users/'.\core\session::get('currentUserHandle'));
             }
         }
 
@@ -40,7 +40,7 @@ class PostsController extends Controller{
         $data['title'] = 'View post';
         $data['js'] = "";
         View::renderpartial('header', $data);
-        View::render('post/view', $data);
+        View::render('posts/view', $data);
         View::renderpartial('footer', $data);
     }
 

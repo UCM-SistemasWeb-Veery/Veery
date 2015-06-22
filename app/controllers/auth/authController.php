@@ -5,20 +5,23 @@ use controllers\auth\passwordController as password,
         \core\url as Url,
         \core\view as View;
 class AuthController extends \core\controller {
+    private $_model;
 
+    public function __construct(){
+        parent::__construct();
+        $this->_model = new \models\authModel();
+    }
     public function login(){
         if(Session::get('loggedin')){
             Url::previous();
         }
-
-        $model = new \models\authModel();
 
         $data['title'] = 'Login';
 
         if(isset($_POST['submit'])){
             $userHandle = $_POST['userHandle'];
             $userPassword = $_POST['userPassword'];
-            if(password::verify($userPassword, $model->getHash($_POST['userHandle'])) == 0){
+            if(password::verify($userPassword, $this->_model->getHash($_POST['userHandle'])) == 0){
                 $error[] = 'Usuario o contraseña incorrectos';
                 $data['userHandle'] = $userHandle;
                 View::renderpartial('header', $data);
@@ -26,11 +29,21 @@ class AuthController extends \core\controller {
                 View::renderpartial('footer', $data);
             }
             else{
-                $userID = $model->getUserId($userHandle);
-                Session::set('currentUserHandle', $userHandle);
-                Session::set('currentUserID', $userID);
-                Session::set('loggedin', true);
-                Url::previous();
+                if(!$this->_model->isActive($userHandle)){
+                    $error[] = 'Su cuenta aún no está activa. Por favor, revise su correo electrónico.';
+                    $data['userHandle'] = $userHandle;
+                    View::renderpartial('header', $data);
+                    View::render('register', $data, $error);
+                    View::renderpartial('footer', $data);
+                    //Url::redirect('register', $error);
+                }
+                else{
+                    $userID = $this->_model->getUserId($userHandle);
+                    Session::set('currentUserHandle', $userHandle);
+                    Session::set('currentUserID', $userID);
+                    Session::set('loggedin', true);
+                    Url::redirect();
+                }
             }
         }
     }
@@ -43,6 +56,6 @@ class AuthController extends \core\controller {
 
     public function logout(){
         Session::destroy();
-        Url::previous();
+        Url::redirect();
     }
 }

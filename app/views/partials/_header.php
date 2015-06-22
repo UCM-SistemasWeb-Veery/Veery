@@ -41,32 +41,32 @@
             		<div class="col col-4">
 				          <div id="menu-button">
 				              <a href="#menu-toggle" id="menu-toggle"><span></span></a>
-				          </div> 
+				          </div>
 				          <a href="<?php echo PATH ?>"><img id="logo" src="<?php echo PATH ?>img/veryLogo.png" alt="Veery"></a>
 			          </div>
 			          <div class="col col-5 col-offset-3">
-			          <?php 
+			          <?php
 					          if(!\core\session::get('loggedin')){
 					          		echo '
 					            		<div id="session-controls">
 					            			<div id="login-form">
 					            				<form action="'.PATH.'login" method="post">
-					            					<input class="btn inverse small" type="text" name="username" placeholder="Usuario">
-					            					<input class="btn inverse small" type="password" name="password" placeholder="Contraseña">
+					            					<input class="btn inverse small" type="text" name="userHandle" placeholder="Usuario">
+					            					<input class="btn inverse small" type="password" name="userPassword" placeholder="Contraseña">
 																<input class="btn primary small center" method="post" type="submit" name="submit" value="acceder"></input>
 					            				</form>
-					            			</div>	            		
+					            			</div>
 						            		<a href="'.PATH.'register" class="btn alternate small"><span class="fa fa-pencil-square-o"></span> Registro</a>
 														<a href="" id="login-button" class="btn alternate small"><span class="fa fa-sign-in"></span> Login</a>
 													</div>
 					          		';
 					          	} else {
 					          		echo '
-					            		<div id="session-controls">           		
+					            		<div id="session-controls">
 														<a href="'.PATH.'logout" class="btn alternate small"><span class="fa fa-sign-out"></span> Logout</a>
 													</div>
 					          		';
-					          	} 
+					          	}
 			          	?>
 
 						    <?php
@@ -91,7 +91,6 @@
 									  echo "Hola";
 								}*/
 							?>
-	            		
 			          </div>
             	</div>
             </header>

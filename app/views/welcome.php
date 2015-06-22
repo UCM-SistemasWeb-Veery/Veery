@@ -54,9 +54,9 @@
 	        		</div>
 	        		<div class="welcome-form">
 								<h2>New users</h2>
-								<form id="register" action="<?php echo PATH.'users/new'; ?>" method="post">
+								<form id="register" action="<?php echo PATH.'users/create'; ?>" method="post">
 						  		<input class="btn inverse small <?php if(!empty($data['userHandle'])){echo 'error';} ?>" type="text" name="userHandle" placeholder="<?php if(!empty($data['userHandle'])){echo $data['userHandle'];}else{echo 'Usuario';} ?>">
-						  		<input class="btn inverse small <?php if(!empty($data['userEmail'])){echo 'error';} ?>" type="text" name="userEmail" placeholder="<?php if(!empty($data['userHandle'])){echo $data['userHandle'];}else{echo 'Email';} ?>">
+						  		<input class="btn inverse small <?php if(!empty($data['userEmail'])){echo 'error';} ?>" type="email" name="userEmail" placeholder="<?php if(!empty($data['userHandle'])){echo $data['userHandle'];}else{echo 'Email';} ?>">
 									<input class="btn inverse small" type="password" name="userPassword" placeholder="Contraseña">
 									<input class="btn alternate small center" type="submit" name="submit" value="Registrarse">
 								</form>
