@@ -15,9 +15,7 @@ class UsersController extends Controller{
     }
 
     public function view($userHandle) {
-        var_dump($userHandle);
         $data['user'] = $this->_model->getUser($userHandle);
-        var_dump($data['user']);
         $data['follower'] = false;
         if($this->_model->isFollowing($data['user'][0]->userID, Session::get('currentUserID'))){
             $data['follower'] = true;
@@ -60,7 +58,7 @@ class UsersController extends Controller{
             </script>
         ";
         View::renderpartial('header', $data);
-        View::render('user/view', $data);
+        View::render('users/view', $data);
         View::renderpartial('footer', $data);
     }
 
@@ -76,7 +74,7 @@ class UsersController extends Controller{
                 $data['title'] = 'Registro';
                 $error[] = "El usuario ya existe.";
                 View::renderpartial('header', $data);
-                View::render('register', $error);
+                View::render('register', $data, $error);
                 View::renderpartial('footer', $data);
 
             }
@@ -85,7 +83,7 @@ class UsersController extends Controller{
                         'userHandle' => $userHandle,
                         'userPassword' => password::make($_POST['userPassword']),
                         'userEmail' => $userEmail,
-                        'userHash' => password::make($userHandle)
+                        'userHash' => md5(uniqid(mt_rand(), true))
                 );
 
                 $this->_model->createUser($user);
@@ -108,11 +106,11 @@ class UsersController extends Controller{
             $userLastName = $_POST['userLastName'];
             //$userDoB = $_POST['userDoB'];
             $userBio = $_POST['userBio'];
-            $userSlug = Url::generateSlug(strtolower($userName).'-'.strtolower($userLastName));
-            $userProfilePicture = 'img/profilePictures/'.$_FILES['userProfilePicture']['name'];
-            move_uploaded_file($_FILES['userProfilePicture']['tmp_name'], $userProfilePicture);
-            $userHeader = 'img/headerPictures/'.$_FILES['userHeader']['name'];
-            move_uploaded_file($_FILES['userHeader']['tmp_name'], $userHeader);
+            $userSlug = Url::generateSlug(strtolower($userName).ucfirst(strtolower($userLastName)));
+            $userProfilePicture = $_FILES['userProfilePicture']['name'];
+            move_uploaded_file($_FILES['userProfilePicture']['tmp_name'], 'img/profilePictures/'.$userProfilePicture);
+            $userHeader = $_FILES['userHeader']['name'];
+            move_uploaded_file($_FILES['userHeader']['tmp_name'], 'img/headerPictures/'.$userHeader);
 
             $user = array(
                     'userName' => $userName,
@@ -121,11 +119,17 @@ class UsersController extends Controller{
                     'userSlug' => $userSlug,
                     'userProfilePicture' => $userProfilePicture,
                     'userHeader' => $userHeader,
+                    'userActive' => 1
             );
             $data['user'] = $this->_model->getUserByEmail($userEmail);
+            //var_dump();
             $where = array('userID' => $data['user'][0]->userID);
             $this->_model->verifyUser($user, $where);
-            Url::redirect('users/'.$userSlug);
+            $data['title'] = $data['user'][0]->userHandle;
+            Session::set('currentUserHandle',  $data['user'][0]->userHandle);
+            Session::set('currentUserID',  $data['user'][0]->userID);
+            Session::set('loggedin', true);
+            Url::redirect();
            /* if($username == ''){
                 $error[] = 'Username is required.';
             }

@@ -5,7 +5,7 @@ use \core\model as Model;
 class UserModel extends Model{
     public function getUser($userHandle)
     {
-        return $this->_db->select("SELECT * FROM vry_users WHERE userHandle = :userHandle", array(':userHandle' => $userHandle));
+       return $this->_db->select("SELECT * FROM vry_users WHERE userHandle = :userHandle", array(':userHandle' => $userHandle));
     }
 
     public function getUserByEmail($userEmail)

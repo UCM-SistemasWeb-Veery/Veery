@@ -31,7 +31,7 @@ class PostsController extends Controller{
         }
 
         View::renderpartial('header', $data);
-        View::render('post/create', $data);
+        View::render('posts/create', $data);
         View::renderpartial('footer', $data);
     }
 

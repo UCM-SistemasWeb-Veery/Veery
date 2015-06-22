@@ -74,8 +74,6 @@
       });
     });*/
 
-  </script>
-  <script type="text/javascript">
     $('.music-link').on('click', function(e) {
       e.preventDefault();
       $('footer').removeClass('hide');
@@ -90,6 +88,13 @@
         },
         supplied: "mp3",
         keyEnabled: true,
+        cssSelectorAncestor: "#jp_container_1",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
       });
     });
   </script>

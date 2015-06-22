@@ -3,7 +3,7 @@
             <nav class="clearfix">
                 <ul>
                     <li><a class="btn inverse" href="<?php echo PATH; ?>">Home</a></li>
-                    <li><a class="btn inverse" href="<?php echo PATH.'user/'.\core\session::get('currentUserHandle'); ?>">My Veery</a></li>
+                    <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>">My Veery</a></li>
                     <li><a class="btn inverse active" href="<?php echo PATH.'posts/create'; ?>">Add Post</a></li>
                 </ul>
                 <a href="#" id="pull">Just For You</a>
