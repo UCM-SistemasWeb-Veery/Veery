@@ -5,10 +5,12 @@ use \core\view,
 
 class PostsController extends Controller{
     private $_model;
+    private $_user;
 
     public function __construct(){
         parent::__construct();
         $this->_model = new \models\postModel();
+        $this->_model = new \models\userModel();
     }
 
     public function create() {
@@ -25,7 +27,6 @@ class PostsController extends Controller{
             if(!$error){
                 $postData = array('postContent' => $postContent, 'userID' => \core\session::get('currentUserID'));
                 $this->_model->createPost($postData);
-                \core\session::set('message', 'Asistente agregado correctamente');
                 \core\url::redirect('users/'.\core\session::get('currentUserHandle'));
             }
         }

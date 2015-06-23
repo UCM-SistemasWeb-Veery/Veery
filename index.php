@@ -39,6 +39,10 @@ Router::any('users/(:any)', '\controllers\usersController@view');
 Router::any('posts/create', '\controllers\postsController@create');
 Router::any('posts/(:any)', '\controllers\postsController@view');
 
+Router::any('albums/create', '\controllers\albumsController@create');
+Router::any('albums/store', '\controllers\albumsController@store');
+Router::any('albums/(:any)', '\controllers\albumsController@view');
+
 Router::any('invite', '\controllers\invitesController@sendInvites');
 
 //turn on old style routing

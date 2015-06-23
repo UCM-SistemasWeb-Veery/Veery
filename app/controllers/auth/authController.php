@@ -38,9 +38,10 @@ class AuthController extends \core\controller {
                     //Url::redirect('register', $error);
                 }
                 else{
-                    $userID = $this->_model->getUserId($userHandle);
+                    $user = $this->_model->getUser($userHandle);
                     Session::set('currentUserHandle', $userHandle);
-                    Session::set('currentUserID', $userID);
+                    Session::set('currentUserType', $user->userType);
+                    Session::set('currentUserID', $user->userID);
                     Session::set('loggedin', true);
                     Url::redirect();
                 }

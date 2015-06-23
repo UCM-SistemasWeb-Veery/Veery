@@ -51,7 +51,7 @@
     <script src="<?php echo js_path?>app.js"></script>
     <script src="<?php echo js_path?>pinterest_grid.js"></script>
     <script src="<?php echo js_path?>jquery.jplayer.js"></script>
-    <?php if(isset($data['js'])){ echo $data['js'];} ?>  
+    <?php if(isset($data['js'])){ echo $data['js'];} ?>
     <script type="text/javascript">
     /*$(document).ready(function(){
       $("#jquery_jplayer_1").jPlayer({
@@ -74,29 +74,7 @@
       });
     });*/
 
-    $('.music-link').on('click', function(e) {
-      e.preventDefault();
-      $('footer').removeClass('hide');
-      $("#jquery_jplayer_1").jPlayer("destroy");
-      var mp3 = $(this).attr('data-source');
-      //$('#jquery_jplayer_1').jPlayer('setMedia', {mp3:mp3}),jPlayer('play');
-      $("#jquery_jplayer_1").jPlayer( {
-        ready: function() { // The $.jPlayer.event.ready event
-          $(this).jPlayer("setMedia", { // Set the media
-            mp3: mp3
-          }).jPlayer("play"); // Attempt to auto play the media
-        },
-        supplied: "mp3",
-        keyEnabled: true,
-        cssSelectorAncestor: "#jp_container_1",
-        useStateClassSkin: true,
-        autoBlur: false,
-        smoothPlayBar: true,
-        keyEnabled: true,
-        remainingDuration: true,
-        toggleDuration: true
-      });
-    });
+
   </script>
 
 </body>

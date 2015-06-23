@@ -11,10 +11,11 @@ class AuthModel extends \core\model{
 		}
 	}
 
-    public function getUserId($userHandle)
+    public function getUser($userHandle)
     {
-        $data = $this->_db->select("SELECT userID FROM vry_users WHERE userHandle = :userHandle",array(':userHandle' => $userHandle));
-        return $data[0]->userID;
+        $data = $this->_db->select("SELECT * FROM vry_users WHERE userHandle = :userHandle",array(':userHandle' => $userHandle));
+        var_dump($data[0]);
+        return $data[0];
     }
 
     public function isActive($userHandle)

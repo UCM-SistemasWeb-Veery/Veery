@@ -30,3 +30,26 @@
               $("#livesearch").html(data);
           });
       }
+    $('.music-link').on('click', function(e) {
+      e.preventDefault();
+      $('footer').removeClass('hide');
+      $("#jquery_jplayer_1").jPlayer("destroy");
+      var mp3 = $(this).attr('data-source');
+      //$('#jquery_jplayer_1').jPlayer('setMedia', {mp3:mp3}),jPlayer('play');
+      $("#jquery_jplayer_1").jPlayer( {
+        ready: function() { // The $.jPlayer.event.ready event
+          $(this).jPlayer("setMedia", { // Set the media
+            mp3: mp3
+          }).jPlayer("play"); // Attempt to auto play the media
+        },
+        supplied: "mp3",
+        keyEnabled: true,
+        cssSelectorAncestor: "#jp_container_1",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
+      });
+    });

@@ -5,6 +5,7 @@
                     <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle'); ?>"><span class="fa fa-user"></span> My Veery</a></li>
                     <li><a class="btn inverse" href="<?php echo PATH.'posts/create'; ?>"><span class="fa fa-plus"></span> Add Post</a></li>
                     <li><a class="btn inverse" href="<?php echo PATH.'users/'.\core\session::get('currentUserHandle').'/edit'; ?>"><span class="fa fa-pencil-square-o"></span> Editar</a></li>
+                    <?php if(intval(\core\session::get('currentUserType')) == 2){ echo '<li><a class="btn inverse" href="'.PATH.'albums/create"><span class="fa fa-plus"></span> Add Album</a></li>';} ?>
                 </ul>
                 <a href="#" id="pull">Just For You</a>
             </nav>
